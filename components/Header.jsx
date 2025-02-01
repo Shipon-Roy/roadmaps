@@ -1,4 +1,4 @@
-import Container from "@/ui/Container";
+import Container from "@/app/ui/Container";
 import Link from "next/link";
 import React from "react";
 import { CgProfile } from "react-icons/cg";
@@ -12,15 +12,19 @@ export default function Header() {
             <h1>RoadMaps</h1>
           </Link>
           <ul className="flex justify-center items-center gap-5">
-            <Link href="/about">
-              <li>About</li>
+            <Link href="/topics">
+              <li>Topics</li>
+            </Link>
+            <Link href="/posts">
+              <li>Posts</li>
             </Link>
             <Link href="/blogs">
               <li>Blogs</li>
             </Link>
-            <Link href="/contact">
-              <li>Contact</li>
+            <Link href="/podcast">
+              <li>Podcast</li>
             </Link>
+            <Link href="/about">About Us</Link>
           </ul>
           <div>
             <CgProfile />

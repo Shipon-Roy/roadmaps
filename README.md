@@ -4,6 +4,10 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 First, run the development server:
 
+https://laracasts.com/browse/all
+
+video player: https://www.youtube.com/watch?v=8guP6F56TPk
+
 ```bash
 npm run dev
 # or
