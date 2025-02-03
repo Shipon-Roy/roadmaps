@@ -3,7 +3,7 @@ import Container from "../ui/Container";
 
 export default function page() {
   return (
-    <div className="my-20">
+    <div className="flex justify-center items-center h-[620px]">
       <Container>
         <div className=" text-center">
           <h1 className="text-[#7dd3fc] font-bold text-3xl">
