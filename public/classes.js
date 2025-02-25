@@ -33,7 +33,8 @@ export const topics = [
     topic: "React",
   },
   {
-    topic: "React",
+    topic: "Devops",
+    link: "/devops",
   },
   {
     topic: "React",
