@@ -20,7 +20,7 @@ export default function Page({ params }) {
                 width="100%"
                 src={i.link}
                 title={i.title}
-                className="aspect-video rounded"
+                className="aspect-video rounded w-[750px]"
                 frameBorder=""
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
