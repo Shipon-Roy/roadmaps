@@ -1,25 +1,24 @@
 "use client";
-import { classes } from "@/public/classes";
+import { classes } from "@/public/classes"; // Now we're importing the updated classes structure
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import { useRouter } from "next/router";
 
 export default function Page({ params }) {
   const { slug } = params;
 
-  // Dynamically filter classes based on the slug
-  const filteredClasses = classes.filter((cls) => {
-    return cls.tags && cls.tags.includes(slug);
-  });
+  // Dynamically select the appropriate classes based on the slug
+  const selectedClasses = classes[slug] || []; // If the slug is "react" or "next", it will select the corresponding classes
 
   // State to hold the current selected video
   const [currentVideo, setCurrentVideo] = useState(null);
 
-  // Set the default video to the first class in the filtered list when it changes
+  // Set the default video to the first class in the selected classes when it changes
   useEffect(() => {
-    if (filteredClasses.length > 0) {
-      setCurrentVideo(filteredClasses[0]); // Set the first class as default
+    if (selectedClasses.length > 0) {
+      setCurrentVideo(selectedClasses[0]); // Set the first class as default
     }
-  }, [filteredClasses]); // Only run when filteredClasses changes
+  }, [selectedClasses]); // Only run when selectedClasses changes
 
   // Capitalizing the first letter of the slug for the page title
   const formattedSlug = slug.charAt(0).toUpperCase() + slug.slice(1);
@@ -33,8 +32,8 @@ export default function Page({ params }) {
         <div className="w-[25%]">
           <h2 className="text-lg font-semibold mb-4">Other Classes</h2>
           <ul className="space-y-4">
-            {filteredClasses.length > 0 ? (
-              filteredClasses.map((cls, index) => (
+            {selectedClasses.length > 0 ? (
+              selectedClasses.map((cls, index) => (
                 <li
                   key={index}
                   onClick={() => setCurrentVideo(cls)}
@@ -61,7 +60,7 @@ export default function Page({ params }) {
 
         {/* Video Player */}
         <div className="w-[75%]">
-          {filteredClasses.length > 0 && currentVideo ? (
+          {selectedClasses.length > 0 && currentVideo ? (
             <iframe
               width="100%"
               height="auto"
@@ -75,7 +74,7 @@ export default function Page({ params }) {
           ) : (
             <div className="text-center text-gray-400">
               {/* Placeholder when no class is selected */}
-              {filteredClasses.length === 0
+              {selectedClasses.length === 0
                 ? "No classes available for this topic."
                 : "Select a class to watch"}
             </div>
