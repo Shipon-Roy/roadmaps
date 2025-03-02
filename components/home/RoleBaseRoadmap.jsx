@@ -1,5 +1,8 @@
 "use client";
 import { useState } from "react";
+import FrontendFlow from "./roadmap/FrontendFlow";
+import BackendFlow from "./roadmap/BackendFlow";
+import FullstackFlow from "./roadmap/FullstackFlow";
 
 const roles = [
   {
@@ -26,29 +29,28 @@ export default function RoleBaseRoadmap() {
   const renderContent = () => {
     if (!selectedRole) {
       return (
-        <div className="text-white">
-          Frontend Roadmap: Here is the roadmap for Frontend development...
+        <div>
+          <FrontendFlow />
         </div>
       );
     }
     switch (selectedRole) {
       case "Frontend":
         return (
-          <div className="text-white">
-            Frontend Roadmap: Here is the roadmap for Frontend development...
+          <div>
+            <FrontendFlow />
           </div>
         );
       case "Backend":
         return (
-          <div className="text-white">
-            Backend Roadmap: Here is the roadmap for Backend development...
+          <div>
+            <BackendFlow />
           </div>
         );
       case "Full Stack":
         return (
-          <div className="text-white">
-            Full Stack Roadmap: Here is the roadmap for Full Stack
-            development...
+          <div>
+            <FullstackFlow />
           </div>
         );
       default:
