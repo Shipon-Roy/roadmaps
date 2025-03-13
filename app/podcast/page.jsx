@@ -7,7 +7,7 @@ export default function page() {
       <Container>
         <div className=" text-center py-10">
           <h1 className="text-[#7dd3fc] font-bold text-3xl">
-            Learning Path For Developer Podcast
+            Learning Path Developer Podcast
           </h1>
           <p className="text-gray-300">
             Lorem ipsum dolor sit amat, consectetur adipisicing elit. Adipisci

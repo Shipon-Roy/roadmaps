@@ -1,6 +1,12 @@
 import Link from "next/link";
 import React from "react";
-import { FaReact } from "react-icons/fa";
+import { FaReact, FaLaravel } from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiVuedotjs,
+  SiTailwindcss,
+  SiNuxtdotjs,
+} from "react-icons/si";
 
 const topics = [
   {
@@ -9,29 +15,29 @@ const topics = [
     link: "/react",
   },
   {
-    icon: <FaReact />,
+    icon: <SiNextdotjs />,
     topic: "Next",
     link: "/next",
   },
   {
-    icon: <FaReact />,
-    topic: "React",
+    icon: <SiVuedotjs />,
+    topic: "Vue",
+    link: "/vue",
   },
   {
-    icon: <FaReact />,
-    topic: "React",
+    icon: <SiTailwindcss />,
+    topic: "Tailwind CSS",
+    link: "/tailwindcss",
   },
   {
-    icon: <FaReact />,
-    topic: "React",
+    icon: <SiNuxtdotjs />,
+    topic: "Nuxt",
+    link: "/nuxt",
   },
   {
-    icon: <FaReact />,
-    topic: "React",
-  },
-  {
-    icon: <FaReact />,
-    topic: "React",
+    icon: <FaLaravel />,
+    topic: "Laravel",
+    link: "/laravel",
   },
 ];
 
@@ -42,7 +48,7 @@ export default function page() {
         {topics.map((e, index) => (
           <Link key={index} href={`/topics${e.link}`}>
             <div className="flex items-center gap-7 bg-slate-700 text-white p-5 w-[230px] h-[90px] rounded-md hover:bg-slate-600">
-              <span>{e.icon}</span>
+              <span className="text-5xl">{e.icon}</span>
               <h1>{e.topic}</h1>
             </div>
           </Link>
