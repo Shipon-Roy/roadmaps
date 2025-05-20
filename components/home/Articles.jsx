@@ -6,8 +6,14 @@ export default function Articles() {
     <div className="my-20">
       <Container>
         <div className=" text-center">
-          <h1 className="text-[#7dd3fc] font-bold text-3xl">Latest Blogs</h1>
-          <p className="text-gray-300 max-w-[900px] text-xl mt-5 mx-auto">
+          <h1 data-aos="fade-up" className="text-[#7dd3fc] font-bold text-3xl">
+            Latest Blogs
+          </h1>
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="text-gray-300 max-w-[900px] text-xl mt-5 mx-auto"
+          >
             {" "}
             Itaque sed consectetur modi tenetur autem hic molestiae illo
             consequatur, atque, impedit debitis aperiam veritatis et unde animi
@@ -16,7 +22,11 @@ export default function Articles() {
             blanditiis. Illo, dolore inventore?
           </p>
         </div>
-        <div className="mt-20 grid grid-cols-2 justify-items-center ">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          className="mt-20 grid grid-cols-2 justify-items-center "
+        >
           <div className="max-w-xl p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
             <a href="#">
               <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">

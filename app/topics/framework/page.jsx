@@ -1,6 +1,6 @@
 import Link from "next/link";
 import React from "react";
-import { FaReact, FaLaravel } from "react-icons/fa";
+import { FaReact, FaLaravel, FaAngular } from "react-icons/fa";
 import {
   SiNextdotjs,
   SiVuedotjs,
@@ -23,6 +23,11 @@ const topics = [
     icon: <SiVuedotjs />,
     topic: "Vue",
     link: "/vue",
+  },
+  {
+    icon: <FaAngular />,
+    topic: "Angular",
+    link: "/angular",
   },
   {
     icon: <SiTailwindcss />,

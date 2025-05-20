@@ -6,6 +6,7 @@ import {
   FaDocker,
   FaPhp,
   FaLaravel,
+  FaAngular,
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -81,6 +82,11 @@ const topics = [
     icon: <SiVuedotjs />,
     topic: "Vue",
     link: "/vue",
+  },
+  {
+    icon: <FaAngular />,
+    topic: "Angular",
+    link: "/angular",
   },
   {
     icon: <SiTailwindcss />,

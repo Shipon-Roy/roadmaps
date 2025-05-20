@@ -1,14 +1,57 @@
 import Container from "@/app/ui/Container";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
+const contentData = {
+  HTML: {
+    title: "HTML Modal Content",
+    description: "Learn the basics of HTML and structure your webpages.",
+    cards: [
+      {
+        title: "HTML Card 1",
+        description: "Learn the basics of HTML and structure your webpages.",
+        icon: "fas fa-html5",
+      },
+      {
+        title: "HTML Card 2",
+        description: "Structure web elements using HTML tags.",
+        icon: "fas fa-html5",
+      },
+    ],
+  },
+  CSS: {
+    title: "CSS Modal Content",
+    description:
+      "Learn how to style HTML elements with CSS, including properties like color, layout, and animations.",
+    cards: [],
+  },
+  JavaScript: {
+    title: "JavaScript Modal Content",
+    description:
+      "Explore how to add interactivity to your website with JavaScript, including DOM manipulation, events, and logic.",
+    cards: [],
+  },
+  Git: {
+    title: "Git Modal Content",
+    description:
+      "Learn how to build dynamic user interfaces with Git, using components, hooks, and state management.",
+    cards: [],
+  },
+  "React.js": {
+    title: "React.js Modal Content",
+    description:
+      "Learn how to build dynamic user interfaces with React.js, using components, hooks, and state management.",
+    cards: [],
+  },
+};
 
 export default function FrontendFlow() {
   // State to manage modal visibility and content
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [modalContent, setModalContent] = useState("");
+  const [modalContent, setModalContent] = useState(null);
 
   // Function to open modal and set content dynamically
   const handleModalToggle = (content) => {
-    setModalContent(content);
+    setModalContent(contentData[content]);
     setIsModalOpen(true);
   };
 
@@ -61,6 +104,17 @@ export default function FrontendFlow() {
 
           {/* React.js Block */}
           <div
+            onClick={() => handleModalToggle("Git")}
+            className="text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded-lg shadow-xl p-6 w-[14rem] bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer"
+          >
+            <i className="fab fa-react text-3xl mb-4"></i>
+            Git
+          </div>
+          {/* Down Arrow */}
+          <span className="text-white text-4xl animate-bounce">↓</span>
+
+          {/* React.js Block */}
+          <div
             onClick={() => handleModalToggle("React.js")}
             className="text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded-lg shadow-xl p-6 w-[14rem] bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer"
           >
@@ -70,58 +124,34 @@ export default function FrontendFlow() {
         </div>
 
         {/* Modal */}
-        {isModalOpen && (
+        {isModalOpen && modalContent && (
           <div
             onClick={handleOutsideClick}
             className="fixed inset-0 flex justify-center items-center bg-black bg-opacity-60 z-50 transition-opacity duration-500 opacity-100"
           >
             <div className="bg-gradient-to-r from-sky-600 to-gray-900 p-8 rounded-lg shadow-xl w-[80%] md:w-[60%] lg:w-[40%] transform transition-all duration-500 opacity-100 scale-100 hover:scale-105 hover:opacity-90 relative">
               <h2 className="text-3xl font-semibold text-white mb-6">
-                {modalContent} Modal shipon
+                {modalContent.title}
               </h2>
 
               {/* Content inside Modal based on the block clicked */}
-              {modalContent === "HTML" && (
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div className="bg-blue-500 p-6 rounded-lg shadow-lg text-white text-center transform hover:scale-105 transition-all duration-300">
-                    <i className="fas fa-html5 text-4xl mb-4"></i>
-                    <h3 className="font-semibold">HTML Card 1</h3>
-                    <p>Learn the basics of HTML and structure your webpages.</p>
+              <div className="text-white">
+                <h3 className="font-semibold">{modalContent.description}</h3>
+                {modalContent.cards.length > 0 && (
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                    {modalContent.cards.map((card, index) => (
+                      <div
+                        key={index}
+                        className="bg-blue-500 p-6 rounded-lg shadow-lg text-white text-center transform hover:scale-105 transition-all duration-300"
+                      >
+                        <i className={`${card.icon} text-4xl mb-4`}></i>
+                        <h3 className="font-semibold">{card.title}</h3>
+                        <p>{card.description}</p>
+                      </div>
+                    ))}
                   </div>
-                  <div className="bg-green-500 p-6 rounded-lg shadow-lg text-white text-center transform hover:scale-105 transition-all duration-300">
-                    <i className="fas fa-html5 text-4xl mb-4"></i>
-                    <h3 className="font-semibold">HTML Card 2</h3>
-                    <p>Structure web elements using HTML tags.</p>
-                  </div>
-                </div>
-              )}
-              {modalContent === "CSS" && (
-                <div className="text-white">
-                  <h3 className="font-semibold">CSS Modal Content</h3>
-                  <p>
-                    Learn how to style HTML elements with CSS, including
-                    properties like color, layout, and animations.
-                  </p>
-                </div>
-              )}
-              {modalContent === "JavaScript" && (
-                <div className="text-white">
-                  <h3 className="font-semibold">JavaScript Modal Content</h3>
-                  <p>
-                    Explore how to add interactivity to your website with
-                    JavaScript, including DOM manipulation, events, and logic.
-                  </p>
-                </div>
-              )}
-              {modalContent === "React.js" && (
-                <div className="text-white">
-                  <h3 className="font-semibold">React.js Modal Content</h3>
-                  <p>
-                    Learn how to build dynamic user interfaces with React.js,
-                    using components, hooks, and state management.
-                  </p>
-                </div>
-              )}
+                )}
+              </div>
 
               {/* Close Icon */}
               <button

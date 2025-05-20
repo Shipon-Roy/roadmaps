@@ -6,16 +6,24 @@ export default function TechUpdate() {
     <div className="my-20">
       <Container>
         <div className=" text-center">
-          <h1 className="text-[#7dd3fc] font-bold text-3xl">
+          <h1 data-aos="fade-up" className="text-[#7dd3fc] font-bold text-3xl">
             More Than Just A Learning Platform for Free
           </h1>
-          <p className="max-w-[800px] text-gray-300 text-xl mt-5 mx-auto">
+          <p
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="max-w-[800px] text-gray-300 text-xl mt-5 mx-auto"
+          >
             In addition to our full-time instructors, we often reach out to top
             developers in the programming space for their expertise.
           </p>
         </div>
         <div className="grid grid-cols-3 justify-items-center mt-20">
-          <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          >
             <svg
               className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
               aria-hidden="true"
@@ -35,7 +43,11 @@ export default function TechUpdate() {
               your weekly benefits:
             </p>
           </div>
-          <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          >
             <svg
               className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
               aria-hidden="true"
@@ -55,7 +67,11 @@ export default function TechUpdate() {
               your weekly benefits:
             </p>
           </div>
-          <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="3000"
+            className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700"
+          >
             <svg
               className="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3"
               aria-hidden="true"
