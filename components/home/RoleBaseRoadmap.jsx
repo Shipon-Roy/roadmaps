@@ -11,9 +11,9 @@ const roles = [
   {
     path: "Backend",
   },
-  {
-    path: "Full Stack",
-  },
+  // {
+  //   path: "Full Stack",
+  // },
 ];
 
 export default function RoleBaseRoadmap() {
@@ -47,12 +47,12 @@ export default function RoleBaseRoadmap() {
             <BackendFlow />
           </div>
         );
-      case "Full Stack":
-        return (
-          <div>
-            <FullstackFlow />
-          </div>
-        );
+      // case "Full Stack":
+      //   return (
+      //     <div>
+      //       <FullstackFlow />
+      //     </div>
+      //   );
       default:
         return null;
     }

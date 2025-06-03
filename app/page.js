@@ -9,6 +9,7 @@ import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Mern from "@/components/home/Mern";
 
 export default function Home() {
   useEffect(() => {
@@ -17,7 +18,8 @@ export default function Home() {
   return (
     <div>
       <Hero />
-      <RoleBaseRoadmap />
+      <Mern />
+      {/* <RoleBaseRoadmap /> */}
       {/* <Learning /> */}
       <TechUpdate />
       <Articles />

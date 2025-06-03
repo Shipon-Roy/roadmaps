@@ -24,18 +24,19 @@ const contentData = {
       "Learn how to style HTML elements with CSS, including properties like color, layout, and animations.",
     cards: [],
   },
-  JavaScript: {
-    title: "JavaScript Modal Content",
-    description:
-      "Explore how to add interactivity to your website with JavaScript, including DOM manipulation, events, and logic.",
-    cards: [],
-  },
   Git: {
     title: "Git Modal Content",
     description:
       "Learn how to build dynamic user interfaces with Git, using components, hooks, and state management.",
     cards: [],
   },
+  JavaScript: {
+    title: "JavaScript Modal Content",
+    description:
+      "Explore how to add interactivity to your website with JavaScript, including DOM manipulation, events, and logic.",
+    cards: [],
+  },
+  
   "React.js": {
     title: "React.js Modal Content",
     description:
@@ -90,25 +91,27 @@ export default function FrontendFlow() {
           {/* Down Arrow */}
           <span className="text-white text-4xl animate-bounce">↓</span>
 
-          {/* JavaScript Block */}
-          <div
-            onClick={() => handleModalToggle("JavaScript")}
-            className="text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded-lg shadow-xl p-6 w-[14rem] bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer"
-          >
-            <i className="fas fa-laptop-code text-3xl mb-4"></i>
-            JavaScript
-          </div>
-
-          {/* Down Arrow */}
-          <span className="text-white text-4xl animate-bounce">↓</span>
-
-          {/* React.js Block */}
+           {/* React.js Block */}
           <div
             onClick={() => handleModalToggle("Git")}
             className="text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded-lg shadow-xl p-6 w-[14rem] bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer"
           >
             <i className="fab fa-react text-3xl mb-4"></i>
             Git
+          </div>
+
+          
+
+          {/* Down Arrow */}
+          <span className="text-white text-4xl animate-bounce">↓</span>
+
+         {/* JavaScript Block */}
+          <div
+            onClick={() => handleModalToggle("JavaScript")}
+            className="text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded-lg shadow-xl p-6 w-[14rem] bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer"
+          >
+            <i className="fas fa-laptop-code text-3xl mb-4"></i>
+            JavaScript
           </div>
           {/* Down Arrow */}
           <span className="text-white text-4xl animate-bounce">↓</span>
