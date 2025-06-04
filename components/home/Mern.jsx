@@ -51,7 +51,7 @@ export default function Mern() {
                 </svg>
               </div>
               <div className="flex justify-between items-center">
-                <Link href={`/classes/w3`}>
+                <Link href="/classes/html/w3">
                   <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
                     <Image
                       src="/mern/w3schools.png"
@@ -71,7 +71,7 @@ export default function Mern() {
                     </div>
                   </div>
                 </Link>
-                <Link href={`/classes/stacklearner`}>
+                <Link href="/classes/html/stacklearner">
                   <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
                     <Image
                       src="/mern/stacklearner.png"
@@ -118,12 +118,14 @@ export default function Mern() {
                 style={{ opacity: 1, transform: "none" }}
               >
                 <DotLottieReact
-                  className="rounded-2xl"
                   autoplay="true"
                   loop="true"
                   src="/mern/css.lottie"
                   background="transparent"
-                  style={{ width: "100%", height: "100%" }}
+                  style={{
+                    width: "100%",
+                    height: "100%",
+                  }}
                 ></DotLottieReact>
               </div>
             </div>
@@ -152,42 +154,46 @@ export default function Mern() {
                 </svg>
               </div>
               <div className="flex justify-between items-center">
-                <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/w3schools.png"
-                    alt="stack learner"
-                    width={60}
-                    height={40}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white font-bold text-xl text-center lg:text-left">
-                      W3
-                    </h1>
+                <Link href="/classes/css/w3">
+                  <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/w3schools.png"
+                      alt="stack learner"
+                      width={60}
+                      height={40}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white font-bold text-xl text-center lg:text-left">
+                        W3
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-medium text-center lg:!text-left ">
-                      W3Schools
-                    </p>
+                      <p className="text-1 text-gray-300 text-medium text-center lg:!text-left ">
+                        W3Schools
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/stacklearner.png"
-                    alt="stack learner"
-                    width={60}
-                    height={40}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white font-bold text-xl text-center lg:text-left">
-                      HM Nayem
-                    </h1>
+                </Link>
+                <Link href="classes/css/stacklearner">
+                  <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/stacklearner.png"
+                      alt="stack learner"
+                      width={60}
+                      height={40}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white font-bold text-xl text-center lg:text-left">
+                        HM Nayem
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-medium text-center lg:!text-left ">
-                      Stack Learner
-                    </p>
+                      <p className="text-1 text-gray-300 text-medium text-center lg:!text-left ">
+                        Stack Learner
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
 
               <svg
@@ -213,8 +219,8 @@ export default function Mern() {
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
                 <DotLottieReact
                   autoplay="true"
-                  loop=""
-                  src="/mern/html.lottie"
+                  loop="true"
+                  src="/mern/javascript.lottie"
                   background="transparent"
                   style={{ width: "100%", height: "100%" }}
                 ></DotLottieReact>
@@ -245,60 +251,66 @@ export default function Mern() {
                 </svg>
               </div>
               <div className="flex justify-between items-center gap-4">
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/anisul.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl bg-white  h-full"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white text-sm font-semibold">
-                      Anisul Islam
-                    </h1>
+                <Link href="/classes/javascript/anisul">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/anisul.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl bg-white  h-full"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white text-sm font-semibold">
+                        Anisul Islam
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      Anisul Islam
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        Anisul Islam
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/lws.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title   text-white text-sm font-semibold text-center lg:text-left">
-                      Sumit shaha
-                    </h1>
+                </Link>
+                <Link href="/classes/javascript/lws">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/lws.png"
+                      alt="Sumit shaha"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title   text-white text-sm font-semibold text-center lg:text-left">
+                        Sumit shaha
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      LWS
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        LWS
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/stacklearner.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white text-sm font-semibold text-center lg:text-left">
-                      HM Nayem
-                    </h1>
+                </Link>
+                <Link href="/classes/javascript/stacklearner">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/stacklearner.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white text-sm font-semibold text-center lg:text-left">
+                        HM Nayem
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      Stack Learner
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        Stack Learner
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
               <svg
                 className="absolute left-[55%] -bottom-[20%] hidden h-[150px] w-[580px] -translate-x-1/2 -translate-y-1/2 transform lg:block"
@@ -321,8 +333,8 @@ export default function Mern() {
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
                 <DotLottieReact
                   autoplay="true"
-                  loop=""
-                  src="/mern/html.lottie"
+                  loop="true"
+                  src="/mern/react.lottie"
                   background="transparent"
                   style={{ width: "100%", height: "100%" }}
                 ></DotLottieReact>
@@ -429,8 +441,8 @@ export default function Mern() {
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
                 <DotLottieReact
                   autoplay="true"
-                  loop=""
-                  src="/mern/html.lottie"
+                  loop="true"
+                  src="/mern/node.lottie"
                   background="transparent"
                   style={{ width: "100%", height: "100%" }}
                 ></DotLottieReact>
@@ -443,11 +455,11 @@ export default function Mern() {
                 //   transform: "translateX(-100px) scale(0.2) translateZ(0)",
                 // }}
               >
-                <h1 className="section-title relative z-10 text-xl !text-white drop-shadow-[3px_3px_0px_#1e293b]">
+                <h1 className="section-title relative z-10 text-xl text-white font-bold  drop-shadow-[3px_3px_0px_#1e293b]">
                   Nodejs
                 </h1>
                 <svg
-                  className="absolute top-0 opacity-50 dark:opacity-100 "
+                  className="absolute top-0  opacity-50 dark:opacity-100 "
                   width="100%"
                   height="100%"
                   viewBox="0 0 602 473"
@@ -458,7 +470,7 @@ export default function Mern() {
                     fill-rule="evenodd"
                     clip-rule="evenodd"
                     d="M290.806 463.188C374.905 469.353 468.778 492.629 529.757 434.517C597.098 370.239 616.804 266.193 591.202 177.098C566.996 92.3192 491.898 30.0454 407.023 5.07419C335.338 -15.8893 270.48 32.9741 202.363 62.8779C128.971 95.248 31.0635 104.651 6.54775 180.797C-18.899 259.873 34.0116 342.956 93.1287 401.839C144.488 453.014 218.345 457.793 290.806 463.188Z"
-                    fill="#F8BD48"
+                    fill="#10c151"
                   ></path>
                 </svg>
               </div>
