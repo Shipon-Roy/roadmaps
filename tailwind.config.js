@@ -12,6 +12,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      //  Learn MERN side in animation for use
       keyframes: {
         "slide-in": {
           "0%": { transform: "translateX(-300%)", opacity: "0" },
@@ -25,4 +26,3 @@ module.exports = {
   },
   plugins: [],
 };
-

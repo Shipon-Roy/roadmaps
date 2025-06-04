@@ -1,4 +1,3 @@
-import Container from "@/app/ui/Container";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Image from "next/image";
 import Link from "next/link";
@@ -9,10 +8,10 @@ export default function Mern() {
     <div className="wrapper border-general scroll-mt-16 border-t bg-right bg-no-repeat dark:bg-none lg:bg-shape2 ">
       <div className="container space-y-5 ">
         <div className="w-full text-center">
-  <h1 className="animate-slide-in text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded shadow-md p-2 w-[13rem] bg-gray-700">
-    Learn MERN
-  </h1>
-</div>
+          <h1 className="animate-slide-in text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded shadow-md p-2 w-[13rem] bg-gray-700">
+            Learn MERN
+          </h1>
+        </div>
 
         <div className="relative mx-auto max-w-7xl space-y-1 lg:px-20">
           <div className="flex-col-reverse lg:flex-row-reverse relative flex    lg:items-center lg:gap-12">
@@ -52,42 +51,46 @@ export default function Mern() {
                 </svg>
               </div>
               <div className="flex justify-between items-center">
-                <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/w3schools.png"
-                    alt="stack learner"
-                    width={60}
-                    height={40}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white font-bold text-xl text-center lg:text-left">
-                      W3
-                    </h1>
+                <Link href={`/classes/w3`}>
+                  <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/w3schools.png"
+                      alt="W3Schools logo"
+                      width={60}
+                      height={40}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white font-bold text-xl text-center lg:text-left">
+                        W3
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-medium text-center lg:!text-left ">
-                      W3Schools
-                    </p>
+                      <p className="text-1 text-gray-300 text-medium text-center lg:!text-left ">
+                        W3Schools
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/stacklearner.png"
-                    alt="stack learner"
-                    width={60}
-                    height={40}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white font-bold text-xl text-center lg:text-left">
-                      HM Nayem
-                    </h1>
+                </Link>
+                <Link href={`/classes/stacklearner`}>
+                  <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/stacklearner.png"
+                      alt="stack learner"
+                      width={60}
+                      height={40}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white font-bold text-xl text-center lg:text-left">
+                        HM Nayem
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-medium text-center lg:!text-left ">
-                      Stack Learner
-                    </p>
+                      <p className="text-1 text-gray-300 text-medium text-center lg:!text-left ">
+                        Stack Learner
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
 
               <svg
