@@ -1,15 +1,58 @@
+// app/learn/[classId]/page.jsx
 "use client";
 
-import Container from "@/app/ui/Container";
 import { useState } from "react";
+import Container from "@/app/ui/Container"; // ✅ Make sure this is also a client component
 
-// Class data
+// ✅ Sample class data (static for now)
 const classData = {
-  w3: {
-    name: "W3Schools HTML Class",
-    description: "Learn HTML from W3Schools.",
-    videoUrl: "https://www.youtube.com/watch?v=4UZrsTqkcW4",
-  },
+  w3: [
+    {
+      name: "HTML Class 1",
+      description: "Intro to HTML from Stack Learner.",
+      videoUrl: "https://www.youtube.com/watch?v=4UZrsTqkcW4",
+    },
+    {
+      name: "HTML Class 2",
+      description: "Advanced HTML from Stack Learner.",
+      videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+    },
+    {
+      name: "HTML Class 3",
+      description: "Further HTML topics from Stack Learner.",
+      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    },
+    {
+      name: "HTML Class 1",
+      description: "Intro to HTML from Stack Learner.",
+      videoUrl: "https://www.youtube.com/watch?v=4UZrsTqkcW4",
+    },
+    {
+      name: "HTML Class 2",
+      description: "Advanced HTML from Stack Learner.",
+      videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+    },
+    {
+      name: "HTML Class 3",
+      description: "Further HTML topics from Stack Learner.",
+      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    },
+    {
+      name: "HTML Class 1",
+      description: "Intro to HTML from Stack Learner.",
+      videoUrl: "https://www.youtube.com/watch?v=4UZrsTqkcW4",
+    },
+    {
+      name: "HTML Class 2",
+      description: "Advanced HTML from Stack Learner.",
+      videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+    },
+    {
+      name: "HTML Class 3",
+      description: "Further HTML topics from Stack Learner.",
+      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+    },
+  ],
   stacklearner: [
     {
       name: "HTML Class 1",
@@ -56,22 +99,6 @@ const classData = {
       description: "Further HTML topics from Stack Learner.",
       videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
     },
-    {
-      name: "HTML Class 1",
-      description: "Intro to HTML from Stack Learner.",
-      videoUrl: "https://www.youtube.com/watch?v=4UZrsTqkcW4",
-    },
-    {
-      name: "HTML Class 2",
-      description: "Advanced HTML from Stack Learner.",
-      videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
-    },
-    {
-      name: "HTML Class 3",
-      description: "Further HTML topics from Stack Learner.",
-      videoUrl: "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
-    },
-    // Add more items if needed
   ],
   html: {
     name: "HTML Basics",
@@ -80,7 +107,7 @@ const classData = {
   },
 };
 
-// Extract YouTube video ID
+// ✅ Utility to extract video ID from YouTube link
 function getYouTubeVideoId(url) {
   const match = url.match(/[?&]v=([^&]+)/);
   return match ? match[1] : null;
@@ -88,7 +115,14 @@ function getYouTubeVideoId(url) {
 
 export default function Page({ params }) {
   const classInfo = classData[params.classId];
+  const isArray = Array.isArray(classInfo);
+  const initialVideo = isArray ? classInfo?.[0] : classInfo ?? null;
 
+  // ✅ Hooks must be called unconditionally
+  const [selectedVideo, setSelectedVideo] = useState(initialVideo);
+  const videoId = getYouTubeVideoId(selectedVideo?.videoUrl);
+
+  // ✅ Safe return after hook calls
   if (!classInfo) {
     return (
       <div className="p-4 text-red-500">
@@ -97,13 +131,6 @@ export default function Page({ params }) {
     );
   }
 
-  const isArray = Array.isArray(classInfo);
-  const initialVideo = isArray ? classInfo[0] : classInfo;
-
-  const [selectedVideo, setSelectedVideo] = useState(initialVideo);
-
-  const videoId = getYouTubeVideoId(selectedVideo.videoUrl);
-
   return (
     <Container>
       <div className="my-10">
@@ -111,6 +138,7 @@ export default function Page({ params }) {
           Learn MERN
         </h1>
       </div>
+
       <div className="flex flex-col lg:flex-row gap-6 p-6 my-20">
         {/* Main video player */}
         <div className="w-full lg:w-2/2 aspect-video relative">
@@ -120,7 +148,7 @@ export default function Page({ params }) {
               frameBorder="0"
               allow="autoplay; encrypted-media"
               allowFullScreen
-              title={selectedVideo.name}
+              title={selectedVideo?.name}
               className="absolute top-0 left-0 w-full h-full"
             />
           ) : (
@@ -130,8 +158,8 @@ export default function Page({ params }) {
 
         {/* Video list or single video details */}
         <div className="w-full lg:w-1/4 text-white space-y-4">
-          <h1 className="text-xl font-bold">{selectedVideo.name}</h1>
-          <p className="text-gray-300">{selectedVideo.description}</p>
+          <h1 className="text-xl font-bold">{selectedVideo?.name}</h1>
+          <p className="text-gray-300">{selectedVideo?.description}</p>
 
           {isArray && (
             <div className="mt-6">
@@ -144,7 +172,7 @@ export default function Page({ params }) {
                     key={index}
                     onClick={() => setSelectedVideo(item)}
                     className={`block w-full text-left px-3 py-2 rounded hover:bg-gray-700 ${
-                      selectedVideo.videoUrl === item.videoUrl
+                      selectedVideo?.videoUrl === item.videoUrl
                         ? "bg-gray-900 font-bold"
                         : "bg-gray-800"
                     }`}
