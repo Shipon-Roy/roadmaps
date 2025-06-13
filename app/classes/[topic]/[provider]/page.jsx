@@ -198,6 +198,29 @@ const classData = {
       },
     ],
   },
+  gitgithub: {
+    anisul: [
+      {
+        name: "JavaScript Class 1",
+        description: "JavaScript intro from Anisul Islam.",
+        videoUrl: "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+      },
+    ],
+    lws: [
+      {
+        name: "JavaScript LWS Class 1",
+        description: "JS basics from LWS.",
+        videoUrl: "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+      },
+    ],
+    stacklearner: [
+      {
+        name: "JavaScript Stack Class 1",
+        description: "JS basics from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+      },
+    ],
+  },
   javascript: {
     anisul: [
       {
