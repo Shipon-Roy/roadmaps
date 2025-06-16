@@ -366,60 +366,66 @@ export default function Mern() {
                 </svg>
               </div>
               <div className="flex justify-between items-center gap-4">
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/anisul.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl bg-white  h-full"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white text-sm font-semibold">
-                      Anisul Islam
-                    </h1>
+                <Link href="/classes/javascript/anisul">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/anisul.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl bg-white  h-full"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white text-sm font-semibold">
+                        Anisul Islam
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      Anisul Islam
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        Anisul Islam
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/lws.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title   text-white text-sm font-semibold text-center lg:text-left">
-                      Sumit shaha
-                    </h1>
+                </Link>
+                <Link href="/classes/javascript/lws">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/lws.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title   text-white text-sm font-semibold text-center lg:text-left">
+                        Sumit shaha
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      LWS
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        LWS
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/stacklearner.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white text-sm font-semibold text-center lg:text-left">
-                      HM Nayem
-                    </h1>
+                </Link>
+                <Link href="/classes/javascript/stacklearner">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/stacklearner.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white text-sm font-semibold text-center lg:text-left">
+                        HM Nayem
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      Stack Learner
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        Stack Learner
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
               <svg
                 className="absolute -bottom-[35%] right-[35%] hidden h-[190px] w-[620px] -rotate-[17deg] lg:block z-50"
@@ -476,60 +482,66 @@ export default function Mern() {
                 </svg>
               </div>
               <div className="flex justify-between items-center gap-4">
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/anisul.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl bg-white  h-full"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white text-sm font-semibold">
-                      Anisul Islam
-                    </h1>
+                <Link href="/classes/reactjs/anisul">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/anisul.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl bg-white  h-full"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white text-sm font-semibold">
+                        Anisul Islam
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      Anisul Islam
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        Anisul Islam
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/lws.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title   text-white text-sm font-semibold text-center lg:text-left">
-                      Sumit shaha
-                    </h1>
+                </Link>
+                <Link href="/classes/reactjs/lws">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/lws.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title   text-white text-sm font-semibold text-center lg:text-left">
+                        Sumit shaha
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      LWS
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        LWS
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/stacklearner.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white text-sm font-semibold text-center lg:text-left">
-                      HM Nayem
-                    </h1>
+                </Link>
+                <Link href="/classes/reactjs/stacklearner">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/stacklearner.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white text-sm font-semibold text-center lg:text-left">
+                        HM Nayem
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      Stack Learner
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        Stack Learner
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
               <svg
                 className="absolute left-[20%] top-[85%] hidden lg:block"
@@ -586,74 +598,80 @@ export default function Mern() {
                 </svg>
               </div>
               <div className="flex justify-between items-center gap-4">
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/anisul.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl bg-white  h-full"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white text-sm font-semibold">
-                      Anisul Islam
-                    </h1>
+                <Link href="/classes/nodejs/anisul">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/anisul.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl bg-white  h-full"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white text-sm font-semibold">
+                        Anisul Islam
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      Anisul Islam
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        Anisul Islam
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/lws.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title   text-white text-sm font-semibold text-center lg:text-left">
-                      Sumit shaha
-                    </h1>
+                </Link>
+                <Link href="/classes/nodejs/lws">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/lws.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title   text-white text-sm font-semibold text-center lg:text-left">
+                        Sumit shaha
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      LWS
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        LWS
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/stacklearner.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white text-sm font-semibold text-center lg:text-left">
-                      HM Nayem
-                    </h1>
+                </Link>
+                <Link href="/classes/nodejs/stacklearner">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/stacklearner.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white text-sm font-semibold text-center lg:text-left">
+                        HM Nayem
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      Stack Learner
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        Stack Learner
+                      </p>
+                    </div>
+                    <svg
+                      className="absolute -bottom-[35%] right-[35%] hidden h-[190px] w-[620px] -rotate-[17deg] lg:block z-50"
+                      fill="none"
+                      data-reveal="in-fade"
+                    >
+                      <path
+                        d="M595 1c-5.312 32.44-14.005 32.911-28.493 54.17-14.488 22.676-40.566 37.32-86.927 53.383-16.359 9.183-58.29 17.919-77.329 20.941-27.961 4.438-57.257 4.44-85.565 4.82-22.571.303-45.071.327-67.53-2.002-48.556-5.035-97.306-19.13-146.184-19.13-21.265 0-43.185 6.042-63.875 10.529C21.527 127.522 16.22 128.888 1 138"
+                        stroke="#B5CAF9"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-dasharray="4 8 4 8"
+                      ></path>
+                    </svg>
                   </div>
-                  <svg
-                    className="absolute -bottom-[35%] right-[35%] hidden h-[190px] w-[620px] -rotate-[17deg] lg:block z-50"
-                    fill="none"
-                    data-reveal="in-fade"
-                  >
-                    <path
-                      d="M595 1c-5.312 32.44-14.005 32.911-28.493 54.17-14.488 22.676-40.566 37.32-86.927 53.383-16.359 9.183-58.29 17.919-77.329 20.941-27.961 4.438-57.257 4.44-85.565 4.82-22.571.303-45.071.327-67.53-2.002-48.556-5.035-97.306-19.13-146.184-19.13-21.265 0-43.185 6.042-63.875 10.529C21.527 127.522 16.22 128.888 1 138"
-                      stroke="#B5CAF9"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-dasharray="4 8 4 8"
-                    ></path>
-                  </svg>
-                </div>
+                </Link>
               </div>
             </div>
           </div>
@@ -696,60 +714,66 @@ export default function Mern() {
                 </svg>
               </div>
               <div className="flex justify-between items-center gap-4">
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/anisul.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl bg-white  h-full"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white text-sm font-semibold">
-                      Anisul Islam
-                    </h1>
+                <Link href="/classes/mongodb/anisul">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/anisul.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl bg-white  h-full"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white text-sm font-semibold">
+                        Anisul Islam
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      Anisul Islam
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        Anisul Islam
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/lws.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title   text-white text-sm font-semibold text-center lg:text-left">
-                      Sumit shaha
-                    </h1>
+                </Link>
+                <Link href="/classes/mongodb/lws">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/lws.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title   text-white text-sm font-semibold text-center lg:text-left">
+                        Sumit shaha
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      LWS
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        LWS
+                      </p>
+                    </div>
                   </div>
-                </div>
-                <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
-                  <Image
-                    src="/mern/stacklearner.png"
-                    alt="stack learner"
-                    width={50}
-                    height={20}
-                    className="rounded-l-2xl"
-                  />
-                  <div className="p-4">
-                    <h1 className="title text-white text-sm font-semibold text-center lg:text-left">
-                      HM Nayem
-                    </h1>
+                </Link>
+                <Link href="/classes/mongodb/stacklearner">
+                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                    <Image
+                      src="/mern/stacklearner.png"
+                      alt="stack learner"
+                      width={50}
+                      height={20}
+                      className="rounded-l-2xl"
+                    />
+                    <div className="p-4">
+                      <h1 className="title text-white text-sm font-semibold text-center lg:text-left">
+                        HM Nayem
+                      </h1>
 
-                    <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
-                      Stack Learner
-                    </p>
+                      <p className="text-1 text-gray-300 text-sm text-center lg:!text-left ">
+                        Stack Learner
+                      </p>
+                    </div>
                   </div>
-                </div>
+                </Link>
               </div>
               {/* <svg
                 className="absolute left-[20%] top-[85%] hidden lg:block"
