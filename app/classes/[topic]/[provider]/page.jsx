@@ -171,9 +171,68 @@ const classData = {
     ],
     stacklearner: [
       {
-        name: "HTML Stack Class 1",
-        description: "Intro to HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=4UZrsTqkcW4",
+        name: "1.1 Welcome - Web Design Master Class in Bangla | ওয়েব ডিজাইন মাস্টার ক্লাস",
+        description:
+          "একদম শুরু থেকে ওয়েব ডিজাইন শেখার কমপ্লিট রিসোর্স পাবেন এই একটি মাত্র প্লেলিস্টে। এই প্লে লিস্টের ভিডিও গুলো রেকর্ড করা হয়েছিল Stack Learner এর Web Boost পেইড প্রোগ্রামের জন্য। এখন এই ভিডিও গুলো সবার জন্য উন্মোক্ত। এই প্লে লিস্টে আমরা যা যা শিখতে পারবো - * Web Design * HTML & CSS * Advanced CSS Concepts * CSS Layouts * CSS Animations * SCSS * Bootstrap 5 Web Design Projects and a lot of other things Github Link: https://github.com/mrhm-dev/web-desig...",
+        videoUrl:
+          "https://www.youtube.com/embed/1RzKcWEpb5Q?si=Eb3st1yxuTrdQV1f",
+      },
+      {
+        name: "2.1 Environment Setup Introduction | Web Design Master Class in Bangla",
+        description:
+          "In the next few videos, you will learn how to set up an environment for web design. In this section, we are going to learn the following topics - *Install google chrome * google chrome extensions * install vscode * vscode extensions * install git * install nodejs * install windows terminal  * install postman",
+        videoUrl:
+          "https://www.youtube.com/embed/MR-gmUDhmcU?si=P4M4L99p8GWPfRFV",
+      },
+      {
+        name: "HTML Stack Class 2",
+        description: "Advanced HTML from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      },
+      {
+        name: "HTML Stack Class 2",
+        description: "Advanced HTML from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      },
+      {
+        name: "HTML Stack Class 2",
+        description: "Advanced HTML from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      },
+      {
+        name: "HTML Stack Class 2",
+        description: "Advanced HTML from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      },
+      {
+        name: "HTML Stack Class 2",
+        description: "Advanced HTML from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      },
+      {
+        name: "HTML Stack Class 2",
+        description: "Advanced HTML from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      },
+      {
+        name: "HTML Stack Class 2",
+        description: "Advanced HTML from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      },
+      {
+        name: "HTML Stack Class 2",
+        description: "Advanced HTML from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      },
+      {
+        name: "HTML Stack Class 2",
+        description: "Advanced HTML from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      },
+      {
+        name: "HTML Stack Class 2",
+        description: "Advanced HTML from Stack Learner.",
+        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
       },
       {
         name: "HTML Stack Class 2",
