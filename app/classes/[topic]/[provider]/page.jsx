@@ -185,60 +185,110 @@ const classData = {
           "https://www.youtube.com/embed/MR-gmUDhmcU?si=P4M4L99p8GWPfRFV",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "2.2 Install Google Chrome Browser | গুগল ক্রোম ব্রাউজার ইন্সটল করুন",
+        description:
+          "In this video, we are going to download and install google chrome on our machine.Github Link: https://github.com/mrhm-dev/web-desig...",
+        videoUrl:
+          "https://www.youtube.com/embed/o6G5Guhh9Tw?si=TuTUfUZhxHqpXrDE",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "2.3 Chrome Extensions for Web Designers | প্রয়োজনীয় ক্রোম এক্সটেনশন",
+        description:
+          "In this video, we are going to install common google chrome extensions that will be helpful for a web designer.",
+        videoUrl:
+          "https://www.youtube.com/embed/TTH0LNmRUYg?si=f1C-chQkSiAlq8e4",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "2.3.1 Issue Fixed - Google Chrome CSS Overview",
+        description:
+          "পূর্বের ভিডিওতে CSS Overview ফিচারটা Enable করতে অনেকেরই সমস্যা ছিল। এই ভিডিওটি দেখলে আর কোনো সমস্যা থাকবে না। ",
+        videoUrl:
+          "https://www.youtube.com/embed/BKRGuvIgv4Q?si=4WTfhAV4ghbRby3G",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "2.4 Install Visual Studio Code | VSCode ইন্সটল করুন",
+        description:
+          "In this video, we are going to install the best code editor for web developers.",
+        videoUrl:
+          "https://www.youtube.com/embed/PhG4XkHawQ4?si=PvcirTmkB3eI3O9h",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "2.5 Important VSCode Extensions | VSCode এর প্রয়োজনীয় এক্সটেনশনস",
+        description:
+          "In this video, we are going to install the most popular, common, and necessary vscode extensions",
+        videoUrl:
+          "https://www.youtube.com/embed/MH5rzixj9OI?si=rEnSTLIPKCiczM3i",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "2.6 Install Git to Your Machine | গিট ইন্সটল করুন",
+        description:
+          "In this video, we are going to download and install Git on our machine.",
+        videoUrl:
+          "https://www.youtube.com/embed/_7jGXE17a-U?si=EGARjb09YqmyCz2I",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "2.7 Install NodeJS to Your Machine | Node ইন্সটল করুন",
+        description:
+          "In this video, we are going to download and install nodejs on our machine.",
+        videoUrl:
+          "https://www.youtube.com/embed/kCl3tVVvNlY?si=pms1LiopgornsIpw",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "2.8 Install Windows Terminal 1.0 | উইন্ডোজ ব্যবহারকারীদের জন্য খুব গুরুত্বপূর্ণ",
+        description:
+          "In this video, we are going to install a powerful terminal for windows users that is called Windows Terminal 1.0",
+        videoUrl:
+          "https://www.youtube.com/embed/HtMXdGbwPFQ?si=Y1ejr1E_w0iD4Qr6",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "2.9 Install Postman - A REST API Client | বেস্ট ফ্রি রেস্ট ক্লাইন্ট",
+        description:
+          "In this video, we are going to install the most popular, powerful, and free rest API client called Postman.",
+        videoUrl:
+          "https://www.youtube.com/embed/62lbTrdGk_A?si=bhk1eTnAqRDWDCOo",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "3.1 Introduction of play with HTML and CSS chapter | Web Design Master Class in Bangla",
+        description:
+          "In the next few videos, you will learn about HTML and CSS. In this chapter, we are going to learn the following topics - #What is HTML #How to write HTML code #HTML attribute #What is CSS #How to style HTML useing CSS #How to link external CSS file #Common CSS selectors #How to link Google Font #Create a section using div ",
+        videoUrl:
+          "https://www.youtube.com/embed/3B57A0EYDUQ?si=O6OupiPLz4_z0I6z",
       },
       {
-        name: "HTML Stack Class 2",
-        description: "Advanced HTML from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+        name: "3.2 What is html | এইচটিএমএল কি?",
+        description: "In this video, you will learn about what is HTML.",
+        videoUrl:
+          "https://www.youtube.com/embed/ykMSs4AsGLo?si=OHMLWz8Wybjg0iDm",
       },
+      {
+        name: "3.3 How to write html code | কিভাবে এইচটিএমএল কোড লিখবেন?",
+        description:
+          "In this video, you will learn about how to write HTML code.",
+        videoUrl:
+          "https://www.youtube.com/embed/RCiOk_OyNH0?si=dT2jjT6GjFU4rjh3",
+      },
+      {
+        name: "3.4 HTML attribute | এইচটিএমএল এট্রিবিউট",
+        description: "In this video, you will learn about HTML attributes. ",
+        videoUrl:
+          "https://www.youtube.com/embed/t5FNH0U-jMw?si=oMStOtOFTw-6MWMB",
+      },
+      {
+        name: " HTML এর কিছু টপিক CSS এর ক্লাস এ এড করা হয়েছে",
+        description:
+          " ক্লাস এর সিরিয়াল ঠিক রাখার জন্য HTML এর কিছু টপিক CSS এর ক্লাস এ এড করা হয়েছে",
+      },
+
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
     ],
   },
   css: {
@@ -251,10 +301,211 @@ const classData = {
     ],
     stacklearner: [
       {
-        name: "CSS Stack Class 1",
-        description: "CSS basics by Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+        name: "3.5 What is CSS | সিএসএস কি",
+        description: "In this video, you will learn about what is CSS",
+        videoUrl:
+          "https://www.youtube.com/embed/9LU3XL6tYzI?si=ZLfDxSTMLCZfycEC",
       },
+      {
+        name: "3.6 How to style HTML using CSS | কিভাবে সিএসএস ব্যবহার করে এইচটিএমএল স্টাইল করবেন",
+        description:
+          "In this video, you will learn about how to style HTML using CSS.",
+        videoUrl:
+          "https://www.youtube.com/embed/in9JKql82iE?si=1iD9Kpuz3gPToMMK",
+      },
+      {
+        name: "3.7 How to link external CSS file | কিভাবে এক্সটার্নাল সিএসএস ফাইল লিংক করবেন",
+        description:
+          "In this video, you will learn about how to link external CSS files.",
+        videoUrl:
+          "https://www.youtube.com/embed/qP6tAsDqwzM?si=GZrmwRg2X2tQFDYy",
+      },
+      {
+        name: "3.8 Common CSS selectors | সিএসএস সিলেক্টর",
+        description:
+          "In this video, you will learn about common CSS selectors.",
+        videoUrl:
+          "https://www.youtube.com/embed/nVZhBk3YYFU?si=99egVDF6oDJnMwpp",
+      },
+      {
+        name: "3.9 How to link Google Font | কিভাবে গুগল ফন্ট লিংক করবেন?",
+        description: "In this video, you will learn how to link Google Font.",
+        videoUrl:
+          "https://www.youtube.com/embed/Rb_GY4Z9VtI?si=eGCYcWAqfXf-v7AI",
+      },
+      {
+        name: "3.10 Create a section using div tag | div ট্যাগ ব্যবহার করে সেকশন তৈরি",
+        description:
+          "In this video, you will learn how to create a section by using div tag.",
+        videoUrl:
+          "https://www.youtube.com/embed/2Qnpv3eAyPI?si=5jLFRZjUnaMOzhAz",
+      },
+      {
+        name: "4.1 Two Types of HTML Elements | দুই ধরনের এইচটিএমএল এলিমেন্টস",
+        description: "Understand two types of elements in HTML5.",
+        videoUrl:
+          "https://www.youtube.com/embed/jBPFnfIm214?si=gfIWe1GXagQ2VDrw",
+      },
+      {
+        name: "4.2 HTML Inline Elements | এইচটিএমএল ইনলাইন এলিমেন্টস",
+        description: "Understand html5 inline elements.",
+        videoUrl:
+          "https://www.youtube.com/embed/cLUvWS7-prc?si=6-OAX7CvK3Wszx_n",
+      },
+      {
+        name: "4.3 HTML Block Elements | এইচটিএমএল ব্লক এলিমেন্টস",
+        description: "Learn html5 block elements.",
+        videoUrl:
+          "https://www.youtube.com/embed/8qvN7UEc38I?si=aHRk6AflAU6r170O",
+      },
+      {
+        name: "4.4 HTML5 Semantic Elements | এইচটিএমএল ৫ সিম্যান্টিক এলিমেন্টস",
+        description: "Learn HTML 5 Semantic Elements",
+        videoUrl:
+          "https://www.youtube.com/embed/28j5Il7meRQ?si=j5cAPBSNvfsmL67d",
+      },
+      {
+        name: "5.1 Type of CSS Units | সিএসএস এ কি কি ধরনের ইউনিট রয়েছে?",
+        description: "Understand CSS Units",
+        videoUrl:
+          "https://www.youtube.com/embed/TO8xqjNZrWQ?si=Sgwgh_SHMv3BlO8q",
+      },
+      {
+        name: "5.2 CSS Absolute Length Units | অ্যাবসল্যুট লেন্থ ইউনিট",
+        description: "Understand CSS Absolute Length Units",
+        videoUrl:
+          "https://www.youtube.com/embed/tFEIlhYdtnQ?si=uSxSyR1FleBoBLCF",
+      },
+      {
+        name: "5.3 CSS Relative Length Units | রিলেটিভ লেন্থ ইউনিটস",
+        description: "Understand CSS Relative Length Units",
+        videoUrl:
+          "https://www.youtube.com/embed/41HjfoeUdAg?si=Mgpea6d2fxWCUz1p",
+      },
+      {
+        name: "6.1 What is box model | বক্স মডেল কি?",
+        description: "In this video we will learn about CSS box model.",
+        videoUrl:
+          "https://www.youtube.com/embed/9CTO44q92CE?si=E6oaZ3J-pFI1ZhAZ",
+      },
+      {
+        name: "6.2 Box model in action | বক্স মডেল এর কাজ",
+        description: "Box model in action | বক্স মডেল এর কাজ",
+        videoUrl:
+          "https://www.youtube.com/embed/G_qNcfGVwpU?si=Rjj4sABTOICTbN08",
+      },
+      {
+        name: "6.3 Box sizing border box | বক্স-সাইজিং বর্ডার-বক্স",
+        description: "Box sizing border box | বক্স-সাইজিং বর্ডার-বক্স",
+        videoUrl:
+          "https://www.youtube.com/embed/aYWGm1Tmv3M?si=3kkoc_VJ5IEZ5nt8",
+      },
+      {
+        name: "7.1 How to Place Two Divs Side by Side | পাশাপাশি দুইটা ডিভ কিভাবে রাখবো?",
+        description:
+          "How to Place Two Divs Side by Side | পাশাপাশি দুইটা ডিভ কিভাবে রাখবো?",
+        videoUrl:
+          "https://www.youtube.com/embed/b5ftua7iNfI?si=Hp6v3Ufz8Bh2470e",
+      },
+      {
+        name: "7.2 Float Creates an Invisible Layers | সিএসএস ফ্লোট একটা ইনভিসিবল লেয়ার তৈরি করে",
+        description:
+          "Float Creates an Invisible Layers | সিএসএস ফ্লোট একটা ইনভিসিবল লেয়ার তৈরি করে",
+        videoUrl:
+          "https://www.youtube.com/embed/AFD1eBe-at0?si=sctfDgmVaLwOiPbH",
+      },
+      {
+        name: "7.3 Understand Floats and Clearfix | সিএসএস ফ্লোটস এবং ক্লিয়ারফিক্স",
+        description:
+          "Understand Floats and Clearfix | সিএসএস ফ্লোটস এবং ক্লিয়ারফিক্স",
+        videoUrl:
+          "https://www.youtube.com/embed/9KK-kUKiK1s?si=wG6cuxDbL5THEPBK",
+      },
+      {
+        name: "7.4 How to Position Image Inside Text | টেক্সটের মধ্যে কিভাবে ইমেজ রাখবো?",
+        description:
+          "How to Position Image Inside Text | টেক্সটের মধ্যে কিভাবে ইমেজ রাখবো?",
+        videoUrl:
+          "https://www.youtube.com/embed/rik9W1S3Y84?si=wQPtOqkPo5Uol2SD",
+      },
+      {
+        name: "8.1 Understand CSS Flexbox | সিএসএস ফ্লেক্সবক্স কি এবং কিভাবে কাজ করে?",
+        description:
+          "Understand CSS Flexbox | সিএসএস ফ্লেক্সবক্স কি এবং কিভাবে কাজ করে?",
+        videoUrl:
+          "https://www.youtube.com/embed/fwZdP8Li-fs?si=i22ahEHJS2qluIne",
+      },
+      {
+        name: "8.2 Understand CSS Flex Container - Bangla Tutorial | সিএসএস ফ্লেক্স কন্টাইনার",
+        description:
+          "Understand CSS Flex Container  | সিএসএস ফ্লেক্স কন্টাইনার।",
+        videoUrl:
+          "https://www.youtube.com/embed/2577GpqKrKE?si=-kA-SD7mmQas3ear",
+      },
+      {
+        name: "8.3 CSS Flex Container Properties - Bangla Tutorial | সিএসএস ফ্লেক্স কন্টেইনারের প্রোপার্টিজ",
+        description:
+          "CSS Flex Container Properties - Bangla Tutorial | সিএসএস ফ্লেক্স কন্টেইনারের প্রোপার্টিজ।",
+        videoUrl:
+          "https://www.youtube.com/embed/zXEd_fqVAWc?si=Xj-OJFZhRfabWdwZ",
+      },
+      {
+        name: "8.4 Explore CSS Flex Items - Bangla Tutorial | সিএসএস ফ্লেক্স আইটেমস | Stack Learner",
+        description:
+          "Explore CSS Flex Items - Bangla Tutorial | সিএসএস ফ্লেক্স আইটেমস।",
+        videoUrl:
+          "https://www.youtube.com/embed/UUtEjDb9sfI?si=BOHLkUGdef_9aGqy",
+      },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
     ],
   },
   gitgithub: {

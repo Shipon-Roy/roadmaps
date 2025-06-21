@@ -1,5 +1,6 @@
 "use client";
 import Container from "@/app/ui/Container";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Image from "next/image";
 
 export default function Hero() {
@@ -30,14 +31,14 @@ export default function Hero() {
               neque porro quibusdam, voluptatibus reiciendis id magnam,
             </p>
           </div>
-          <div className=" ">
-            <Image
-              className="rounded"
-              src="/images.png"
-              alt=" "
-              width={400}
-              height={400}
-            />
+          <div className="w-[50%] h-full">
+            <DotLottieReact
+              autoplay="true"
+              loop="true"
+              src="/images.lottie"
+              background="transparent"
+              style={{ width: "100%", height: "100%" }}
+            ></DotLottieReact>
           </div>
         </div>
       </Container>
