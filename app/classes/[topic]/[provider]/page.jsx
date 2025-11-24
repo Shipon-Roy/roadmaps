@@ -511,33 +511,438 @@ const classData = {
   gitgithub: {
     anisul: [
       {
-        name: "JavaScript Class 1",
-        description: "JavaScript intro from Anisul Islam.",
-        videoUrl: "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+        name: "1 : welcome to git and GitHub series",
+        description: "  welcome to git and GitHub series by Anisul islam",
+        videoUrl:
+          "https://www.youtube.com/embed/cPgIpUraWQo?si=eKT5zDUNt1MQUcuk",
+      },
+      {
+        name: "2 : introduction to git and GitHub",
+        description:
+          "In this video, I will explain why do we need a version control system such as git. I will also explain what is the purpose of GitHub. In the end, I will explain the key differences between git and GitHub.",
+        videoUrl:
+          "https://www.youtube.com/embed/ulTs4vqOzyo?si=SaaB4Gcke7QvYkXc",
+      },
+      {
+        name: "3 : Commands for Mac/Windows terminals",
+        description:
+          "Here is the link for the Windows command line:    • Windows Command Line Crash Course in Bangla  Basic commands for Mac and Windows terminals.",
+        videoUrl:
+          "https://www.youtube.com/embed/w2BAxjngwKA?si=4_l7b_djLlbUJmYE",
+      },
+      {
+        name: "4 : git setup and configuration (part-1)",
+        description:
+          "windows command-line crash course:    • Windows Command Line Crash Course in Bangla  In this video, I will explain how to set git on your system. I will also explain how to do the git configuration.",
+        videoUrl:
+          "https://www.youtube.com/embed/vj5-nkhTRbo?si=o4Ujl6Sv5RZjsGw3",
+      },
+      {
+        name: "5 : git setup and configuration (part-2)",
+        description: " git setup and configuration (part-2)",
+        videoUrl:
+          "https://www.youtube.com/embed/2GsvUiCi3K4?si=31Mep20LFp_tyEh_",
+      },
+      {
+        name: "6 : How to create and setup SSH key",
+        description:
+          "In this video, I will demonstrate how to collaborate on GitHub with a practical demonstration.",
+        videoUrl:
+          "https://www.youtube.com/embed/poewMpeBQmU?si=tHyG7EPg-x04vKy9",
+      },
+      {
+        name: "7 : how to create git folder",
+        description:
+          "🔴 windows command-line crash course:    • Windows Command Line Crash Course in Bangla  ✅In this video, I will explain how to create a git folder and add new files to the git folder.  ",
+        videoUrl:
+          "https://www.youtube.com/embed/oa6viOCTEeM?si=mRQka_Tunqp08JKt",
+      },
+      {
+        name: "8 : how to add files in staging area",
+        description:
+          "✅In this video, I will explain how to add git files in the staging area and how to remove git files from the staging area. ",
+        videoUrl:
+          "https://www.youtube.com/embed/IDhgZX4esQQ?si=tvtpHk_qmrLS7PjY",
+      },
+      {
+        name: "9 : git & GitHub practice-1",
+        description:
+          "✅In this video, we will practice whatever we learnt from the last few lessons. we will review how to create a git directory, add files in a git directory, stagging files in a git directory. We will also review how to restore git files and track the modified files. ",
+        videoUrl:
+          "https://www.youtube.com/embed/jSj-GF-utls?si=Co6doT0sgqmbOT4H",
+      },
+      {
+        name: "10 : how to do git commit & reset commit",
+        description:
+          "✅In this video, I will explain how to make a git commit and how to remove or reset a git commit.",
+        videoUrl:
+          "https://www.youtube.com/embed/gmBKbxKGcn8?si=b-xmvvtTx6bl5zIE",
+      },
+      {
+        name: "11 : Write better commit messages",
+        description:
+          "✅ In this video, I will explain how to make better git commit messages and descriptions.",
+        videoUrl:
+          "https://www.youtube.com/embed/_6Wqq7i63bI?si=C7vmbONc9c-R7LQq",
+      },
+      {
+        name: "11 : git head and undo (theory)",
+        description:
+          "✅In this video, I will explain how to do undo in git. I will also explain details about git HEAD.",
+        videoUrl:
+          "https://www.youtube.com/embed/xUNsecljvog?si=KWf_7UqRi3yWnCSw",
+      },
+      {
+        name: "12 : git head and undo (practical)",
+        description:
+          "🔴 windows command-line crash course:    • Windows Command Line Crash Course in Bangla  ✅In this video, I will explain how to do undo in git. I will also explain details about git HEAD.",
+        videoUrl:
+          "https://www.youtube.com/embed/rEoeC-HBqws?si=zl2Lh_5CZtFbNELv",
+      },
+      {
+        name: "13 : what is gitignore file",
+        description:
+          "🔴  check my git documentation: https://github.com/anisul-Islam/githu... ✅In this video, I will explain what is gitignore file is and why it is so important for us. I will also show you how to create a gitignore file and add the things in it.",
+        videoUrl:
+          "https://www.youtube.com/embed/CKla6oWTezM?si=xAme_3VQN8CLkgU8",
+      },
+      {
+        name: "14 : Git Aliases | git command shortcut",
+        description:
+          "In this video, I will show how to set shortcuts for git commands.",
+        videoUrl:
+          "https://www.youtube.com/embed/khh7rh-fl50?si=nsoqd3yLbV-9D3pF",
+      },
+      {
+        name: "15 : GitHub repository and commit",
+        description:
+          "✅  In this video, I will show you how to use GitHub. I will show you how to create a GitHub repository, add readme files and make commits in your GitHub repo.🔴  check my git documentation: https://github.com/anisul-Islam/githu...",
+        videoUrl:
+          "https://www.youtube.com/embed/HRVNOjl9e5U?si=sGl0KuXNUP_k7-Wm",
+      },
+      {
+        name: "16 : Markdown crash course",
+        description:
+          "👉 In this video, I will tell you everything you need to know about markdown language. I will start with what is markdown, why do we need markdown, how to use markdown and go deeper throughout this video. 🔴 Find the markdown Code in GitHub - https://github.com/anisul-Islam/readm...",
+        videoUrl:
+          "https://www.youtube.com/embed/bl0-DTgh-mw?si=Ghc82_i5-fozIEnX",
+      },
+      {
+        name: "17 : connecting local and remote repo",
+        description:
+          "✅ In this video, I will show you how to connect a local and remote repository. 🔴  check my git documentation: https://github.com/anisul-Islam/githu...",
+        videoUrl:
+          "https://www.youtube.com/embed/sLX2YWYpkAc?si=1LOzA02umSLx9330",
+      },
+      {
+        name: "18 : git pull and push",
+        description:
+          "✅  In this video, I will show you how to push your changes in GitHub and pull changes into your local repository from a remote repository. 🔴  check my git documentation: https://github.com/anisul-Islam/githu...",
+        videoUrl:
+          "https://www.youtube.com/embed/UXEoCfYwI1Q?si=eL_QZgyO42Iclc8s",
+      },
+      {
+        name: "22 : branching, merging and pull request",
+        description:
+          "✅  In this video, I will explain what branching is and the need for branching. I will show how to do branching and merging in GitHub. 🔴  check my git documentation: https://github.com/anisul-Islam/githu...",
+        videoUrl:
+          "https://www.youtube.com/embed/3k8Bq_usPsk?si=ZOSYY_Vmp-jn_vMa",
+      },
+      {
+        name: "23 : branching and merging locally",
+        description:
+          "✅  In this video, I will show you how to branch and merge locally. 🔴  check my git documentation: https://github.com/anisul-Islam/githu...",
+        videoUrl:
+          "https://www.youtube.com/embed/AhBxGYzdWI0?si=HMQil8x5M7Jq3-OO",
+      },
+      {
+        name: "24 : git & GitHub practice-2",
+        description:
+          "✅  In this video, I will show you how to create a local and remote repository. I will also show you how to make a git commit and push changes in the remote repository. Finally, we will see how to pull changes from the remote repository. 🔴  check my git documentation: https://github.com/anisul-Islam/githu...",
+        videoUrl:
+          "https://www.youtube.com/embed/IHVzseHh3Bo?si=rkl9Qeo6fkX3lDKw",
+      },
+      {
+        name: "25 : GitHub issues",
+        description:
+          "✅  In this video, I will explain GitHub issues and why we need them. I will also show how to open and close GitHub Issues. 🔴  check my git documentation: https://github.com/anisul-Islam/githu...",
+        videoUrl:
+          "https://www.youtube.com/embed/E5HFlpx7QP4?si=B0jdu92dl0cMb8Ku",
+      },
+      {
+        name: "26 : fast forward merge",
+        description:
+          "In this video, I will explain what a 2-way merge or fast-forward merge is with a practical demonstration.",
+        videoUrl:
+          "https://www.youtube.com/embed/FbX_MpqSLfc?si=OK_MZ9GBw2LQwZwH",
+      },
+      {
+        name: "27 : 3-way merge",
+        description:
+          "In this video, I will explain what is 3-way merge is with a practical demonstration.",
+        videoUrl:
+          "https://www.youtube.com/embed/dPSB-UhioJw?si=HGWl--H07SizEpsO",
+      },
+      {
+        name: "28 : resolve merge conflict on git",
+        description:
+          "In this video, I will explain what is merge conflict is and how to resolve to merge conflict on git with a practical demonstration.",
+        videoUrl:
+          "https://www.youtube.com/embed/LapVNu99qU8?si=-6KsITi4q5Pw6x4t",
+      },
+      {
+        name: "29 : resolve merge conflict on GitHub",
+        description:
+          "In this video, I will explain a merge conflict and how to resolve a merge conflict on GitHub with a practical demonstration.",
+        videoUrl:
+          "https://www.youtube.com/embed/KmbNiB6jbHo?si=CTTocl1t5cZa0xWm",
+      },
+      {
+        name: "30 : fork & clone - contribute on others project",
+        description:
+          "In this video, I will show how to contribute to other open-source projects or repositories with a practical demonstration.",
+        videoUrl:
+          "https://www.youtube.com/embed/FH0wptOLukk?si=VOm9Ab2WuEizz2Nn",
+      },
+      {
+        name: "31 : how to do a collaboration on GitHub",
+        description:
+          "In this video, I will show how to how to do collaborate on GitHub with a practical demonstration.",
+        videoUrl:
+          "https://www.youtube.com/embed/nS9QbJt4KaQ?si=qVj1r5q7dXFvueJ9",
+      },
+      {
+        name: "32 : publish your website on github",
+        description: "  publish your website on github",
+        videoUrl:
+          "https://www.youtube.com/embed/cI-B554zaRw?si=6IKtlkK777W8E1xv",
+      },
+      {
+        name: " 33 : github series finale",
+        description:
+          "🔴  This is the last video of this series. I hope you have enjoyed and learnt a lot. Try hard, practice more. See you in the next series. ",
+        videoUrl:
+          "https://www.youtube.com/embed/OgPm5Hzc4zs?si=fNyJoUAdwh8WQL-d",
       },
     ],
     lws: [
       {
-        name: "JavaScript LWS Class 1",
-        description: "JS basics from LWS.",
-        videoUrl: "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+        name: "Crash Course - সহজ বাংলায় Git & GitHub - Bangla ( বাংলা ) Tutorial",
+        description:
+          "Git একটা Version Control Mechanism. মানে এটা সবসময় আমাদের file system এর দিকে নজর রাখে এবং কোন change হলে সেটার record রাখে। শুধু তাই নয়, প্রতিটা change এর আগের এবং পরের version ও আলাদা আলাদা করে track রেখে দেয় git. আর GitHub হলো এই সব changes এবং version এর cloud host. অনেকেই মনে করেন Git এবং GithHub একই জিনিস। কিন্তু আসলে তা সঠিক নয়। git যদি coffee হয় তাহলে  GitHub হলো coffee shop!একজন Programmer হিসেবে যতো tool নিয়েই কাজ করেন না কেন, তার মধ্যে সবচেয়ে গুরুত্বপূর্ণ tool হলো git! তাই Beginners দের জন্য git এর এই Crash Course টি নিয়ে আসলাম। এই Tutorial এ আমি git এবং GitHub কি, Installation, Initilization, Cloning, Status, Add, Reset, Commit, Remove, Branching, Merging, Push, Pull & Fetch নিয়ে আলোচনা করেছি। এগুলোই মূলত একজন Programmer এর জানা প্রয়োজন হয়। আশা করি ভিডিওটি আপনাদের ভালো লাগবে।",
+        videoUrl:
+          "https://www.youtube.com/embed/oe21Nlq8GS4?si=047uhYSQK-ZEgja-",
       },
     ],
     stacklearner: [
       {
-        name: "JavaScript Stack Class 1",
-        description: "JS basics from Stack Learner.",
-        videoUrl: "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+        name: "1: Basic Uses of Git For Beginners Bangla Tutorial Video",
+        description:
+          "The full form of git is global information tracker. It is a distributed version control system for tracking changes in computer files and coordinating work on those files among multiple people(Wikipedia). Primarily used for source code management in software development but it can be used to keep track of changes in any set of files. Created by  Linus Torvalds in 2005 for the development of the Linux kernel. Git thinks about its data. In git nearly every operation is local. It’s impossible to change the contents of any file or directory without Git knowing about it. When you do actions in Git, nearly all of them only add data to the Git database. In git committed means that the data is safely stored in the database.Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.",
+        videoUrl:
+          "https://www.youtube.com/embed/C4lNdjgYoi8?si=zab6lPBRmuwp0cd_",
+      },
+      {
+        name: "2-9: Basic Usage of Git For Beginners Bangla Tutorial Video - 2",
+        description:
+          "The full form of git is global information tracker. It is a distributed version control system for tracking changes in computer files and coordinating work on those files among multiple people(Wikipedia). Primarily used for source code management in software development but it can be used to keep track of changes in any set of files. Created by  Linus Torvalds in 2005 for the development of the Linux kernel. Git thinks about its data. In git nearly every operation is local. It’s impossible to change the contents of any file or directory without Git knowing about it. When you do actions in Git, nearly all of them only add data to the Git database. In git committed means that the data is safely stored in the database.Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.",
+        videoUrl:
+          "https://www.youtube.com/embed/hTFSeWgT7jg?si=hjR3-bbifsLFI0cF",
+      },
+      {
+        name: "3-9: Github introduction For Beginners Bangla Tutorial Video",
+        description:
+          "The full form of git is global information tracker. It is a distributed version control system for tracking changes in computer files and coordinating work on those files among multiple people(Wikipedia). Primarily used for source code management in software development but it can be used to keep track of changes in any set of files. Created by  Linus Torvalds in 2005 for the development of the Linux kernel. Git thinks about its data. In git nearly every operation is local. It’s impossible to change the contents of any file or directory without Git knowing about it. When you do actions in Git, nearly all of them only add data to the Git database. In git committed means that the data is safely stored in the database.Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.",
+        videoUrl:
+          "https://www.youtube.com/embed/-IpyFnFkAPc?si=GX31ZVKHNEW7jmKx",
+      },
+      {
+        name: "4-9: What is Branch in Git For All Bangla Tutorial Video",
+        description:
+          "The full form of git is global information tracker. It is a distributed version control system for tracking changes in computer files and coordinating work on those files among multiple people(Wikipedia). Primarily used for source code management in software development but it can be used to keep track of changes in any set of files. Created by  Linus Torvalds in 2005 for the development of the Linux kernel. Git thinks about its data. In git nearly every operation is local. It’s impossible to change the contents of any file or directory without Git knowing about it. When you do actions in Git, nearly all of them only add data to the Git database. In git committed means that the data is safely stored in the database.Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.",
+        videoUrl:
+          "https://www.youtube.com/embed/Mf2rhvV667I?si=AoTLjKOmE20rEem7",
+      },
+      {
+        name: "5-9: What is Merge Conflict in Git Bangla Tutorial Video",
+        description:
+          "The full form of git is global information tracker. It is a distributed version control system for tracking changes in computer files and coordinating work on those files among multiple people(Wikipedia). Primarily used for source code management in software development but it can be used to keep track of changes in any set of files. Created by  Linus Torvalds in 2005 for the development of the Linux kernel. Git thinks about its data. In git nearly every operation is local. It’s impossible to change the contents of any file or directory without Git knowing about it. When you do actions in Git, nearly all of them only add data to the Git database. In git committed means that the data is safely stored in the database.Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.",
+        videoUrl:
+          "https://www.youtube.com/embed/sLDQLeXYaFg?si=d0VmVv1VJGnI-3D4",
+      },
+      {
+        name: "6-9: What is Fork And Pull Request in Git Bangla Tutorial Video",
+        description:
+          "The full form of git is global information tracker. It is a distributed version control system for tracking changes in computer files and coordinating work on those files among multiple people(Wikipedia). Primarily used for source code management in software development but it can be used to keep track of changes in any set of files. Created by  Linus Torvalds in 2005 for the development of the Linux kernel. Git thinks about its data. In git nearly every operation is local. It’s impossible to change the contents of any file or directory without Git knowing about it. When you do actions in Git, nearly all of them only add data to the Git database. In git committed means that the data is safely stored in the database.Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.",
+        videoUrl:
+          "https://www.youtube.com/embed/fGEKHpSHCHY?si=HNteUBi1sK4Qj0ae",
+      },
+      {
+        name: "7-9: How to Use Visual Studio Code For Beginners Bangla Video",
+        description:
+          "The full form of git is global information tracker. It is a distributed version control system for tracking changes in computer files and coordinating work on those files among multiple people(Wikipedia). Primarily used for source code management in software development but it can be used to keep track of changes in any set of files. Created by  Linus Torvalds in 2005 for the development of the Linux kernel. Git thinks about its data. In git nearly every operation is local. It’s impossible to change the contents of any file or directory without Git knowing about it. When you do actions in Git, nearly all of them only add data to the Git database. In git committed means that the data is safely stored in the database.Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.",
+        videoUrl:
+          "https://www.youtube.com/embed/wK9IAw7nsxU?si=OhaYRxNFgCpN1Dcs",
+      },
+      {
+        name: "8-9: Use Git with VSCode For Beginners Bangla Tutorial Video",
+        description:
+          "The full form of git is global information tracker. It is a distributed version control system for tracking changes in computer files and coordinating work on those files among multiple people(Wikipedia). Primarily used for source code management in software development but it can be used to keep track of changes in any set of files. Created by  Linus Torvalds in 2005 for the development of the Linux kernel. Git thinks about its data. In git nearly every operation is local. It’s impossible to change the contents of any file or directory without Git knowing about it. When you do actions in Git, nearly all of them only add data to the Git database. In git committed means that the data is safely stored in the database.Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.",
+        videoUrl:
+          "https://www.youtube.com/embed/t_1z65j0MY8?si=FvATM1Gw3W51J5nb",
+      },
+      {
+        name: "9-9: How to Use Git Kraken For Git and Github Bangla Tutorial",
+        description:
+          "The full form of git is global information tracker. It is a distributed version control system for tracking changes in computer files and coordinating work on those files among multiple people(Wikipedia). Primarily used for source code management in software development but it can be used to keep track of changes in any set of files. Created by  Linus Torvalds in 2005 for the development of the Linux kernel. Git thinks about its data. In git nearly every operation is local. It’s impossible to change the contents of any file or directory without Git knowing about it. When you do actions in Git, nearly all of them only add data to the Git database. In git committed means that the data is safely stored in the database.Modified means that you have changed the file but have not committed it to your database yet. Staged means that you have marked a modified file in its current version to go into your next commit snapshot.",
+        videoUrl:
+          "https://www.youtube.com/embed/AHEZlnJ4FCc?si=ofwShwoPB8ojY3Rt",
+      },
+      {
+        name: "Git Hacks: Format Your Commit Message | কিভাবে কমিট মেসেজ লিখব?",
+        description:
+          "সিম্পল হ্যাকঃ কিভাবে সুন্দর করে স্ট্যান্ডার্ড ভাবে গিট কমিট মেসেজ লিখবেন?",
+        videoUrl:
+          "https://www.youtube.com/embed/0oj46eH5h0A?si=ucUz6nUE33LBUY71",
       },
     ],
   },
   javascript: {
     anisul: [
       {
-        name: "JavaScript Class 1",
-        description: "JavaScript intro from Anisul Islam.",
-        videoUrl: "https://www.youtube.com/watch?v=W6NZfCO5SIk",
+        name: "1 : The Ultimate JavaScript Roadmap ",
+        description:
+          "👉 In this video, I will discuss the ultimate javascript roadmap you need for a smooth and strong start.🔴 Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas... ",
+        videoUrl:
+          "https://www.youtube.com/embed/xpP5L1NuMQU?si=Fu1fOlPF188Q80hI",
       },
+      {
+        name: "2 : how to show output in JavaScript",
+        description:
+          "👉 In this video, I will discuss the ultimate javascript roadmap you need for a smooth and strong start.🔴 Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas... ",
+        videoUrl:
+          "https://www.youtube.com/embed/fBhxs9OHxtY?si=DXECVeNkZCK7Z9uR",
+      },
+      {
+        name: "3 : how to add JavaScript in html",
+        description:
+          "Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas... ",
+        videoUrl:
+          "https://www.youtube.com/embed/HvpmqQ53Rjw?si=aXk9pmgavhazKcfP",
+      },
+      {
+        name: "4 : Keyword, Data Type and comment",
+        description:
+          "Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas...",
+        videoUrl:
+          "https://www.youtube.com/embed/7AA6H_NBiL0?si=jCjaYgpYv8EVJdFY",
+      },
+      {
+        name: "5 : how to declare variables in JavaScript",
+        description:
+          "Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas...",
+        videoUrl:
+          "https://www.youtube.com/embed/9fLfvLAIajA?si=b4MCVD7GsEornWIb",
+      },
+      {
+        name: "6 : var vs let vs const and run with node",
+        description:
+          "Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas...",
+        videoUrl:
+          "https://www.youtube.com/embed/dzr3mxTKJ74?si=KUJvrTZxvJwxQqxI",
+      },
+      {
+        name: "7 : personal budget tracker app phase 1,2",
+        description:
+          "Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas...",
+        videoUrl:
+          "https://www.youtube.com/embed/54z0EHsa3Es?si=q_T2kOVu7nduvSRd",
+      },
+      {
+        name: "8 : number method | toFixed | toPrecision",
+        description:
+          "Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas...",
+        videoUrl:
+          "https://www.youtube.com/embed/uBEKIMJx50E?si=iONhuNKXl2ekmZWp",
+      },
+      {
+        name: "9 : how to add or concatenate strings",
+        description:
+          "Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas...",
+        videoUrl:
+          "https://www.youtube.com/embed/S09l_YSOp80?si=Y-hadAvTnpCo4ysV",
+      },
+      {
+        name: "10 : Library functions for string",
+        description:
+          "🔴 Task-2 Solutions: https://github.com/anisul-Islam/javas...🔴 Find All the JavaScript Code in GitHub - https://github.com/anisul-Islam/javas... ",
+        videoUrl:
+          "https://www.youtube.com/embed/w-HOpmckKF8?si=QVyBAOxnD0NQ2HpS",
+      },
+      {
+        name: "11 : task - peronsal tracker phase 3",
+        description:
+          "🔴 Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas... ",
+        videoUrl:
+          "https://www.youtube.com/embed/OegIwq3NqLY?si=EarvKWNi3ty2DIG0",
+      },
+      {
+        name: "12 : Arithmetic and assignment operator",
+        description:
+          "🔴 Find All the JavaScript Code on GitHub - https://github.com/anisul-Islam/javas... ",
+        videoUrl:
+          "https://www.youtube.com/embed/edlzr3HeGx0?si=BnMjjoAMgP6ak1QJ",
+      },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
+      // {
+      //   name: "HTML Stack Class 2",
+      //   description: "Advanced HTML from Stack Learner.",
+      //   videoUrl: "https://www.youtube.com/watch?v=pQN-pnXPaVg",
+      // },
     ],
     lws: [
       {
