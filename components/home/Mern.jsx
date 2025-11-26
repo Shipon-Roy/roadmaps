@@ -5,8 +5,8 @@ import React from "react";
 
 export default function Mern() {
   return (
-    <div className="wrapper border-general scroll-mt-16 border-t bg-right bg-no-repeat dark:bg-none lg:bg-shape2 ">
-      <div className="container space-y-5 ">
+    <div className="wrapper border-general scroll-mt-16 border-t bg-right bg-no-repeat lg:bg-shape2">
+      <div className="container mx-auto space-y-5 ">
         <div className="w-full text-center">
           <h1 className="animate-slide-in text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded shadow-md p-2 w-[13rem] bg-gray-700">
             Learn MERN
@@ -14,7 +14,10 @@ export default function Mern() {
         </div>
 
         <div className="relative mx-auto max-w-7xl space-y-1 lg:px-20">
-          <div className="flex-col-reverse lg:flex-row-reverse relative flex    lg:items-center lg:gap-12">
+          <div
+            data-aos="fade-up"
+            className="flex-col-reverse lg:flex-row-reverse relative flex    lg:items-center lg:gap-12"
+          >
             <div className="grid w-full place-items-center lg:min-h-[536px]">
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
                 <DotLottieReact
@@ -35,7 +38,7 @@ export default function Mern() {
                   HTML
                 </h1>
                 <svg
-                  className="absolute top-0 z-0 opacity-50 dark:opacity-100"
+                  className="absolute top-0 z-0 opacity-100"
                   width="100%"
                   height="100%"
                   viewBox="0 0 602 473"
@@ -111,7 +114,10 @@ export default function Mern() {
               </svg>
             </div>
           </div>
-          <div className=" relative flex flex-col-reverse lg:flex-row lg:items-center lg:gap-12">
+          <div
+            data-aos="fade-up"
+            className=" relative flex flex-col-reverse lg:flex-row lg:items-center lg:gap-12"
+          >
             <div className="grid w-full place-items-center lg:min-h-[536px]">
               <div
                 className="w-full "
@@ -138,7 +144,7 @@ export default function Mern() {
                   CSS
                 </h1>
                 <svg
-                  className="absolute top-0 z-0 opacity-50 dark:opacity-100"
+                  className="absolute top-0 z-0 opacity-100"
                   width="100%"
                   height="100%"
                   viewBox="0 0 602 473"
@@ -214,7 +220,10 @@ export default function Mern() {
               </svg>
             </div>
           </div>
-          <div className="flex-col-reverse lg:flex-row-reverse relative flex lg:flex-row lg:items-center lg:gap-12">
+          <div
+            data-aos="fade-up"
+            className="flex-col-reverse lg:flex-row-reverse relative flex lg:flex-row lg:items-center lg:gap-12"
+          >
             <div className="grid w-full place-items-center lg:min-h-[536px]">
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
                 <DotLottieReact
@@ -236,7 +245,7 @@ export default function Mern() {
                   <span className="text-gray-700">Github</span>
                 </h1>
                 <svg
-                  className="absolute top-0 z-0 opacity-50 dark:opacity-100"
+                  className="absolute top-0 z-0 opacity-100"
                   width="100%"
                   height="100%"
                   viewBox="0 0 602 473"
@@ -329,7 +338,10 @@ export default function Mern() {
               </svg>
             </div>
           </div>
-          <div className=" relative flex flex-col-reverse lg:flex-row lg:items-center lg:gap-12">
+          <div
+            data-aos="fade-up"
+            className=" relative flex flex-col-reverse lg:flex-row lg:items-center lg:gap-12"
+          >
             <div className="grid w-full place-items-center lg:min-h-[536px]">
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
                 <DotLottieReact
@@ -350,7 +362,7 @@ export default function Mern() {
                   Javascript
                 </h1>
                 <svg
-                  className="absolute top-0 z-0 opacity-50 dark:opacity-100"
+                  className="absolute top-0 z-0 opacity-100"
                   width="100%"
                   height="100%"
                   viewBox="0 0 602 473"
@@ -443,7 +455,10 @@ export default function Mern() {
               </svg>{" "}
             </div>
           </div>
-          <div className="flex-col-reverse lg:flex-row-reverse relative flex  lg:flex-row lg:items-center lg:gap-12">
+          <div
+            data-aos="fade-up"
+            className="flex-col-reverse lg:flex-row-reverse relative flex  lg:flex-row lg:items-center lg:gap-12"
+          >
             <div className="grid w-full place-items-center lg:min-h-[536px]">
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
                 <DotLottieReact
@@ -466,7 +481,7 @@ export default function Mern() {
                   Reactjs
                 </h1>
                 <svg
-                  className="absolute top-0  opacity-50 dark:opacity-100 "
+                  className="absolute top-0 opacity-100 "
                   width="100%"
                   height="100%"
                   viewBox="0 0 602 473"
@@ -561,7 +576,10 @@ export default function Mern() {
               </svg>
             </div>
           </div>
-          <div className=" relative flex flex-col-reverse lg:flex-row lg:items-center lg:gap-12">
+          <div
+            data-aos="fade-up"
+            className=" relative flex flex-col-reverse lg:flex-row lg:items-center lg:gap-12"
+          >
             <div className="grid w-full place-items-center lg:min-h-[536px]">
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
                 <DotLottieReact
@@ -582,7 +600,7 @@ export default function Mern() {
                   Nodejs
                 </h1>
                 <svg
-                  className="absolute top-0 z-0 opacity-50 dark:opacity-100"
+                  className="absolute top-0 z-0 opacity-100"
                   width="100%"
                   height="100%"
                   viewBox="0 0 602 473"
@@ -675,7 +693,10 @@ export default function Mern() {
               </div>
             </div>
           </div>
-          <div className="flex-col-reverse lg:flex-row-reverse relative flex  lg:flex-row lg:items-center lg:gap-12">
+          <div
+            data-aos="fade-up"
+            className="flex-col-reverse lg:flex-row-reverse relative flex  lg:flex-row lg:items-center lg:gap-12"
+          >
             <div className="grid w-full place-items-center lg:min-h-[536px]">
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
                 <DotLottieReact
@@ -698,7 +719,7 @@ export default function Mern() {
                   MongoDB
                 </h1>
                 <svg
-                  className="absolute top-0  opacity-50 dark:opacity-100 "
+                  className="absolute top-0 opacity-100 "
                   width="100%"
                   height="100%"
                   viewBox="0 0 602 473"

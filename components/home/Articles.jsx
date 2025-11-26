@@ -27,19 +27,19 @@ export default function Articles() {
           data-aos-duration="3000"
           className="mt-20 grid grid-cols-2 justify-items-center "
         >
-          <div className="max-w-xl p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+          <div className="max-w-xl p-6   border   rounded-lg shadow-sm  bg-gray-800  border-gray-700">
             <a href="#">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight  text-white">
                 Noteworthy technology acquisitions 2025
               </h5>
             </a>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 font-normal  text-gray-400">
               Here are the biggest enterprise technology acquisitions of 2021 so
               far, in reverse chronological order.
             </p>
             <a
               href="#"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#7dd3fc] bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#7dd3fc] bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none        focus:ring-gray-800"
             >
               Read more
               <svg
@@ -59,19 +59,19 @@ export default function Articles() {
               </svg>
             </a>
           </div>
-          <div className="max-w-xl p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+          <div className="max-w-xl p-6   border   rounded-lg shadow-sm  bg-gray-800  border-gray-700">
             <a href="#">
-              <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+              <h5 className="mb-2 text-2xl font-bold tracking-tight  text-white">
                 Noteworthy technology acquisitions 2024
               </h5>
             </a>
-            <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+            <p className="mb-3 font-normal  text-gray-400">
               Here are the biggest enterprise technology acquisitions of 2021 so
               far, in reverse chronological order.
             </p>
             <a
               href="#"
-              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#7dd3fc] bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none focus:ring-gray-300 dark:bg-gray-600 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+              className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-[#7dd3fc] bg-gray-700 rounded-lg hover:bg-gray-800 focus:ring-4 focus:outline-none      focus:ring-gray-800"
             >
               Read more
               <svg
