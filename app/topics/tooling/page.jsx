@@ -1,4 +1,4 @@
-import Container from "@/app/ui/Container";
+import Container from "@/components/ui/Container";
 import Link from "next/link";
 import React from "react";
 import { FaGitSquare, FaDocker } from "react-icons/fa";

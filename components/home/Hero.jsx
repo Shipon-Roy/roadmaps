@@ -1,7 +1,7 @@
 "use client";
-import Container from "@/app/ui/Container";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Image from "next/image";
+import Container from "../ui/Container";
 
 export default function Hero() {
   return (

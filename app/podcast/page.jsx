@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Container from "../ui/Container";
+import Container from "../../components/ui/Container";
 
 const videos = [
   {

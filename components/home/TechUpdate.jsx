@@ -1,5 +1,4 @@
-import Container from "@/app/ui/Container";
-import React from "react";
+import Container from "../ui/Container";
 
 export default function TechUpdate() {
   return (

@@ -1,7 +1,6 @@
-import Container from "@/app/ui/Container";
 import Link from "next/link";
-import React from "react";
 import { CgProfile } from "react-icons/cg";
+import Container from "./ui/Container";
 
 export default function Header() {
   return (

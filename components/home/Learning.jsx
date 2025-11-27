@@ -1,4 +1,4 @@
-import Container from "@/app/ui/Container";
+import Container from "@/components/ui/Container";
 import React, { Fragment } from "react";
 import { FaArrowAltCircleDown } from "react-icons/fa";
 

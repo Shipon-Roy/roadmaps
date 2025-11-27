@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import Container from "@/app/ui/Container";
+import Container from "../../../../components/ui/Container";
 
 // ✅ Static class data organized by topic and provider
 const classData = {

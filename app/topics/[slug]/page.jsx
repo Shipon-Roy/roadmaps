@@ -1,7 +1,6 @@
 "use client";
-import { classes } from "@/public/classes"; // Now we're importing the updated classes structure
 import { useState, useEffect } from "react";
-import { useRouter } from "next/router";
+import { classes } from "../../../public/classes";
 
 export default function Page({ params }) {
   const { slug } = params;

@@ -1,15 +1,11 @@
 "use client";
-import Articles from "@/components/home/Articles";
-import Hero from "@/components/home/Hero";
-import Learning from "@/components/home/Learning";
-import RoleBaseRoadmap from "@/components/home/RoleBaseRoadmap";
-import Teachers from "@/components/home/Teachers";
-import TechUpdate from "@/components/home/TechUpdate";
-import Image from "next/image";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Mern from "@/components/home/Mern";
+import Articles from "../components/home/Articles";
+import Hero from "../components/home/Hero";
+import TechUpdate from "../components/home/TechUpdate";
 
 export default function Home() {
   useEffect(() => {

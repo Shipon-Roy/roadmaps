@@ -1,4 +1,4 @@
-import Container from "@/app/ui/Container";
+import Container from "@/components/ui/Container";
 import React, { useState, useEffect } from "react";
 
 const contentData = {
@@ -36,7 +36,7 @@ const contentData = {
       "Explore how to add interactivity to your website with JavaScript, including DOM manipulation, events, and logic.",
     cards: [],
   },
-  
+
   "React.js": {
     title: "React.js Modal Content",
     description:
@@ -91,7 +91,7 @@ export default function FrontendFlow() {
           {/* Down Arrow */}
           <span className="text-white text-4xl animate-bounce">↓</span>
 
-           {/* React.js Block */}
+          {/* React.js Block */}
           <div
             onClick={() => handleModalToggle("Git")}
             className="text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded-lg shadow-xl p-6 w-[14rem] bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer"
@@ -100,12 +100,10 @@ export default function FrontendFlow() {
             Git
           </div>
 
-          
-
           {/* Down Arrow */}
           <span className="text-white text-4xl animate-bounce">↓</span>
 
-         {/* JavaScript Block */}
+          {/* JavaScript Block */}
           <div
             onClick={() => handleModalToggle("JavaScript")}
             className="text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded-lg shadow-xl p-6 w-[14rem] bg-gray-700 transition-all duration-300 transform hover:scale-105 hover:shadow-2xl cursor-pointer"

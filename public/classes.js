@@ -1,46 +1,104 @@
+import {
+  FaReact,
+  FaGitSquare,
+  FaDocker,
+  FaPhp,
+  FaLaravel,
+  FaAngular,
+} from "react-icons/fa";
+import {
+  SiNextdotjs,
+  SiJavascript,
+  SiMysql,
+  SiTypescript,
+  SiPython,
+  SiVuedotjs,
+  SiTailwindcss,
+  SiNuxtdotjs,
+} from "react-icons/si";
+import { FaGolang } from "react-icons/fa6";
+import { TbBrandVscode } from "react-icons/tb";
+
 export const topics = [
   {
-    topic: "HTML",
+    icon: <FaReact />,
+    topic: "React",
     link: "/react",
   },
   {
-    topic: "CSS",
+    icon: <SiNextdotjs />,
+    topic: "next",
     link: "/next",
   },
   {
+    icon: <SiJavascript />,
     topic: "Javascript",
     link: "/javascript",
   },
   {
-    topic: "Reactjs/Nextjs",
+    icon: <FaGitSquare />,
+    topic: "Git",
+    link: "/git",
   },
   {
-    topic: "Nodejs",
+    icon: <FaDocker />,
+    topic: "Docker",
+    link: "/docker",
   },
   {
-    topic: "React",
+    icon: <TbBrandVscode />,
+    topic: "VS Code",
+    link: "/vscode",
   },
   {
-    topic: "React",
+    icon: <SiMysql />,
+    topic: "MySQL",
+    link: "/mysql",
   },
   {
-    topic: "React",
+    icon: <SiTypescript />,
+    topic: "TypeScript",
+    link: "/typescript",
   },
   {
-    topic: "React",
+    icon: <FaPhp />,
+    topic: "PHP",
+    link: "/php",
   },
   {
-    topic: "React",
+    icon: <SiPython />,
+    topic: "Python",
+    link: "/python",
   },
   {
-    topic: "Devops",
-    link: "/devops",
+    icon: <FaGolang />,
+    topic: "Go",
+    link: "/go",
   },
   {
-    topic: "React",
+    icon: <SiVuedotjs />,
+    topic: "Vue",
+    link: "/vue",
   },
   {
-    topic: "React",
+    icon: <FaAngular />,
+    topic: "Angular",
+    link: "/angular",
+  },
+  {
+    icon: <SiTailwindcss />,
+    topic: "Tailwind CSS",
+    link: "/tailwindcss",
+  },
+  {
+    icon: <SiNuxtdotjs />,
+    topic: "Nuxt",
+    link: "/nuxt",
+  },
+  {
+    icon: <FaLaravel />,
+    topic: "Laravel",
+    link: "/laravel",
   },
 ];
 export const classes = {
@@ -57,13 +115,14 @@ export const classes = {
       views: "2.1k",
       link: "https://www.youtube.com/embed/5Xy-t8k_M4A?si=QLZ7ODPc2sOWBmT3",
       thumbnail: "",
-      tags: [  "react" ],
+      tags: ["react"],
       likes: 0,
       unlikes: 0,
     },
     {
       id: 2,
-      title: "#2 React Virtual DOM Explained - Easy Explanation - React Tutorial Bangla Series",
+      title:
+        "#2 React Virtual DOM Explained - Easy Explanation - React Tutorial Bangla Series",
       description:
         "React Virtual DOM Explained - Easy Explanation - React Tutorial Bangla Series React JS এর ক্ষেত্রে আমরা বারবারই একটা fancy word শুনে থাকি, সেটা হলো Virtual DOM! যে myth টা মানুষের মধ্যে ঢুকে আছে সেটা হলো - Virtual DOM, আমাদের চির পরিচিত browser DOM এর থেকে অনেক fast এবং একারণে vanilla DOM এর থেকে React অনেক fast User Interface Render করে! আসলেই কি তাই? React কি শুধুই Performance achieve করার জন্যই Virtual DOM use করে? এই Video টি দেখলে আসলে কি হচ্ছে সেটা আপনারা বুঝতে পারবেন। সঠিক ধারণা পাবেন Virtual DOM সম্পর্কে যেটা যতদিন react নিয়ে কাজ করবেন, আপনাদের অনেক বেশি কাজে দিবে বলে আমার বিশ্বাস।",
       author: "Learn with Sumit",
@@ -96,8 +155,7 @@ export const classes = {
     },
     {
       id: 4,
-      title:
-        "How to install React in 2023 - new react.dev Website",
+      title: "How to install React in 2023 - new react.dev Website",
       description:
         "Are you interested in learning React JS from scratch but not sure how to get started? In this video tutorial, I'll walk you through the process of installing React JS according to the brand new react.dev website. Whether you're a complete beginner or already have some coding experience, this step-by-step guide will help you set up your environment and start building React applications in no time. By the end of this tutorial, you'll have a solid understanding of how to install and set up React JS, and be ready to start building your own React applications. Whether you want to create a simple website or a complex web app, React JS is a powerful tool that can help you achieve your goals. So, let's get started and learn how to install React JS today! My complete React Tutorial series -    • #1 What is React and How it works - React ...  ",
       author: "Learn with Sumit",
@@ -113,7 +171,8 @@ export const classes = {
     },
     {
       id: 5,
-      title: "#4 React Prerequisites - React শিখতে কি কি জানা প্রয়োজন - React Tutorial Bangla Series",
+      title:
+        "#4 React Prerequisites - React শিখতে কি কি জানা প্রয়োজন - React Tutorial Bangla Series",
       description:
         "React Prerequisites - React শিখতে কি কি জানা প্রয়োজন - Things to learn before react - React Tutorial Bangla Series এই ভিডিওতে আমি বলেছি কমপক্ষে ঠিক কতটুকু জানলে আপনি React নিয়ে কাজ করা শুরু করতে পারেন।সেই সাথে এই series এর আমার আগের ভিডিওতে setup করা project setup এর সাথে additional যে কাজটুকু আপনাদের করতে হবে সেটাও বলে দিয়েছি। আশা করি আপনারা এই video টি দেখে প্রয়োজনীয় step গুলো complete করে পরবর্তী video গুলো দেখবেন।",
       author: "Learn with Sumit",
@@ -140,13 +199,14 @@ export const classes = {
       views: "2.1k",
       link: "https://www.youtube.com/embed/Uj-Bt0pWEP4?si=fP8_Kt-RL-gvvxJB",
       thumbnail: " ",
-      tags: ["react" ],
+      tags: ["react"],
       likes: 0,
       unlikes: 0,
     },
     {
       id: 7,
-      title: "#6 React Components and Props Core Concept - React Tutorial Bangla Series",
+      title:
+        "#6 React Components and Props Core Concept - React Tutorial Bangla Series",
       description:
         "React Components and Props Core Concept  - React Class Component - React functional component - React Tutorial Bangla Series এই ভিডিওতে আমি React JS এর one of the most important core building blocks - Component নিয়ে কথা বলেছি এবং সেই সাথে এই component এর বৈশিষ্ট্য props নিয়ে কথা বলেছি। এই video টি দেখলে দুই ধরণের component - Functional and Class Component নিয়ে আপনাদের আর কোন confusion থাকবেনা। সেই সাথে একেবারে ভিতর থেকে visualize করতে পারবেন এই component কোথা থেকে এলো এবং কিভাবে কাজ করে।",
       author: "Learn with Sumit",
@@ -162,7 +222,8 @@ export const classes = {
     },
     {
       id: 8,
-      title: "#7 React State & Lifecycle in Class Component - React Tutorial Bangla Series",
+      title:
+        "#7 React State & Lifecycle in Class Component - React Tutorial Bangla Series",
       description:
         "React State & Lifecycle in Class Component - React State Management - React Lifecycle Component - React Tutorial Bangla Series এই ভিডিওতে আমি state নিয়ে আলোচনা করেছি। state কি, react এ Class Component এ কিভাবে state management করা হয়, কিভাবে state change করে react এ component re-render করতে হয় এবং state manage করার সময় কি কি বিষয় খেয়াল করতে হয়, এগুলো নিয়ে আমি বিস্তারিত আলোচনা করেছি ।",
       author: "Learn with Sumit",
@@ -178,7 +239,8 @@ export const classes = {
     },
     {
       id: 9,
-      title: "#8 React Event Handling & Control Re Rendering - React Tutorial Bangla Series",
+      title:
+        "#8 React Event Handling & Control Re Rendering - React Tutorial Bangla Series",
       description:
         "React Event Handling and Control Rendering - React Rendering Tutorial - React Event Handle Tutorial - React Tutorial Bangla Series এই video তে আমি React এ কিভাবে event handling করতে হয় সে সম্পর্কে আলোচনা করেছি। সেই সাথে normal HTML event এর সাথে এটার difference কি সেটাও বলেছি। Event Handling - এর callback handle করতে গিয়ে class Component এ 'this' keyword নিয়ে বিশাল confusion তৈরী হয়। এই video পুরোটা মন দিয়ে দেখলে এই confusion চিরকালের জন্য clear হয়ে যাবে আপনাদের। শুধু তাই নয়, JavaScript এর রহস্যময় 'this' keyword এর behavior আপনারা আরো ভালভাবে বুঝতে পারবেন। এরপরে React এর সবচেয়ে গুরুত্বপূর্ণ কিন্তু সবচেয়ে confusing 'Unnecessary Render Cycle' সম্পর্কে আলোচনা করেছি। এই video দেখলে clearly বুঝতে পারবেন এই unnecessary re-render কিভাবে detect করবেন এবং প্রয়োজনে সেটা avoid করতে পারেন। একজন React Developer এর জন্য Video টি অত্যন্ত গুরুত্বপূর্ণ। তাই আশা থাকবে পুরো video টি আপনারা দেখবেন।",
       author: "Learn with Sumit",
@@ -194,7 +256,8 @@ export const classes = {
     },
     {
       id: 10,
-      title: "#9 React Conditional Rendering, List and Keys - React Tutorial Bangla Series",
+      title:
+        "#9 React Conditional Rendering, List and Keys - React Tutorial Bangla Series",
       description:
         "React Conditional Rendering, List and Keys - React Tutorial Bangla Series এই video তে আমি দেখিয়েছি কিভাবে React এ আমরা কোন একটা particular condition এর উপর base করে component render করতে পারি। সেজন্য আমি কয়েকটি coding pattern দেখিয়েছি। যেমন - normal if/else ব্যবহার করে element variable এর মাধ্যমে, Logical ”&&” Operator ব্যবহার করে truthy/falsy value এর ক্ষেত্রে inline if/else এর মাধ্যমে, Conditional Operator যেমন ternary operator ব্যবহার করে inline if/else এর মাধ্যমে এবং simply “null” value return করে conditionally component render না করে আরেকটি pattern দেখিয়েছি। এরপরে কিভাবে React এ List component ব্যবহার করতে হয় এবং সেক্ষেত্রে Array.map( ) method এর ব্যবহার দেখিয়েছি। আশা করি video টি beginners দের উপকারে আসবে।",
       author: "Learn with Sumit",
@@ -210,7 +273,8 @@ export const classes = {
     },
     {
       id: 11,
-      title: "#10 React Form Handling - Controlled vs Uncontrolled Component- React Tutorial Bangla Series",
+      title:
+        "#10 React Form Handling - Controlled vs Uncontrolled Component- React Tutorial Bangla Series",
       description:
         "React Form Handling - React form tutorial - React form handle - Controlled vs Uncontrolled Component- React Tutorial Bangla Series React JS এ দুইভাবে Form এর input handle করা হয় - একটা হলো Controlled এবং আরেকটা হলো Uncontrolled. Controlled way তে Form handle করা মানে হলো input এর value এর control React Component কে দিয়ে দেয়া এবং state change এর মাধ্যমে value change handle করা। আর Uncontrolled way তে form handle করার মানে হলো traditional way তে মানে DOM এর মাধ্যমে default ভাবে handle করা। এই video তে এই concept টি detail এ বুঝিয়েছি। এছাড়া বিভিন্ন input element এর ক্ষেত্রে কিভাবে value change নিয়ে কাজ করা যায় সেটা clear করেছি। আশা করি video টি দেখলে concept টি পূর্ণরূপে আপনাদের কাছে পরিষ্কার হবে।",
       author: "Learn with Sumit",
@@ -242,7 +306,8 @@ export const classes = {
     },
     {
       id: 13,
-      title: "#12 React Composition vs Inheritance - React Tutorial Bangla Series",
+      title:
+        "#12 React Composition vs Inheritance - React Tutorial Bangla Series",
       description:
         "React Composition vs Inheritance - React Tutorial Bangla Series এই series এর আগের video গুলোর মতোই এই video টিও একটি conceptual video. আপনারা জানেন আমি React JS এর documentation থেকে main concept গুলো যেগুলো React বলছে সেগুলোই বুঝানোর চেষ্টা করছি। সেখানে তারা বলছে, React এ component design করার সময়  OOP এর concept Inheritance ব্যবহার না করে Composition ব্যবহার করতে। কি এই Inheritance, composition technique টাই বা কি, কেন React আমাদের কে Inheritance ব্যবহার না করার পরামর্শ দিচ্ছে, গুরুত্বপূর্ণ এই ব্যাপার গুলোই আমি এই Video তে clear করার চেষ্টা করেছি। আশা করি যারা দেখবেন, নতুন কিছু জানবেন।",
       author: "Learn with Sumit",
@@ -258,7 +323,8 @@ export const classes = {
     },
     {
       id: 14,
-      title: "#13 React Higher Order Components (HOC) - React Tutorial Bangla Series",
+      title:
+        "#13 React Higher Order Components (HOC) - React Tutorial Bangla Series",
       description:
         "React Higher Order Component (HOC) - React Tutorial Bangla Series চলমান React Tutorial Series - এ এই video তে আমি আলোচনা করেছি React - এর সবচেয়ে interesting topic - এর একটি - Higher Order  Component নিয়ে। আমি এই video তে ৩ টি part - এ এই topic টি cover করেছি। প্রথমে দেখবো কেন Higher Order Component - এর মতো একটা জিনিস আমাদের প্রয়োজন। এরপরে দেখবো Higher Order Component আসলে কি এবং সবশেষে উদাহরণের মাধ্যমে দেখবো - কিভাবে একটা Higher Order Component তৈরী করে ব্যবহার করতে হয়।",
       author: "Learn with Sumit",
@@ -290,7 +356,8 @@ export const classes = {
     },
     {
       id: 16,
-      title: "#15 React Context API - What is Context API - Why Context API - React Tutorial Bangla Series",
+      title:
+        "#15 React Context API - What is Context API - Why Context API - React Tutorial Bangla Series",
       description:
         "React Context API - What is Context API - Why Context API - React Tutorial Bangla Series এই video তে আমি React এর অন্যতম গুরুত্বপূর্ণ concept - Context API নিয়ে কথা বলেছি। এই video টি দেখলে Concept API কেন প্রয়োজন এবং এটা আসলে কিভাবে কাজ করে সেটা একদম পরিষ্কার ভাবে ধারণা পেয়ে যাবেন। ভিডিও টি আমার ৩ পর্বের Context API Tutorial এর প্রথম ভিডিও। এটা শেষ করে অবশ্যই পরের ভিডিওটি দেখতে ভুলবেন না। link নিচে দেয়া আছে।",
       author: "Learn with Sumit",
@@ -306,7 +373,8 @@ export const classes = {
     },
     {
       id: 17,
-      title: "#16 React Context API - How to use React Context API - React Tutorial Bangla Series",
+      title:
+        "#16 React Context API - How to use React Context API - React Tutorial Bangla Series",
       description:
         "React Context API - How to use React Context API - React Tutorial Bangla Series এই video তে আমি React Context API  নিজে বানিয়ে দেখিয়েছি যেটা দেখলে আপনারা বুঝতে পারবেন context api আসলে কি করে। এভাবে হয়তো কেউ আপনাদের কে context API বুঝায়নি এর আগে! ভিডিও টি আমার ৩ পর্বের Context API Tutorial এর দ্বিতীয় ভিডিও। এটা শেষ করে অবশ্যই পরের ভিডিওটি দেখতে ভুলবেন না। link নিচে দেয়া আছে। এছাড়া প্রথম video টির link ও নিচে পাবেন।",
       author: "Learn with Sumit",
@@ -322,7 +390,8 @@ export const classes = {
     },
     {
       id: 18,
-      title: "#17 React Context API - contextType & useContext hook - React Tutorial Bangla Series",
+      title:
+        "#17 React Context API - contextType & useContext hook - React Tutorial Bangla Series",
       description:
         "React Context API - contextType & useContext hook - React Tutorial Bangla Series এই video তে আমি React এর Context API  - এর গুরুত্ত্বপূর্ণ কিছু বৈশিষ্ট্য দেখিয়েছি এবং সেটা দেখাতে গিয়ে class component এবং function component এর ক্ষেত্রে context API ব্যবহারের alternative pattern গুলো যেমন contextType static property এবং useContext hook নিয়েও আলোচনা করেছি। এই ভিডিওটি আমার ৩ পর্বের React Context API Tutorial এর তৃতীয় video. আগের দুইটি video এর লিংক নিচে দেয়া আছে।",
       author: "Learn with Sumit",
@@ -338,7 +407,8 @@ export const classes = {
     },
     {
       id: 19,
-      title: "#18 React Hooks Bangla - What is React Hook - React Hook Introduction - React Tutorial Bangla Series",
+      title:
+        "#18 React Hooks Bangla - What is React Hook - React Hook Introduction - React Tutorial Bangla Series",
       description:
         "React Hooks Bangla - What is React Hook - React Hook Introduction - React Tutorial Bangla Series এই ভিডিওতে আমি React এর Hooks নিয়ে প্রাথমিক ধারণা দিয়েছি। সেটা করতে গিয়ে আমি আলোচনা করেছি - hook কি, কেন hook আসলো, এসে কি সমস্যার সমাধান করলো এবং সেই সাথে এটাও আলোচনা করেছি কেন এতোদিন আমি old school React মানে Class Component দিয়ে আপনাদের কে React এর concept বুঝিয়েছিলাম। এই Video এর মাধ্যমে আমরা Modern React এর stateful function component এ land করলাম। আশা করি React Hook এর introduction হিসেবে এবং hook সম্পর্কে প্রাথমিক ধারণা পেতে video টি আপনাদের কে সহায়তা করবে। এছাড়া video টি বানানোর মূল উদ্দেশ্য hooks নিয়ে যে ভীতিটা সবার মধ্যে কাজ করে, সেটা কাটানো। আশা করি সেই উদ্দেশ্য সফল হয়েছে।",
       author: "Learn with Sumit",
@@ -354,7 +424,8 @@ export const classes = {
     },
     {
       id: 20,
-      title: "#19 React Hooks Bangla - React useState hook Bangla - React Tutorial Bangla Series",
+      title:
+        "#19 React Hooks Bangla - React useState hook Bangla - React Tutorial Bangla Series",
       description:
         "React Hooks Bangla - React useState hook Bangla - React Tutorial Bangla Series এই video তে আমি React এর useState() hook নিয়ে detail আলোচনা করেছি। কিভাবে useState() hook কাজ করে, কিভাবে এটা ব্যবহার করতে হয়, এটা ব্যবহারের সীমাবদ্ধতা কি আছে, কি কি নিয়ম মানতে হয় এবং শুধু তাই নয়, কিভাবে এটা কাজ করে সেটা বুঝানোর জন্য আমি নিজে useState hook বানিয়ে দেখিয়েছি একেবারে raw JavaScript ব্যবহার করে। আশা করি video দেখলে useState hook - এর সাথে সাথে, React - এর hook system এর উপরই একটা solid foundation পেয়ে যাবেন আপনারা।",
       author: "Learn with Sumit",
@@ -370,7 +441,8 @@ export const classes = {
     },
     {
       id: 21,
-      title: "#20 React Hooks Bangla - React useEffect hook Bangla - React Tutorial Bangla Series",
+      title:
+        "#20 React Hooks Bangla - React useEffect hook Bangla - React Tutorial Bangla Series",
       description:
         "React Hooks Bangla - React useEffect hook Bangla - React Tutorial Bangla Series এই video তে আমি React এর useEffect() hook নিয়ে detail আলোচনা করেছি। Side effects বলতে আসলে কি বুঝায়, কিভাবে useEffect() hook কাজ করে, কিভাবে এটা ব্যবহার করতে হয়,  কি কি নিয়ম মানতে হয় ইত্যাদি নিয়ে উদাহরণ সহ বিস্তারিত আলোচনা করেছি। আশা করি video দেখলে useEffect() নামক এই গুরুত্বপূর্ণ এবং powerful React Hook সম্পর্কে আপনাদের সমস্ত confusion clear হয়ে যাবে।",
       author: "Learn with Sumit",
@@ -386,7 +458,8 @@ export const classes = {
     },
     {
       id: 22,
-      title: "#21 React Hooks Bangla - React useCallback & useMemo hook Bangla - React Tutorial Bangla Series",
+      title:
+        "#21 React Hooks Bangla - React useCallback & useMemo hook Bangla - React Tutorial Bangla Series",
       description:
         "React Hooks Bangla - React useCallback & useMemo hook Bangla - React Tutorial Bangla Series এই video তে আমি React এর useCallback() এবং useMemo() hook নিয়ে detail আলোচনা করেছি। এই hooks দুটি মূলত functional component এর performance optimization করতে সাহায্য করে। এছাড়া এই video তে আমি functional component এ React.memo() Higher Order Function এর ব্যবহারও বুঝিয়েছি। আশা করি video টি দেখলে powerful এই React Hooks গুলো সম্পর্কে আপনাদের সমস্ত confusion clear হয়ে যাবে।",
       author: "Learn with Sumit",
@@ -402,7 +475,8 @@ export const classes = {
     },
     {
       id: 23,
-      title: "#22 React Hooks Bangla - React useRef hook Bangla - React Tutorial Bangla Series",
+      title:
+        "#22 React Hooks Bangla - React useRef hook Bangla - React Tutorial Bangla Series",
       description:
         "React Hooks Bangla - React useRef hook Bangla - React Tutorial Bangla Series এই video তে আমি React এর আরেকটি hook - useRef নিয়ে আলোচনা করেছি। সেটা করতে গিয়ে forwardRef সম্পর্কেও বিস্তারিত বলেছি। মূলত useRef hook টি ব্যবহার করার হয় DOM Node ধরতে এবং DOM Related Operation গুলো React এর way তে handle করতে। আশা করি video টি আপনাদের উপকারে আসবে।",
       author: "Learn with Sumit",
@@ -418,7 +492,8 @@ export const classes = {
     },
     {
       id: 24,
-      title: "#23 React Hooks Bangla - React useReducer hook Bangla - React Tutorial Bangla Series",
+      title:
+        "#23 React Hooks Bangla - React useReducer hook Bangla - React Tutorial Bangla Series",
       description:
         "React Hooks Bangla - React useReducer hook Bangla - React Tutorial Bangla Series এই video তে আমি React এর useReducer() hook নিয়ে আলোচনা করেছি। যেহেতু এই hook টিকে React এর সবচেয়ে কঠিন hook বলা হয় তাই এটা নিয়ে অনেক গুলো উদাহরণ দিয়ে আমি বিস্তারিত আলোচনা করেছি। শুধু তাই নয় এই useReducer() hook টি জনপ্রিয় state management library Redux এর concept এর একটা foundation বলে আমি মনে করি। আশা করি video টি আপনাদের উপকারে আসবে।",
       author: "Learn with Sumit",
@@ -434,7 +509,8 @@ export const classes = {
     },
     {
       id: 25,
-      title: "#24 React Hooks Bangla - React custom hook Bangla Tutorial - React Tutorial Bangla Series",
+      title:
+        "#24 React Hooks Bangla - React custom hook Bangla Tutorial - React Tutorial Bangla Series",
       description:
         "React Hooks Bangla - React custom hook Bangla Tutorial - React Tutorial Bangla Series এই video তে আমি আলোচনা করেছি React এর custom hook নিয়ে। বিভিন্ন built-in hook এর পাশাপাশি আমরা আমাদের প্রয়োজন মতো React - এ custom hook বানিয়ে নিতে পারি এবং সেটাকে ব্যবহার করে re-usable functionality achieve করতে পারি। আশা করি tutorial টি আপনাদের উপকারে আসবে।",
       author: "Learn with Sumit",
@@ -450,7 +526,8 @@ export const classes = {
     },
     {
       id: 26,
-      title: "#25 Styling React Components - Stylesheets Inline Style & CSS Modules - React Tutorial Bangla Series",
+      title:
+        "#25 Styling React Components - Stylesheets Inline Style & CSS Modules - React Tutorial Bangla Series",
       description:
         "Styling React Components - Stylesheets Inline Style & CSS Modules - React Tutorial Bangla Series In this React Tutorial Bangla series, I have explained about Styling in React. You will understand how we can style React components with stylesheets, inline style and css modules.",
       author: "Learn with Sumit",
@@ -466,7 +543,8 @@ export const classes = {
     },
     {
       id: 27,
-      title: "#26 React Styled Components Tutorial - React Styling - CSS in JS - React Tutorial Bangla Series",
+      title:
+        "#26 React Styled Components Tutorial - React Styling - CSS in JS - React Tutorial Bangla Series",
       description:
         "React Styled Components Tutorial - React Styling - CSS in JS - React Tutorial Bangla Series In this React Bangla Tutorial, I have explained about Styled Components in React and thereby learn how to inject CSS in JS. You will understand how we can style React components with styled components and achieve css modularity and completely separate logic from styles.",
       author: "Learn with Sumit",
@@ -482,7 +560,8 @@ export const classes = {
     },
     {
       id: 28,
-      title: "#27 [Deprecated] React Router DOM Complete Guide - React Tutorial Bangla Series",
+      title:
+        "#27 [Deprecated] React Router DOM Complete Guide - React Tutorial Bangla Series",
       description:
         "React Router Tutorial Bangla - React Router DOM Complete Guide In this video, I explained React Router DOM according to its Documentation. If you have never used React Router before and want to achieve navigation in your react application, then this tutorial is for you. This tutorial is exclusively in Bangla language. Note: Please note that, react router dom package was updated to version 6 with lots of breaking changes. So following this tutorial might lead to confusion and lot of syntaxes shown in this tutorial might not work. I have a dedicated tutorial on React Router version 6 which you must follow after watching this tutorial. Here it is : https://lwsbd.link/rr6",
       author: "Learn with Sumit",
@@ -498,7 +577,8 @@ export const classes = {
     },
     {
       id: 29,
-      title: "#28 React Project Tutorial - Quiz Application with Firebase - Part 1",
+      title:
+        "#28 React Project Tutorial - Quiz Application with Firebase - Part 1",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 1",
       author: "Learn with Sumit",
@@ -514,7 +594,8 @@ export const classes = {
     },
     {
       id: 30,
-      title: "#29 React Project Tutorial - Quiz Application with Firebase - Part 2",
+      title:
+        "#29 React Project Tutorial - Quiz Application with Firebase - Part 2",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 2",
       author: "Learn with Sumit",
@@ -530,7 +611,8 @@ export const classes = {
     },
     {
       id: 31,
-      title: "#30 React Project Tutorial - Quiz Application with Firebase - Part 3",
+      title:
+        "#30 React Project Tutorial - Quiz Application with Firebase - Part 3",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 3",
       author: "Learn with Sumit",
@@ -546,7 +628,8 @@ export const classes = {
     },
     {
       id: 32,
-      title: "#31 React Project Tutorial - Quiz Application with Firebase - Part 4",
+      title:
+        "#31 React Project Tutorial - Quiz Application with Firebase - Part 4",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 4",
       author: "Learn with Sumit",
@@ -562,7 +645,8 @@ export const classes = {
     },
     {
       id: 33,
-      title: "#32 React Project Tutorial - Quiz Application with Firebase - Part 5",
+      title:
+        "#32 React Project Tutorial - Quiz Application with Firebase - Part 5",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 5",
       author: "Learn with Sumit",
@@ -578,7 +662,8 @@ export const classes = {
     },
     {
       id: 34,
-      title: "#33 React Project Tutorial - Quiz Application with Firebase - Part 6",
+      title:
+        "#33 React Project Tutorial - Quiz Application with Firebase - Part 6",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 6",
       author: "Learn with Sumit",
@@ -594,7 +679,8 @@ export const classes = {
     },
     {
       id: 35,
-      title: "#34 React Project Tutorial - Quiz Application with Firebase - Part 7",
+      title:
+        "#34 React Project Tutorial - Quiz Application with Firebase - Part 7",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 7",
       author: "Learn with Sumit",
@@ -610,7 +696,8 @@ export const classes = {
     },
     {
       id: 36,
-      title: "#35 React Project Tutorial - Quiz Application with Firebase - Part 8",
+      title:
+        "#35 React Project Tutorial - Quiz Application with Firebase - Part 8",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 8",
       author: "Learn with Sumit",
@@ -626,7 +713,8 @@ export const classes = {
     },
     {
       id: 37,
-      title: "#36 React Project Tutorial - Quiz Application with Firebase - Part 9",
+      title:
+        "#36 React Project Tutorial - Quiz Application with Firebase - Part 9",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 9",
       author: "Learn with Sumit",
@@ -642,7 +730,8 @@ export const classes = {
     },
     {
       id: 38,
-      title: "#37 React Project Tutorial - Quiz Application with Firebase - Part 10",
+      title:
+        "#37 React Project Tutorial - Quiz Application with Firebase - Part 10",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 10",
       author: "Learn with Sumit",
@@ -658,7 +747,8 @@ export const classes = {
     },
     {
       id: 39,
-      title: "#38 React Project Tutorial - Quiz Application with Firebase - Part 11",
+      title:
+        "#38 React Project Tutorial - Quiz Application with Firebase - Part 11",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 11",
       author: "Learn with Sumit",
@@ -674,7 +764,8 @@ export const classes = {
     },
     {
       id: 40,
-      title: "#39 React Project Tutorial - Quiz Application with Firebase - Part 12",
+      title:
+        "#39 React Project Tutorial - Quiz Application with Firebase - Part 12",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 12",
       author: "Learn with Sumit",
@@ -690,7 +781,8 @@ export const classes = {
     },
     {
       id: 41,
-      title: "#40 React Project Tutorial - Quiz Application with Firebase - Part 13",
+      title:
+        "#40 React Project Tutorial - Quiz Application with Firebase - Part 13",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 12",
       author: "Learn with Sumit",
@@ -706,7 +798,8 @@ export const classes = {
     },
     {
       id: 42,
-      title: "#41 React Project Tutorial - Quiz Application with Firebase - Part 14",
+      title:
+        "#41 React Project Tutorial - Quiz Application with Firebase - Part 14",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 14",
       author: "Learn with Sumit",
@@ -722,7 +815,8 @@ export const classes = {
     },
     {
       id: 43,
-      title: "#42 React Project Tutorial - Quiz Application with Firebase - Part 15",
+      title:
+        "#42 React Project Tutorial - Quiz Application with Firebase - Part 15",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 15",
       author: "Learn with Sumit",
@@ -738,7 +832,8 @@ export const classes = {
     },
     {
       id: 44,
-      title: "#43 React Project Tutorial - Quiz Application with Firebase - Part 16",
+      title:
+        "#43 React Project Tutorial - Quiz Application with Firebase - Part 16",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 16",
       author: "Learn with Sumit",
@@ -754,7 +849,8 @@ export const classes = {
     },
     {
       id: 45,
-      title: "#44 React Project Tutorial - Quiz Application with Firebase - Part 17",
+      title:
+        "#44 React Project Tutorial - Quiz Application with Firebase - Part 17",
       description:
         "Complete React Project developed with create-react-app package and Google Firebase as back-end Database & Authentication - Part 17",
       author: "Learn with Sumit",
@@ -770,7 +866,8 @@ export const classes = {
     },
     {
       id: 46,
-      title: "#45 React Router DOM v6 Bangla Tutorial - Breaking Changes - React Router 6 vs 5",
+      title:
+        "#45 React Router DOM v6 Bangla Tutorial - Breaking Changes - React Router 6 vs 5",
       description:
         "In this React Router DOM v6 Bangla tutorial, you will learn how to install react router dom 6, what are the breaking changes in react router 6, difference between react router 6 vs 5, how to upgrade from react router v5 to react router v6.  Previously, I provided a detail Bangla Tutorial on React Router DOM but that was based on React Router version 5. You will get that tutorial link from below.",
       author: "Learn with Sumit",
@@ -834,7 +931,8 @@ export const classes = {
     },
     {
       id: 50,
-      title: "4 ways to fetch fetch data from API in React (Bangla) | fetch axios swr and react-query",
+      title:
+        "4 ways to fetch fetch data from API in React (Bangla) | fetch axios swr and react-query",
       description:
         "In this video, I have explained 4 ways to fetch fetch data from API in React (Bangla) using fetch API,  axios, swr and react-query.",
       author: "Learn with Sumit",
@@ -850,7 +948,8 @@ export const classes = {
     },
     {
       id: 51,
-      title: "Master React State Management with Preact Signals | Step-by-Step Tutorial",
+      title:
+        "Master React State Management with Preact Signals | Step-by-Step Tutorial",
       description:
         "Welcome to this in-depth tutorial where we dive into the world of React state management using Preact's powerful signals utility. Whether you're a beginner looking to grasp the fundamentals or an experienced developer seeking to enhance your skills, this comprehensive guide has you covered. In this tutorial, we'll cover: Understanding React Signals: We'll start from the basics, explaining what signals are and why they're a game-changer for state management in React and Preact applications. Installation and Setup: Follow along as we walk you through the installation process and set up a project environment to get started with React Signals quickly. Creating a Reactive Component: Learn how to build a reactive component that responds to changes in your application's state effortlessly. Managing Complex State: Dive deep into handling complex state scenarios with React Signals, ensuring your application remains maintainable and efficient. By the end of this tutorial, you'll have a solid understanding of React state management with Preact Signals, enabling you to build robust and highly responsive web applications. Don't forget to like, subscribe, and hit the notification bell to stay updated with our latest tutorials. Let's get started!",
       author: "Learn with Sumit",
@@ -880,7 +979,6 @@ export const classes = {
       likes: 0,
       unlikes: 0,
     },
-    
   ],
   next: [
     {

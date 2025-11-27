@@ -1,6 +1,6 @@
-import Container from "@/app/ui/Container";
 import Image from "next/image";
 import React from "react";
+import Container from "../ui/Container";
 
 export default function Teachers() {
   return (
