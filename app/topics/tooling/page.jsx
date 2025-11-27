@@ -1,9 +1,8 @@
-import Container from "@/components/ui/Container";
 import Link from "next/link";
-import React from "react";
 import { FaGitSquare, FaDocker } from "react-icons/fa";
 import { SiMysql } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
+import Container from "../../../components/ui/Container";
 
 const topics = [
   {

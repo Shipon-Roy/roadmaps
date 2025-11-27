@@ -1,6 +1,6 @@
 import Link from "next/link";
-import Container from "../../components/ui/Container";
 import { topics } from "../../public/classes";
+import Container from "../../components/ui/Container";
 
 export default function page() {
   return (
