@@ -6,11 +6,16 @@ export default async function BlogList() {
 
   return (
     <div className="max-w-6xl mx-auto py-16 px-4">
-      <h1 className="text-4xl font-bold mb-12 text-center text-gray-50">
-        All Blog Posts
-      </h1>
-
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="mx-auto max-w-2xl lg:mx-0">
+        <h2 className="text-4xl font-semibold tracking-tight text-pretty text-white sm:text-5xl">
+          From the blog
+        </h2>
+        <p className="mt-2 text-lg/8 text-gray-300">
+          Learn how to grow your skill with our expert advice.
+        </p>
+      </div>
+      <hr className="my-10" />
+      <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-8">
         {posts.map((post) => (
           <Link
             key={post.slug}
@@ -18,16 +23,14 @@ export default async function BlogList() {
             className="block bg-gray-700 shadow-lg rounded-xl overflow-hidden hover:shadow-2xl transition-shadow duration-300 group"
           >
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-2 text-gray-100 group-hover:text-blue-600 transition-colors duration-300">
+              <h2 className="text-2xl font-semibold mb-2 text-gray-100  transition-colors duration-300">
                 {post.title || post.slug.replace(/-/g, " ")}
               </h2>
               {post.date && (
-                <p className="text-sm text-gray-500 mb-4">{post.date}</p>
+                <p className="text-sm text-gray-300 mb-4">{post.date}</p>
               )}
-              {post.description && (
-                <p className="text-gray-700">{post.description}</p>
-              )}
-              <span className="inline-block mt-4 text-blue-600 font-medium group-hover:underline">
+              {post.name && <p className="text-gray-300">{post.name}</p>}
+              <span className="inline-block mt-4 text-green-400 font-medium group-hover:underline">
                 Read More →
               </span>
             </div>
