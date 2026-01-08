@@ -222,7 +222,7 @@ export default function Mern() {
           </div>
           <div
             data-aos="fade-up"
-            className="flex-col-reverse lg:flex-row-reverse relative flex lg:flex-row lg:items-center lg:gap-12"
+            className="flex-col-reverse relative flex lg:flex-row lg:items-center lg:gap-12"
           >
             <div className="grid w-full place-items-center lg:min-h-[536px]">
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
@@ -457,7 +457,7 @@ export default function Mern() {
           </div>
           <div
             data-aos="fade-up"
-            className="flex-col-reverse lg:flex-row-reverse relative flex  lg:flex-row lg:items-center lg:gap-12"
+            className="flex-col-reverse lg:flex-row-reverse relative flex lg:items-center lg:gap-12"
           >
             <div className="grid w-full place-items-center lg:min-h-[536px]">
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
@@ -695,7 +695,7 @@ export default function Mern() {
           </div>
           <div
             data-aos="fade-up"
-            className="flex-col-reverse lg:flex-row-reverse relative flex  lg:flex-row lg:items-center lg:gap-12"
+            className="flex-col-reverse lg:flex-row-reverse relative flex lg:items-center lg:gap-12"
           >
             <div className="grid w-full place-items-center lg:min-h-[536px]">
               <div className="w-full" style={{ opacity: 1, transform: "none" }}>
