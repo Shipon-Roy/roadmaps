@@ -224,17 +224,6 @@ export default function Mern() {
             data-aos="fade-up"
             className="flex-col-reverse relative flex lg:flex-row lg:items-center lg:gap-12"
           >
-            <div className="grid w-full place-items-center lg:min-h-[536px]">
-              <div className="w-full" style={{ opacity: 1, transform: "none" }}>
-                <DotLottieReact
-                  autoplay="true"
-                  loop="true"
-                  src="/mern/gitgithub.lottie"
-                  background="transparent"
-                  style={{ width: "100%", height: "100%" }}
-                ></DotLottieReact>
-              </div>
-            </div>
             <div className="h-full w-full space-y-6 bg-gray-700 shadow-2xl rounded-2xl p-4">
               <div
                 className="relative z-10 mx-auto grid w-24 place-items-center py-10 lg:mx-px "
@@ -336,6 +325,17 @@ export default function Mern() {
                   stroke-dasharray="4 8 4 8"
                 ></path>
               </svg>
+            </div>
+            <div className="grid w-full place-items-center lg:min-h-[536px]">
+              <div className="w-full" style={{ opacity: 1, transform: "none" }}>
+                <DotLottieReact
+                  autoplay="true"
+                  loop="true"
+                  src="/mern/gitgithub.lottie"
+                  background="transparent"
+                  style={{ width: "100%", height: "100%" }}
+                ></DotLottieReact>
+              </div>
             </div>
           </div>
           <div
