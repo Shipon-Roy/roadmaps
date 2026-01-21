@@ -25,10 +25,13 @@ export default function Hero() {
             <p
               data-aos="fade-up"
               data-aos-duration="3000"
-              className="text-gray-300 text-xl leading-7 max-w-[500px] mt-5 "
+              className="text-gray-300 text-md leading-7 max-w-[500px] mt-5 "
             >
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci
-              neque porro quibusdam, voluptatibus reiciendis id magnam,
+              Welcome to Free Learning Path, the ultimate destination for anyone
+              looking to learn programming languages for free! Whether you’re a
+              beginner starting from scratch or an experienced developer looking
+              to sharpen your skills, we offer a wide range of resources to help
+              you grow.
             </p>
           </div>
           <div className="w-[50%] h-full">
