@@ -53,6 +53,9 @@ export default function Mern() {
                   ></path>
                 </svg>
               </div>
+              <p className="text-gray-300 font-bold">
+                Hyper Text Markup Language
+              </p>
               <div className="flex justify-between items-center">
                 <Link href="/classes/html/w3">
                   <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
