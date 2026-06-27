@@ -5,12 +5,24 @@ import React from "react";
 
 export default function Mern() {
   return (
-    <div className="wrapper border-general scroll-mt-16 border-t bg-right bg-no-repeat lg:bg-shape2">
-      <div className="container mx-auto space-y-5 ">
-        <div className="w-full text-center">
-          <h1 className="animate-slide-in text-[#7dd3fc] font-semibold text-md mx-auto text-center rounded shadow-md p-2 w-[13rem] bg-gray-700">
-            Learn MERN
-          </h1>
+    <div className="scroll-mt-16 py-24 relative overflow-hidden">
+      {/* subtle divider glow */}
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[1px] bg-gradient-to-r from-transparent via-gray-600/50 to-transparent pointer-events-none" />
+      <div className="container mx-auto space-y-5 px-5 sm:px-6 lg:px-8 xl:px-12 2xl:px-20">
+        <div className="w-full text-center space-y-4 mb-12">
+          <span className="inline-block text-xs font-semibold uppercase tracking-widest text-sky-400 bg-sky-400/10 px-4 py-1.5 rounded-full border border-sky-400/20">
+            Curriculum
+          </span>
+          <h2 className="text-4xl lg:text-5xl font-bold text-white">
+            Learn the{" "}
+            <span className="bg-gradient-to-r from-sky-400 to-cyan-400 bg-clip-text text-transparent">
+              MERN Stack
+            </span>
+          </h2>
+          <p className="text-gray-400 text-lg max-w-[560px] mx-auto">
+            A complete learning path covering everything from HTML basics to
+            full-stack MERN development.
+          </p>
         </div>
 
         <div className="relative mx-auto max-w-7xl space-y-1 lg:px-20">
@@ -29,7 +41,7 @@ export default function Mern() {
                 ></DotLottieReact>
               </div>
             </div>
-            <div className="h-full w-full space-y-6 bg-gray-700 shadow-2xl rounded-2xl p-4">
+            <div className="h-full w-full space-y-6 bg-gray-800/60 border border-gray-700/50 backdrop-blur-sm shadow-2xl rounded-2xl p-6">
               <div
                 className="relative z-10 mx-auto grid w-24 place-items-center py-10 lg:mx-px "
                 style={{ transform: "none" }}
@@ -58,7 +70,7 @@ export default function Mern() {
               </p>
               <div className="flex justify-between items-center">
                 <Link href="/classes/html/w3">
-                  <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex  bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/w3schools.png"
                       alt="W3Schools logo"
@@ -78,7 +90,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/html/stacklearner">
-                  <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex  bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/stacklearner.png"
                       alt="stack learner"
@@ -100,7 +112,7 @@ export default function Mern() {
               </div>
 
               <svg
-                className="absolute left-[20%] top-[85%] hidden lg:block"
+                className="absolute left-[40%] top-[100%] rotate-[10deg] hidden lg:block"
                 width="432"
                 height="125"
                 fill="none"
@@ -138,7 +150,7 @@ export default function Mern() {
                 ></DotLottieReact>
               </div>
             </div>
-            <div className="h-full w-full space-y-6 bg-gray-700 shadow-2xl rounded-2xl p-4">
+            <div className="h-full w-full space-y-6 bg-gray-800/60 border border-gray-700/50 backdrop-blur-sm shadow-2xl rounded-2xl p-6">
               <div
                 className="relative z-10 mx-auto grid w-24 place-items-center py-10 lg:mx-px "
                 style={{ transform: "none" }}
@@ -165,7 +177,7 @@ export default function Mern() {
               <p className="text-gray-300 font-bold">Cascading Style Sheets</p>
               <div className="flex justify-between items-center">
                 <Link href="/classes/css/w3">
-                  <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex  bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/w3schools.png"
                       alt="stack learner"
@@ -185,7 +197,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="classes/css/stacklearner">
-                  <div className="flex  bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex  bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/stacklearner.png"
                       alt="stack learner"
@@ -207,7 +219,7 @@ export default function Mern() {
               </div>
 
               <svg
-                className="absolute left-[10%] top-[79%] z-0 hidden h-[268.09px] w-full -rotate-6 transform lg:block"
+                className="absolute left-[-30%] top-[85%] z-0 hidden h-[268.09px] w-full -rotate-[12deg] transform lg:block"
                 width="100%"
                 height="268.09px"
                 fill="none"
@@ -228,7 +240,7 @@ export default function Mern() {
             data-aos="fade-up"
             className="flex-col-reverse relative flex lg:flex-row lg:items-center lg:gap-12"
           >
-            <div className="h-full w-full space-y-6 bg-gray-700 shadow-2xl rounded-2xl p-4">
+            <div className="h-full w-full space-y-6 bg-gray-800/60 border border-gray-700/50 backdrop-blur-sm shadow-2xl rounded-2xl p-6">
               <div
                 className="relative z-10 mx-auto grid w-24 place-items-center py-10 lg:mx-px "
                 style={{ transform: "none" }}
@@ -255,7 +267,7 @@ export default function Mern() {
               </div>
               <div className="flex justify-between items-center gap-4">
                 <Link href="/classes/gitgithub/anisul">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/anisul.png"
                       alt="stack learner"
@@ -275,7 +287,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/gitgithub/lws">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/lws.png"
                       alt="Sumit shaha"
@@ -295,7 +307,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/gitgithub/stacklearner">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/stacklearner.png"
                       alt="stack learner"
@@ -316,7 +328,7 @@ export default function Mern() {
                 </Link>
               </div>
               <svg
-                className="absolute left-[55%] -bottom-[20%] hidden h-[150px] w-[580px] -translate-x-1/2 -translate-y-1/2 transform lg:block"
+                className="absolute left-[100%] -bottom-[100%] hidden h-[150px] w-[580px] -translate-x-1/2 -translate-y-1/2 transform lg:block"
                 fill="none"
                 data-reveal="in-fade"
               >
@@ -357,7 +369,7 @@ export default function Mern() {
                 ></DotLottieReact>
               </div>
             </div>
-            <div className="h-full w-full space-y-6 bg-gray-700 shadow-2xl rounded-2xl p-4">
+            <div className="h-full w-full space-y-6 bg-gray-800/60 border border-gray-700/50 backdrop-blur-sm shadow-2xl rounded-2xl p-6">
               <div
                 className="relative z-10 mx-auto grid w-24 place-items-center py-10 lg:mx-px "
                 style={{ transform: "none" }}
@@ -383,7 +395,7 @@ export default function Mern() {
               </div>
               <div className="flex justify-between items-center gap-4">
                 <Link href="/classes/javascript/anisul">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/anisul.png"
                       alt="stack learner"
@@ -403,7 +415,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/javascript/lws">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/lws.png"
                       alt="stack learner"
@@ -423,7 +435,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/javascript/stacklearner">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/stacklearner.png"
                       alt="stack learner"
@@ -444,7 +456,7 @@ export default function Mern() {
                 </Link>
               </div>
               <svg
-                className="absolute -bottom-[35%] right-[35%] hidden h-[190px] w-[620px] -rotate-[17deg] lg:block z-50"
+                className="absolute -bottom-[98%] right-[35%] hidden h-[190px] w-[620px] -rotate-[10deg] lg:block z-50"
                 fill="none"
                 data-reveal="in-fade"
               >
@@ -474,7 +486,7 @@ export default function Mern() {
                 ></DotLottieReact>
               </div>
             </div>
-            <div className="h-full w-full space-y-6 bg-gray-700 shadow-2xl rounded-2xl p-4">
+            <div className="h-full w-full space-y-6 bg-gray-800/60 border border-gray-700/50 backdrop-blur-sm shadow-2xl rounded-2xl p-6">
               <div
                 className="relative z-10 mx-auto grid w-24 place-items-center py-10 lg:mx-px "
                 // style={{
@@ -502,7 +514,7 @@ export default function Mern() {
               </div>
               <div className="flex justify-between items-center gap-4">
                 <Link href="/classes/reactjs/anisul">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/anisul.png"
                       alt="stack learner"
@@ -522,7 +534,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/reactjs/lws">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/lws.png"
                       alt="stack learner"
@@ -542,7 +554,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/reactjs/stacklearner">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/stacklearner.png"
                       alt="stack learner"
@@ -563,7 +575,7 @@ export default function Mern() {
                 </Link>
               </div>
               <svg
-                className="absolute left-[20%] top-[85%] hidden lg:block"
+                className="absolute left-[50%] top-[120%] rotate-[10deg] hidden lg:block"
                 width="432"
                 height="125"
                 fill="none"
@@ -595,7 +607,7 @@ export default function Mern() {
                 ></DotLottieReact>
               </div>
             </div>
-            <div className="h-full w-full space-y-6 bg-gray-700 shadow-2xl rounded-2xl p-4">
+            <div className="h-full w-full space-y-6 bg-gray-800/60 border border-gray-700/50 backdrop-blur-sm shadow-2xl rounded-2xl p-6">
               <div
                 className="relative z-10 mx-auto grid w-24 place-items-center py-10 lg:mx-px "
                 style={{ transform: "none" }}
@@ -621,7 +633,7 @@ export default function Mern() {
               </div>
               <div className="flex justify-between items-center gap-4">
                 <Link href="/classes/nodejs/anisul">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/anisul.png"
                       alt="stack learner"
@@ -641,7 +653,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/nodejs/lws">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/lws.png"
                       alt="stack learner"
@@ -661,7 +673,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/nodejs/stacklearner">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/stacklearner.png"
                       alt="stack learner"
@@ -679,7 +691,7 @@ export default function Mern() {
                       </p>
                     </div>
                     <svg
-                      className="absolute -bottom-[35%] right-[35%] hidden h-[190px] w-[620px] -rotate-[17deg] lg:block z-50"
+                      className="absolute -bottom-[100%] right-[35%] hidden h-[190px] w-[620px] -rotate-[12deg] lg:block z-50"
                       fill="none"
                       data-reveal="in-fade"
                     >
@@ -712,7 +724,7 @@ export default function Mern() {
                 ></DotLottieReact>
               </div>
             </div>
-            <div className="h-full w-full space-y-6 bg-gray-700 shadow-2xl rounded-2xl p-4">
+            <div className="h-full w-full space-y-6 bg-gray-800/60 border border-gray-700/50 backdrop-blur-sm shadow-2xl rounded-2xl p-6">
               <div
                 className="relative z-10 mx-auto grid w-24 place-items-center py-10 lg:mx-px "
                 // style={{
@@ -740,7 +752,7 @@ export default function Mern() {
               </div>
               <div className="flex justify-between items-center gap-4">
                 <Link href="/classes/mongodb/anisul">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/anisul.png"
                       alt="stack learner"
@@ -760,7 +772,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/mongodb/lws">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/lws.png"
                       alt="stack learner"
@@ -780,7 +792,7 @@ export default function Mern() {
                   </div>
                 </Link>
                 <Link href="/classes/mongodb/stacklearner">
-                  <div className="flex w-[180px] h-[70px] bg-gray-500 shadow-2xl rounded-2xl">
+                  <div className="flex w-[180px] h-[70px] bg-gray-700/80 hover:bg-gray-700 transition-colors duration-200 shadow-xl rounded-2xl">
                     <Image
                       src="/mern/stacklearner.png"
                       alt="stack learner"
