@@ -1049,7 +1049,7 @@ function getYouTubeVideoId(url) {
     }
 
     const match = url.match(
-      /(?:\/shorts\/|\/watch\?v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/
+      /(?:\/shorts\/|\/watch\?v=|\/embed\/|youtu\.be\/)([a-zA-Z0-9_-]{11})/,
     );
     return match ? match[1] : null;
   } catch (err) {
@@ -1061,18 +1061,18 @@ export default function Page({ params }) {
   const { topic, provider } = params;
 
   const topicData = useMemo(
-    () => classData?.[topic]?.[provider],
-    [topic, provider]
+    () => classData?.[topic]?.[provider] ?? null,
+    [topic, provider],
   );
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedVideo, setSelectedVideo] = useState(null);
 
   useEffect(() => {
-    if (topicData && topicData.length > 0) {
-      setSelectedVideo(topicData[0]);
-      setCurrentIndex(0);
-    }
+    if (!topicData?.length) return;
+
+    setSelectedVideo(topicData[0]);
+    setCurrentIndex(0);
   }, [topicData]);
 
   if (!topicData) {

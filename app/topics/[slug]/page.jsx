@@ -5,8 +5,8 @@ import { classes } from "../../../public/classes";
 export default function Page({ params }) {
   const { slug } = params;
 
-  // Wrap in useMemo so the reference stays stable across renders
-  const selectedClasses = useMemo(() => classes[slug] || [], [slug]);
+  // Keep the selected classes list stable across renders so the effect dependency stays predictable.
+  const selectedClasses = useMemo(() => classes[slug] ?? [], [slug]);
 
   // State to hold the current selected video
   const [currentVideo, setCurrentVideo] = useState(null);
@@ -64,7 +64,7 @@ export default function Page({ params }) {
                   >
                     <span className="text-sm">{cls.title}</span>
                   </li>
-                )
+                ),
               )
             ) : (
               <li className="text-gray-400">
