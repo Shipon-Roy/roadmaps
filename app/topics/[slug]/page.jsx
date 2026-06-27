@@ -1,12 +1,12 @@
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { classes } from "../../../public/classes";
 
 export default function Page({ params }) {
   const { slug } = params;
 
-  // Dynamically select the appropriate classes based on the slug
-  const selectedClasses = classes[slug] || []; // If the slug is "react" or "next", it will select the corresponding classes
+  // Wrap in useMemo so the reference stays stable across renders
+  const selectedClasses = useMemo(() => classes[slug] || [], [slug]);
 
   // State to hold the current selected video
   const [currentVideo, setCurrentVideo] = useState(null);

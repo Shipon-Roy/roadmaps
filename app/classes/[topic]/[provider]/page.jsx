@@ -1072,7 +1072,7 @@ export default function Page({ params }) {
       setSelectedVideo(topicData[0]);
       setCurrentIndex(0);
     }
-  }, [topic, provider]);
+  }, [topic, provider, topicData]);
 
   if (!topicData) {
     return (
