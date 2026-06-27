@@ -1066,9 +1066,7 @@ export default function Page({ params }) {
   );
 
   const [currentIndex, setCurrentIndex] = useState(0);
-  const [selectedVideo, setSelectedVideo] = useState(
-    topicData && topicData.length > 0 ? topicData[0] : null
-  );
+  const [selectedVideo, setSelectedVideo] = useState(null);
 
   useEffect(() => {
     if (topicData && topicData.length > 0) {
