@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import Container from "../../../../components/ui/Container";
 
 // ✅ Static class data organized by topic and provider
@@ -1060,7 +1060,10 @@ function getYouTubeVideoId(url) {
 export default function Page({ params }) {
   const { topic, provider } = params;
 
-  const topicData = classData?.[topic]?.[provider];
+  const topicData = useMemo(
+    () => classData?.[topic]?.[provider],
+    [topic, provider]
+  );
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [selectedVideo, setSelectedVideo] = useState(
@@ -1072,7 +1075,7 @@ export default function Page({ params }) {
       setSelectedVideo(topicData[0]);
       setCurrentIndex(0);
     }
-  }, [topic, provider, topicData]);
+  }, [topicData]);
 
   if (!topicData) {
     return (
