@@ -1,12 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  images: {
-    domains: ["i3.ytimg.com"], // Allow images from ytimg.com
-  },
-  eslint: {
-    // Warnings don't block production builds
-    ignoreDuringBuilds: true,
-  },
+images: {
+remotePatterns: [
+{
+protocol: "https",
+hostname: "i3.ytimg.com",
+},
+],
+},
 };
 
 module.exports = nextConfig;
