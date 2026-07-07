@@ -1,9 +1,9 @@
 "use client";
-import { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import { classes } from "../../../public/classes";
 
 export default function Page({ params }) {
-  const { slug } = params;
+  const { slug } = React.use(params);
 
   // Keep the selected classes list stable across renders so the effect dependency stays predictable.
   const selectedClasses = useMemo(() => classes[slug] ?? [], [slug]);

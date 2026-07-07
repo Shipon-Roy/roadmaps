@@ -14,7 +14,7 @@ import {
   SiPython,
   SiVuedotjs,
   SiTailwindcss,
-  SiNuxtdotjs,
+  SiNuxt,
 } from "react-icons/si";
 import { FaGolang } from "react-icons/fa6";
 import { TbBrandVscode } from "react-icons/tb";
@@ -91,7 +91,7 @@ export const topics = [
     link: "/tailwindcss",
   },
   {
-    icon: <SiNuxtdotjs />,
+    icon: <SiNuxt />,
     topic: "Nuxt",
     link: "/nuxt",
   },

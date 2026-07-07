@@ -1,12 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { FaReact, FaLaravel, FaAngular } from "react-icons/fa";
-import {
-  SiNextdotjs,
-  SiVuedotjs,
-  SiTailwindcss,
-  SiNuxtdotjs,
-} from "react-icons/si";
+import { SiNextdotjs, SiVuedotjs, SiTailwindcss, SiNuxt } from "react-icons/si";
 
 const topics = [
   {
@@ -35,7 +30,7 @@ const topics = [
     link: "/tailwindcss",
   },
   {
-    icon: <SiNuxtdotjs />,
+    icon: <SiNuxt />,
     topic: "Nuxt",
     link: "/nuxt",
   },

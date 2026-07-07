@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useMemo } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import Container from "../../../../components/ui/Container";
 
 // ✅ Static class data organized by topic and provider
@@ -1058,7 +1058,7 @@ function getYouTubeVideoId(url) {
 }
 
 export default function Page({ params }) {
-  const { topic, provider } = params;
+  const { topic, provider } = React.use(params);
 
   const topicData = useMemo(
     () => classData?.[topic]?.[provider] ?? null,
