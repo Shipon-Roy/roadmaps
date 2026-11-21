@@ -1104,16 +1104,16 @@ export default function Page({ params }) {
 
   return (
     <Container>
-      <div className="my-10">
-        <h1 className="text-[#7dd3fc] font-semibold text-md text-center rounded shadow-md p-2 w-[13rem] mx-auto bg-gray-700">
-          Learn {topic.toUpperCase()} - {provider.toUpperCase()}
-        </h1>
+      <div className="my-10 text-center">
+        <span className="inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-5 py-2 text-sm font-semibold text-primary">
+          Learn {topic.toUpperCase()} — {provider.toUpperCase()}
+        </span>
       </div>
 
-      <div className="flex flex-col lg:flex-row gap-6 p-6 my-10">
+      <div className="my-10 flex flex-col gap-8 p-4 sm:p-6 lg:flex-row">
         {/* Video Player Section */}
         <div className="w-full lg:w-3/4">
-          <div className="aspect-video mb-4 rounded-2xl overflow-hidden shadow-2xl">
+          <div className="mb-4 aspect-video overflow-hidden rounded-xl border bg-card shadow-md">
             {videoId ? (
               <iframe
                 src={`https://www.youtube.com/embed/${videoId}`}
@@ -1121,21 +1121,21 @@ export default function Page({ params }) {
                 allow="autoplay; encrypted-media"
                 allowFullScreen
                 title={selectedVideo?.name}
-                className="w-full h-full"
+                className="h-full w-full"
               />
             ) : (
-              <p className="text-red-500 p-4 text-center bg-gray-800 rounded">
+              <p className="rounded-lg bg-destructive/10 p-4 text-center text-sm text-destructive">
                 Invalid or unsupported video link.
               </p>
             )}
           </div>
 
           {/* Prev/Next Buttons */}
-          <div className="flex justify-center gap-4 mt-4">
+          <div className="mt-4 flex justify-center gap-3">
             <button
               onClick={handlePrev}
               disabled={currentIndex === 0}
-              className="px-4 py-2 bg-blue-600 text-white rounded disabled:opacity-50"
+              className="inline-flex h-10 items-center justify-center rounded-sm border border-border px-5 text-sm font-medium text-foreground transition-colors duration-200 hover:border-primary/40 hover:bg-accent disabled:cursor-not-allowed disabled:opacity-50"
               aria-label="Previous video"
             >
               Previous
@@ -1143,27 +1143,29 @@ export default function Page({ params }) {
             <button
               onClick={handleNext}
               disabled={currentIndex === topicData.length - 1}
-              className="px-4 py-2 bg-blue-600 text-white rounded disabled:opacity-50"
+              className="inline-flex h-10 items-center justify-center rounded-sm bg-blue-600 px-5 text-sm font-medium text-white transition-colors duration-200 hover:bg-blue-700 disabled:cursor-not-allowed disabled:opacity-50 dark:bg-blue-500 dark:hover:bg-blue-600"
               aria-label="Next video"
             >
               Next
             </button>
           </div>
           <div className="my-10">
-            <h2 className="text-xl text-white font-bold">
+            <h2 className="text-lg font-semibold leading-snug text-foreground sm:text-xl">
               {selectedVideo?.name}
             </h2>
-            <p className="text-gray-300">{selectedVideo?.description}</p>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground sm:text-base">
+              {selectedVideo?.description}
+            </p>
           </div>
         </div>
 
         {/* Sidebar */}
-        <div className="w-full lg:w-1/4 text-white space-y-4">
+        <div className="w-full space-y-4 lg:w-1/4">
           <div className="mt-6">
-            <h3 className="text-lg font-semibold border-b border-gray-600 pb-1">
+            <h3 className="border-b border-border pb-2 text-sm font-semibold uppercase tracking-widest text-primary">
               Related Classes
             </h3>
-            <div className="mt-2 max-h-96 overflow-y-auto space-y-2">
+            <div className="mt-2 max-h-96 space-y-2 overflow-y-auto">
               {topicData.map((item, index) => (
                 <button
                   key={index}
@@ -1171,10 +1173,10 @@ export default function Page({ params }) {
                     setSelectedVideo(item);
                     setCurrentIndex(index);
                   }}
-                  className={`block w-full text-left px-3 py-2 rounded hover:bg-gray-700 ${
+                  className={`block w-full rounded-sm border px-3 py-2 text-left text-sm transition-colors duration-200 ${
                     selectedVideo?.videoUrl === item.videoUrl
-                      ? "bg-gray-900 font-bold"
-                      : "bg-gray-800"
+                      ? "border-primary/40 bg-primary/10 font-semibold text-primary"
+                      : "border-border bg-card/60 text-muted-foreground hover:border-primary/40 hover:text-foreground"
                   }`}
                 >
                   {item.name}

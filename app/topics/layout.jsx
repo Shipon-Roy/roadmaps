@@ -10,22 +10,18 @@ export default function layout({ children }) {
 
   const getActiveClass = (path) => {
     const isActive = pathname === path;
-    return `group relative px-8 py-4 bg-gradient-to-r from-slate-700 via-${
-      isActive ? "blue-800/60" : "blue-800/30"
-    } to-slate-800 backdrop-blur-xl rounded-3xl border ${
+    return `group relative inline-flex items-center gap-2 rounded-sm border px-5 py-2.5 text-sm font-medium transition-colors duration-200 ${
       isActive
-        ? "border-blue-400/60 ring-2 ring-blue-400/30 shadow-3xl shadow-blue-500/30 scale-105"
-        : "border-white/20 shadow-2xl"
-    } hover:shadow-3xl hover:shadow-blue-500/25 hover:-translate-y-2 hover:from-blue-600 hover:to-purple-700/50 transition-all duration-500 text-white font-bold text-lg overflow-hidden ${
-      isActive ? "ring-2 ring-blue-400/40" : ""
+        ? "border-primary/40 bg-primary/10 text-primary"
+        : "border-border bg-secondary/40 text-muted-foreground hover:border-primary/40 hover:text-foreground"
     }`;
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-slate-900 via-blue-900/20 to-slate-900">
+    <div className="min-h-screen">
       <Banner />
       <Container>
-        <div className="flex items-center justify-center gap-4 py-12 -m-4">
+        <div className="flex flex-wrap items-center justify-center gap-3 py-10">
           <Link href="/topics/">
             <button className={getActiveClass("/topics/")}>
               <span className="relative z-10 flex items-center gap-2">

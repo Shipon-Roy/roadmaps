@@ -1,78 +1,98 @@
-import React from "react";
 import Container from "../../components/ui/Container";
+
+const values = [
+  {
+    title: "Completely Free",
+    desc: "Every roadmap, class, and article on this platform costs nothing — forever.",
+    accent: "text-emerald-400",
+  },
+  {
+    title: "Structured Paths",
+    desc: "No random tutorials. Each topic follows a step-by-step order that actually builds on the last one.",
+    accent: "text-blue-400",
+  },
+  {
+    title: "Industry Ready",
+    desc: "Learn the exact skills companies ask for, not outdated syntax from a decade ago.",
+    accent: "text-purple-400",
+  },
+];
 
 export default function About() {
   return (
-    <Container>
-      <div className="max-w-4xl mx-auto px-4 py-12">
-        {/* Hero Section */}
-        <div className="text-center mb-16">
-          <h1 className="text-blue-300 font-bold text-4xl md:text-5xl mb-6 bg-gradient-to-r from-blue-300 to-sky-400 bg-clip-text text-transparent drop-shadow-lg">
-            About Us
-          </h1>
-          <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-sky-500 mx-auto rounded-full mb-8"></div>
-        </div>
-
-        {/* Main Content */}
-        <div className="space-y-8">
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300">
-            <p className="text-white text-lg leading-relaxed">
-              Welcome to{" "}
-              <span className="text-sky-400 font-semibold bg-sky-400/20 px-2 py-1 rounded-lg">
-                Free Learning Path
-              </span>
-              , the ultimate destination for anyone looking to learn programming
-              languages for free! Whether you&rsquo;re a beginner starting from
-              scratch or an experienced developer looking to sharpen your
-              skills, we offer a wide range of resources to help you grow.
-            </p>
-          </div>
-
-          <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 shadow-2xl hover:shadow-blue-500/25 transition-all duration-300">
-            <p className="text-white text-lg leading-relaxed">
-              At{" "}
-              <span className="text-sky-400 font-semibold bg-sky-400/20 px-2 py-1 rounded-lg">
-                Free Learning Path
-              </span>
-              , we believe that learning to code should be accessible to
-              everyone, regardless of their location, background, or financial
-              situation. That&rsquo;s why we&rsquo;ve dedicated ourselves to
-              providing high-quality programming tutorials, courses, and
-              exercises that are completely{" "}
-              <span className="text-green-400 font-bold">free of charge</span>.
-            </p>
-          </div>
-        </div>
-
-        {/* Mission Section */}
-        <div className="mt-20">
-          <div className="text-center mb-12">
-            <h1 className="text-blue-300 font-bold text-4xl md:text-5xl bg-gradient-to-r from-blue-300 to-sky-400 bg-clip-text text-transparent drop-shadow-lg">
-              Our Mission
+    <div className="py-24">
+      <Container>
+        <div className="mx-auto max-w-4xl">
+          {/* Header */}
+          <div className="mb-14 space-y-4 text-center">
+            <span className="inline-block rounded-full border border-border bg-secondary px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
+              About
+            </span>
+            <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
+              Free Learning <span className="gradient-text">Path</span>
             </h1>
-            <div className="w-24 h-1 bg-gradient-to-r from-blue-400 to-sky-500 mx-auto mt-4 rounded-full"></div>
+            <p className="mx-auto max-w-2xl text-sm font-medium leading-relaxed text-muted-foreground sm:text-base">
+              The ultimate destination for anyone looking to learn programming
+              for free — from your first line of code to a job-ready developer.
+            </p>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-900/50 to-purple-900/50 backdrop-blur-xl rounded-3xl p-10 border border-white/30 shadow-2xl max-w-3xl mx-auto">
-            <p className="text-white text-xl leading-relaxed text-center font-medium">
+          <div className="divider-glow mb-14 h-px w-full" />
+
+          {/* Intro */}
+          <div className="space-y-4">
+            <p className="leading-relaxed text-muted-foreground">
+              Whether you&rsquo;re a beginner starting from scratch or an
+              experienced developer looking to sharpen your skills, we offer a
+              wide range of resources to help you grow. We believe learning to
+              code should be accessible to everyone, regardless of location,
+              background, or financial situation.
+            </p>
+            <p className="leading-relaxed text-muted-foreground">
+              That&rsquo;s why every tutorial, class, and exercise here is
+              completely{" "}
+              <span className="font-semibold text-emerald-400">
+                free of charge
+              </span>
+              .
+            </p>
+          </div>
+
+          {/* Values */}
+          <div className="mt-14 grid gap-4 sm:grid-cols-3">
+            {values.map((v) => (
+              <div
+                key={v.title}
+                className="rounded-xl border bg-card/60 p-5 shadow-md backdrop-blur-sm"
+              >
+                <div
+                  className={`mb-3 h-1 w-10 rounded-full bg-current ${v.accent}`}
+                  aria-hidden="true"
+                />
+                <h2 className="text-base font-semibold">{v.title}</h2>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                  {v.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* Mission */}
+          <div className="mt-14 rounded-xl border bg-card/60 p-8 shadow-md backdrop-blur-sm">
+            <h2 className="text-lg font-semibold">Our Mission</h2>
+            <p className="mt-4 leading-relaxed text-muted-foreground">
               Our mission is to empower individuals around the world with the
               skills they need to succeed in the ever-evolving tech industry. We
-              are committed to offering a
-              <span className="text-sky-400 font-bold bg-sky-400/20 px-3 py-1 rounded-full">
+              are committed to offering a{" "}
+              <span className="font-semibold text-primary">
                 free, comprehensive learning platform
-              </span>
-              where anyone, regardless of their experience, can dive into the
-              world of programming and software development.
+              </span>{" "}
+              where anyone, regardless of experience, can dive into the world of
+              programming and software development.
             </p>
           </div>
         </div>
-
-        {/* Decorative Elements */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-sky-500/10 rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute -bottom-40 -left-40 w-96 h-96 bg-blue-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
-        </div>
-      </div>
-    </Container>
+      </Container>
+    </div>
   );
 }

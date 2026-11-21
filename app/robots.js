@@ -1,0 +1,16 @@
+const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+
+export default function robots() {
+  return {
+    rules: [
+      {
+        userAgent: "*",
+        allow: "/",
+        // ডাইনামিক ফাইলগুলো crawler-এর জন্য উপযুক্ত নয়
+        disallow: ["/api/", "/_next/"],
+      },
+    ],
+    sitemap: `${SITE_URL}/sitemap.xml`,
+  };
+}

@@ -20,7 +20,6 @@ const features = [
     title: "Learning Paths",
     desc: "Structured, step-by-step roadmaps designed to take you from beginner to job-ready developer.",
     color: "from-sky-500 to-blue-600",
-    glow: "shadow-sky-500/20",
   },
   {
     icon: (
@@ -41,7 +40,6 @@ const features = [
     title: "Gain Skills",
     desc: "Hands-on resources and curated content from top instructors to sharpen your programming skills.",
     color: "from-violet-500 to-purple-600",
-    glow: "shadow-violet-500/20",
   },
   {
     icon: (
@@ -62,17 +60,15 @@ const features = [
     title: "Career Prep",
     desc: "Everything you need to land your first dev job — from portfolio guidance to interview preparation.",
     color: "from-emerald-500 to-teal-600",
-    glow: "shadow-emerald-500/20",
   },
 ];
 
 export default function TechUpdate() {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section className="relative overflow-hidden border-t border-border py-24">
       {/* subtle background */}
       <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[900px] h-[1px] bg-gradient-to-r from-transparent via-gray-600/50 to-transparent" />
-        <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[900px] h-[1px] bg-gradient-to-r from-transparent via-gray-600/50 to-transparent" />
+        <div className="absolute bottom-0 left-1/2 h-px w-[900px] -translate-x-1/2 divider-glow" />
       </div>
 
       <Container>
@@ -80,24 +76,22 @@ export default function TechUpdate() {
         <div className="text-center mb-16 space-y-4">
           <span
             data-aos="fade-up"
-            className="inline-block text-xs font-semibold uppercase tracking-widest text-sky-400 bg-sky-400/10 px-4 py-1.5 rounded-full border border-sky-400/20"
+            className="inline-block rounded-full border border-border bg-secondary px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary"
           >
             What We Offer
           </span>
           <h2
             data-aos="fade-up"
             data-aos-duration="1200"
-            className="text-4xl lg:text-5xl font-bold text-white"
+            className="text-2xl font-extrabold tracking-tight sm:text-3xl"
           >
             More Than Just A{" "}
-            <span className="bg-gradient-to-r from-sky-400 to-cyan-400 bg-clip-text text-transparent">
-              Learning Platform
-            </span>
+            <span className="gradient-text">Learning Platform</span>
           </h2>
           <p
             data-aos="fade-up"
             data-aos-duration="1500"
-            className="text-gray-400 text-lg max-w-[600px] mx-auto leading-relaxed"
+            className="mx-auto max-w-[600px] text-sm font-medium leading-relaxed text-muted-foreground sm:text-base"
           >
             We combine expert instruction, community, and structured content to
             give you the best free learning experience available.
@@ -111,20 +105,20 @@ export default function TechUpdate() {
               key={i}
               data-aos="fade-up"
               data-aos-duration={1000 + i * 200}
-              className={`group relative p-8 rounded-2xl bg-gray-800/50 border border-gray-700/50 hover:border-gray-600 backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 shadow-xl ${f.glow}`}
+              className={`group relative overflow-hidden rounded-lg border bg-card p-6 shadow-sm transition-colors duration-200 hover:border-primary/40 sm:p-8`}
             >
               {/* Icon */}
               <div
-                className={`w-12 h-12 rounded-xl bg-gradient-to-br ${f.color} flex items-center justify-center text-white mb-6 shadow-lg`}
+                className={`w-12 h-12 rounded-lg bg-gradient-to-br ${f.color} flex items-center justify-center text-white mb-6 shadow-sm`}
               >
                 {f.icon}
               </div>
-              <h3 className="text-white font-bold text-xl mb-3">{f.title}</h3>
-              <p className="text-gray-400 leading-relaxed">{f.desc}</p>
+              <h3 className="mb-3 text-lg font-semibold">{f.title}</h3>
+              <p className="text-sm leading-relaxed text-muted-foreground">{f.desc}</p>
 
               {/* Hover glow */}
               <div
-                className={`absolute inset-0 rounded-2xl bg-gradient-to-br ${f.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
+                className={`absolute inset-0 bg-gradient-to-br ${f.color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}
               />
             </div>
           ))}

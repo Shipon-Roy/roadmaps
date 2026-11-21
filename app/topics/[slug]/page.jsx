@@ -42,15 +42,19 @@ export default function Page({ params }) {
   };
 
   return (
-    <div className="text-white my-10">
+    <div className="my-10">
       {/* Dynamically display the topic name */}
-      <h1>{formattedSlug} Classes</h1>
-      <div className="flex justify-between gap-5 w-[80vw]">
+      <h1 className="text-xl font-extrabold tracking-tight sm:text-2xl">
+        {formattedSlug} <span className="gradient-text">Classes</span>
+      </h1>
+      <div className="mt-6 flex flex-col gap-6 lg:flex-row lg:justify-between">
         {/* Sidebar with Clickable Classes */}
-        <div className="w-[25%]">
+        <div className="w-full lg:w-[25%]">
           {/* Set max height and enable scrolling */}
-          <h2 className="text-lg font-semibold mb-4">Other Classes</h2>
-          <ul className="space-y-4 max-h-[400px] overflow-y-auto ">
+          <h2 className="mb-4 text-sm font-semibold uppercase tracking-widest text-primary">
+            Other Classes
+          </h2>
+          <ul className="max-h-[400px] space-y-2 overflow-y-auto">
             {selectedClasses.length > 0 ? (
               selectedClasses.map(
                 // Limit to 10 classes
@@ -58,16 +62,18 @@ export default function Page({ params }) {
                   <li
                     key={index}
                     onClick={() => setCurrentVideo(cls)}
-                    className={`cursor-pointer flex items-center gap-3 hover:bg-gray-800 p-2 rounded-md ${
-                      currentVideo === cls ? "bg-gray-700" : ""
+                    className={`cursor-pointer rounded-sm border p-2.5 text-sm transition-colors duration-200 ${
+                      currentVideo === cls
+                        ? "border-primary/40 bg-primary/10 text-primary"
+                        : "border-border bg-card/60 text-muted-foreground hover:border-primary/40 hover:text-foreground"
                     }`} // Add active class styling here
                   >
-                    <span className="text-sm">{cls.title}</span>
+                    <span>{cls.title}</span>
                   </li>
                 ),
               )
             ) : (
-              <li className="text-gray-400">
+              <li className="text-sm text-muted-foreground">
                 No classes available for this topic.
               </li>
             )}
@@ -75,20 +81,20 @@ export default function Page({ params }) {
         </div>
 
         {/* Video Player */}
-        <div className="w-[75%]">
+        <div className="w-full lg:w-[75%]">
           {selectedClasses.length > 0 && currentVideo ? (
             <iframe
               width="100%"
               height="auto"
               src={`${currentVideo.link}?autoplay=1`} // Auto play enabled by appending '?autoplay=1'
               title={currentVideo.title}
-              className="aspect-video rounded"
+              className="aspect-video rounded-xl border bg-card"
               frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
               allowFullScreen
             ></iframe>
           ) : (
-            <div className="text-center text-gray-400">
+            <div className="rounded-xl border bg-card/60 p-10 text-center text-sm text-muted-foreground">
               {/* Placeholder when no class is selected */}
               {selectedClasses.length === 0
                 ? "No classes available for this topic."
@@ -98,12 +104,12 @@ export default function Page({ params }) {
 
           {/* Previous and Next Class Buttons */}
           {selectedClasses.length > 0 && currentVideo && (
-            <div className="mt-4 flex gap-4">
+            <div className="mt-4 flex gap-3">
               {/* Previous Class Button */}
               <button
                 onClick={handlePreviousClass}
                 disabled={selectedClasses.indexOf(currentVideo) === 0} // Disable button on first class
-                className="px-4 py-2 bg-blue-500 text-white rounded-md disabled:bg-gray-400"
+                className="inline-flex h-10 items-center justify-center rounded-sm bg-blue-600 px-5 text-sm font-medium text-white transition-colors duration-200 hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-secondary disabled:text-muted-foreground dark:bg-blue-500 dark:hover:bg-blue-600"
               >
                 Previous Class
               </button>
@@ -115,7 +121,7 @@ export default function Page({ params }) {
                   selectedClasses.indexOf(currentVideo) ===
                   selectedClasses.length - 1
                 } // Disable button on last class
-                className="px-4 py-2 bg-blue-500 text-white rounded-md disabled:bg-gray-400"
+                className="inline-flex h-10 items-center justify-center rounded-sm bg-blue-600 px-5 text-sm font-medium text-white transition-colors duration-200 hover:bg-blue-700 disabled:cursor-not-allowed disabled:bg-secondary disabled:text-muted-foreground dark:bg-blue-500 dark:hover:bg-blue-600"
               >
                 Next Class
               </button>

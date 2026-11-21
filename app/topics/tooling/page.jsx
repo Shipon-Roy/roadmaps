@@ -34,32 +34,38 @@ export default function page() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-6 max-w-5xl mx-auto">
           {topics.map((e, index) => (
             <Link key={index} href={`/topics${e.link}`}>
-              <div className="group relative h-[120px] flex items-center gap-6 p-6 bg-gradient-to-br from-slate-800/70 via-slate-700/50 to-slate-900/70 backdrop-blur-xl rounded-2xl border border-green-500 hover:border-emerald-400/40 hover:shadow-2xl hover:shadow-emerald-500/20 hover:-translate-y-3 hover:from-emerald-600/20 hover:to-teal-600/20 transition-all duration-500 overflow-hidden shadow-xl">
-                
-                {/* Subtle shine effect */}
-                <div className="absolute inset-0 bg-gradient-to-r from-white/10 via-transparent to-white/10 -skew-x-12 -translate-x-full group-hover:translate-x-[110%] transition-transform duration-1000" />
-                
+              <div className="group relative flex h-[120px] items-center gap-4 overflow-hidden rounded-xl border bg-card/60 p-5 shadow-md backdrop-blur-sm transition-all duration-200 hover:border-primary/40">
                 {/* Icon container */}
-                <div className="relative w-16 h-16 bg-white/10 backdrop-blur-xl rounded-2xl flex items-center justify-center border-2 border-white/20 group-hover:bg-emerald-400/20 group-hover:border-emerald-400/40 group-hover:scale-110 group-hover:rotate-3 transition-all duration-600 shadow-lg z-10">
-                  <span className="text-3xl group-hover:text-emerald-300 drop-shadow-2xl transition-all duration-500">
+                <div className="relative z-10 grid h-14 w-14 shrink-0 place-items-center rounded-lg border border-border bg-secondary transition-colors duration-200 group-hover:border-primary/40">
+                  <span className="text-2xl text-foreground transition-colors duration-200 group-hover:text-primary">
                     {e.icon}
                   </span>
                 </div>
-                
+
                 {/* Text content */}
-                <div className="min-w-0 flex-1 relative z-10">
-                  <h1 className="text-xl font-bold bg-gradient-to-r from-white to-emerald-200/80 bg-clip-text text-transparent group-hover:from-blue-400 group-hover:to-cyan-400 transition-all duration-700 leading-tight line-clamp-2">
+                <div className="relative z-10 min-w-0 flex-1">
+                  <h1 className="line-clamp-2 text-base font-semibold leading-tight transition-colors duration-200 group-hover:text-primary">
                     {e.topic}
                   </h1>
-                  
+
                   {/* Animated accent line */}
-                  <div className="mt-2 w-0 h-1.5 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-full group-hover:w-20 transition-all duration-700 origin-left" />
+                  <div className="mt-2 h-1 w-10 origin-left scale-x-0 rounded-full bg-gradient-to-r from-blue-400 to-purple-400 transition-transform duration-300 group-hover:scale-x-100" />
                 </div>
-                
-                {/* Corner indicator */}
-                <div className="absolute top-4 right-4 w-8 h-8 bg-gradient-to-r from-blue-400/20 to-cyan-400/20 rounded-xl backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 flex items-center justify-center">
-                  <div className="w-2.5 h-2.5 bg-blue-400 rounded-full animate-pulse" />
-                </div>
+
+                {/* Arrow */}
+                <svg
+                  className="relative z-10 h-4 w-4 shrink-0 text-muted-foreground opacity-0 transition-all duration-200 group-hover:translate-x-1 group-hover:text-primary group-hover:opacity-100"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                  strokeWidth={2}
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 8l4 4m0 0l-4 4m4-4H3"
+                  />
+                </svg>
               </div>
             </Link>
           ))}

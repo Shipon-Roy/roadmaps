@@ -193,51 +193,57 @@ export default function Page() {
   const currentVideos = videos.slice(startIndex, startIndex + ITEMS_PER_PAGE);
 
   return (
-    <div className="py-12 bg-gradient-to-b from-slate-900 via-blue-900/20 to-slate-900 min-h-screen">
+    <div className="py-24">
       <Container>
-        <div className="text-center mb-16">
-          <h1 className="bg-gradient-to-r from-[#7dd3fc] to-blue-400 bg-clip-text text-transparent font-black text-5xl md:text-6xl mb-6 drop-shadow-2xl">
-            Learning Path Developer Podcast
+        {/* Section header — হোমপেজের মতো একই ধাঁচ */}
+        <div className="mx-auto mb-14 max-w-2xl space-y-4 text-center">
+          <span className="inline-block rounded-full border border-border bg-secondary px-4 py-1.5 text-xs font-semibold uppercase tracking-widest text-primary">
+            Podcast
+          </span>
+          <h1 className="text-2xl font-extrabold tracking-tight sm:text-3xl">
+            Learning Path Developer <span className="gradient-text">Podcast</span>
           </h1>
-          <p className="text-xl text-gray-200 max-w-3xl mx-auto leading-relaxed backdrop-blur-sm bg-white/5 rounded-2xl p-8 border border-white/10 shadow-2xl">
-            Start your journey into web development with our CSS learning
-            series. Learn everything from basics to advanced techniques, all in
-            one place.[web:6]
+          <p className="text-sm font-medium leading-relaxed text-muted-foreground sm:text-base">
+            Start your journey into web development with our video series.
+            Learn everything from basics to advanced techniques, all in one
+            place.
           </p>
         </div>
+
+        <div className="divider-glow mx-auto mb-14 h-px w-full max-w-4xl" />
 
         {/* Selected Video View */}
         {selectedVideo && (
           <div className="flex flex-col lg:flex-row gap-8 mb-16">
             <div className="w-full lg:w-[68%]">
-              <div className="aspect-video relative group rounded-2xl overflow-hidden shadow-2xl ring-2 ring-white/20 hover:ring-blue-400/50 transition-all duration-500 hover:shadow-3xl hover:-translate-y-2 bg-gradient-to-br from-black/50 to-transparent">
+              <div className="group aspect-video relative overflow-hidden rounded-xl border bg-card/60 shadow-md">
                 <iframe
                   src={`${selectedVideo.videoUrl}?autoplay=1&rel=0`}
-                  className="w-full h-full rounded-2xl pointer-events-auto group-hover:scale-[1.02] transition-transform duration-700"
+                  className="h-full w-full"
                   title={selectedVideo.name}
                   frameBorder="0"
                   allow="autoplay; encrypted-media; fullscreen"
                   allowFullScreen
                 ></iframe>
               </div>
-              <div className="mt-6 p-6 bg-white/5 backdrop-blur-xl rounded-2xl border border-white/10 shadow-xl">
-                <h2 className="text-2xl md:text-3xl font-bold text-white mb-4 bg-gradient-to-r from-white to-gray-200 bg-clip-text">
+              <div className="mt-6 rounded-xl border bg-card/60 p-6 shadow-md backdrop-blur-sm">
+                <h2 className="mb-4 text-xl font-semibold leading-snug sm:text-2xl">
                   {selectedVideo.name}
                 </h2>
-                <p className="text-lg text-gray-300 leading-relaxed">
+                <p className="text-sm leading-relaxed text-muted-foreground sm:text-base">
                   {selectedVideo.description}
                 </p>
                 <button
-                  className="mt-6 inline-flex items-center gap-2 text-lg font-semibold text-blue-400 hover:text-blue-300 transition-all duration-300 hover:underline hover:decoration-2 underline-offset-4 group"
+                  className="group mt-6 inline-flex items-center gap-2 text-sm font-semibold text-primary transition-all duration-200 hover:underline hover:decoration-2 underline-offset-4"
                   onClick={() => {
                     setSelectedVideo(null);
                     setCurrentPage(1);
                   }}
                 >
                   ← Back to video list
-                  <span className="w-6 h-6 bg-blue-400/20 rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                  <span className="flex h-6 w-6 items-center justify-center rounded-full bg-primary/20 transition-transform group-hover:scale-110">
                     <svg
-                      className="w-4 h-4"
+                      className="h-4 w-4"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -255,14 +261,14 @@ export default function Page() {
             </div>
 
             {/* Sidebar thumbnails */}
-            <div className="w-full lg:w-[32%] max-h-[600px] overflow-y-auto pr-4 scrollbar-thin scrollbar-thumb-blue-500/50 scrollbar-track-slate-800/50 rounded-2xl">
+            <div className="w-full max-h-[600px] overflow-y-auto rounded-xl pr-2 lg:w-[32%]">
               <div className="grid grid-cols-2 md:grid-cols-1 gap-4">
                 {videos
                   .filter((video) => video.videoUrl !== selectedVideo.videoUrl)
                   .map((video, index) => (
                     <div
                       key={index}
-                      className="cursor-pointer group relative hover:scale-[1.05] transition-all duration-300 hover:shadow-2xl rounded-xl overflow-hidden border-2 border-transparent hover:border-blue-400/50 bg-gradient-to-t from-black/30 to-transparent"
+                      className="group relative cursor-pointer overflow-hidden rounded-lg border border-border bg-card/60 transition-all duration-200 hover:border-primary/40"
                       onClick={() => setSelectedVideo(video)}
                     >
                       <div className="aspect-video relative">
@@ -275,7 +281,7 @@ export default function Page() {
                           allowFullScreen
                         ></iframe>
                         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300 flex items-end p-4">
-                          <span className="text-white font-semibold text-sm truncate bg-white/10 px-3 py-1 rounded-full backdrop-blur-sm">
+                          <span className="rounded-full border border-border bg-background/80 px-3 py-1 text-xs font-semibold text-foreground backdrop-blur">
                             Play
                           </span>
                         </div>
@@ -290,33 +296,33 @@ export default function Page() {
         {/* Video Grid with Pagination */}
         {!selectedVideo && (
           <>
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-3 gap-8 mb-16">
+            <div className="mb-16 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {currentVideos.map((video, index) => (
                 <div
                   key={index}
-                  className="group cursor-pointer relative overflow-hidden rounded-2xl shadow-2xl hover:shadow-3xl hover:-translate-y-4 transition-all duration-500 border-2 border-transparent hover:border-blue-400/50 bg-gradient-to-br from-slate-800/50 to-transparent hover:bg-slate-800/70 backdrop-blur-sm"
+                  className="group relative cursor-pointer overflow-hidden rounded-xl border bg-card/60 shadow-md backdrop-blur-sm transition-all duration-200 hover:border-primary/40"
                   onClick={() => setSelectedVideo(video)}
                 >
                   <div className="aspect-video relative">
                     <iframe
                       src={video.videoUrl}
-                      className="w-full h-full rounded-2xl pointer-events-none group-hover:scale-110 transition-transform duration-700"
+                      className="h-full w-full pointer-events-none"
                       title={video.name}
                       frameBorder="0"
                       allow="encrypted-media"
                       allowFullScreen
                     ></iframe>
-                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-all duration-500 flex flex-col justify-end p-6">
-                      <div className="absolute top-4 right-4 w-12 h-12 bg-white/20 backdrop-blur-sm rounded-2xl flex items-center justify-center opacity-0 group-hover:opacity-100 transition-all duration-300 hover:bg-white/30">
+                    <div className="absolute inset-0 flex flex-col justify-end bg-gradient-to-t from-black/80 via-black/20 to-transparent p-5 opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                      <div className="absolute right-3 top-3 grid h-10 w-10 place-items-center rounded-lg bg-background/80 backdrop-blur">
                         <svg
-                          className="w-6 h-6"
+                          className="h-5 w-5 text-primary"
                           fill="currentColor"
                           viewBox="0 0 24 24"
                         >
                           <path d="M8 5v14l11-7z" />
                         </svg>
                       </div>
-                      <h3 className="text-xl font-bold text-white drop-shadow-lg mb-2 line-clamp-2">
+                      <h3 className="mb-1 line-clamp-2 text-sm font-semibold leading-snug text-white drop-shadow">
                         {video.name}
                       </h3>
                     </div>
@@ -326,18 +332,18 @@ export default function Page() {
             </div>
 
             {/* Pagination Controls */}
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-6 text-white p-8 backdrop-blur-xl bg-white/5 rounded-3xl border border-white/10 shadow-2xl max-w-md mx-auto">
+            <div className="mx-auto flex max-w-md flex-col items-center justify-center gap-3 rounded-xl border bg-card/60 p-4 shadow-md backdrop-blur-sm sm:flex-row">
               <button
                 disabled={currentPage === 1}
                 onClick={() => setCurrentPage((prev) => prev - 1)}
-                className={`px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform flex items-center gap-2 ${
+                className={`inline-flex h-10 items-center justify-center gap-2 rounded-sm border px-5 text-sm font-medium transition-colors duration-200 ${
                   currentPage === 1
-                    ? "bg-slate-700/50 text-gray-400 cursor-not-allowed shadow-lg"
-                    : "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 active:scale-95 text-white"
+                    ? "cursor-not-allowed border-border text-muted-foreground/50"
+                    : "border-border text-foreground hover:border-primary/40 hover:bg-accent"
                 }`}
               >
                 <svg
-                  className="w-5 h-5"
+                  className="h-4 w-4"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -351,21 +357,21 @@ export default function Page() {
                 </svg>
                 Previous
               </button>
-              <span className="text-2xl font-bold bg-white/10 px-8 py-3 rounded-2xl backdrop-blur-sm border border-white/20 min-w-[140px] text-center shadow-xl">
+              <span className="min-w-[140px] rounded-sm bg-secondary px-6 py-2.5 text-center text-sm font-semibold text-secondary-foreground">
                 Page {currentPage} of {totalPages}
               </span>
               <button
                 disabled={currentPage === totalPages}
                 onClick={() => setCurrentPage((prev) => prev + 1)}
-                className={`px-6 py-3 rounded-2xl font-semibold transition-all duration-300 transform flex items-center gap-2 ${
+                className={`inline-flex h-10 items-center justify-center gap-2 rounded-sm px-5 text-sm font-medium text-white transition-colors duration-200 ${
                   currentPage === totalPages
-                    ? "bg-slate-700/50 text-gray-400 cursor-not-allowed shadow-lg"
-                    : "bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 shadow-xl hover:shadow-2xl hover:-translate-y-1 active:scale-95 text-white"
+                    ? "cursor-not-allowed bg-secondary text-muted-foreground"
+                    : "bg-blue-600 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
                 }`}
               >
                 Next
                 <svg
-                  className="w-5 h-5"
+                  className="h-4 w-4"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"

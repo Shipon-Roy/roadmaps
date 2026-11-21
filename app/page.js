@@ -4,6 +4,7 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Articles from "../components/home/Articles";
 import Hero from "../components/home/Hero";
+import TechMarquee from "../components/home/TechMarquee";
 import TechUpdate from "../components/home/TechUpdate";
 import Mern from "../components/home/Mern";
 
@@ -14,6 +15,7 @@ export default function Home() {
   return (
     <div>
       <Hero />
+      <TechMarquee />
       <Mern />
       {/* <RoleBaseRoadmap /> */}
       {/* <Learning /> */}

@@ -1,112 +1,127 @@
 "use client";
-import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import Link from "next/link";
 import Container from "../ui/Container";
 
+const stats = [
+  { value: "10+", label: "Topics" },
+  { value: "Free", label: "Resources" },
+  { value: "MERN", label: "Stack" },
+];
+
 export default function Hero() {
   return (
-    <div className="relative overflow-hidden min-h-[90vh] flex items-center">
-      {/* Background glow blobs */}
-      <div className="absolute inset-0 pointer-events-none">
-        <div className="absolute -top-40 -left-40 w-[600px] h-[600px] bg-sky-500/10 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 -right-40 w-[600px] h-[600px] bg-cyan-500/10 rounded-full blur-3xl" />
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-blue-600/5 rounded-full blur-3xl" />
+    <section className="relative flex min-h-[85vh] items-center justify-center overflow-hidden bg-gradient-to-b from-background via-background to-background py-20 pb-32">
+      {/* Blueprint grid */}
+      <div className="grid-bg pointer-events-none absolute inset-0" />
+
+      {/* Background glow */}
+      <div className="pointer-events-none absolute inset-0 overflow-hidden">
+        <div className="absolute left-1/2 top-1/2 h-[700px] w-[700px] -translate-x-1/2 -translate-y-1/2 rounded-full bg-blue-600/10 blur-3xl" />
+        <div className="absolute -left-40 top-0 h-[400px] w-[400px] rounded-full bg-indigo-500/10 blur-3xl" />
+        <div className="absolute -right-40 bottom-0 h-[400px] w-[400px] rounded-full bg-purple-500/10 blur-3xl" />
       </div>
 
       <Container>
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-12 py-16">
-          {/* Left Content */}
-          <div className="flex-1 space-y-8 text-center lg:text-left">
-            {/* Badge */}
-            <div
-              data-aos="fade-up"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-sky-500/10 border border-sky-500/20 text-sky-400 text-sm font-medium"
-            >
-              <span className="w-2 h-2 rounded-full bg-sky-400 animate-pulse" />
-              Welcome to Free Learning Path
-            </div>
-
-            {/* Heading */}
-            <h1
-              data-aos="fade-up"
-              data-aos-duration="1200"
-              className="text-5xl lg:text-7xl font-extrabold leading-tight text-white"
-            >
-              Learning Path
-              <span className="block bg-gradient-to-r from-sky-400 via-cyan-400 to-blue-500 bg-clip-text text-transparent">
-                For Developers
-              </span>
-            </h1>
-
-            {/* Description */}
-            <p
-              data-aos="fade-up"
-              data-aos-duration="1500"
-              className="text-gray-400 text-lg leading-relaxed max-w-[520px] mx-auto lg:mx-0"
-            >
-              The ultimate destination for anyone looking to learn programming
-              for free. Structured roadmaps, curated resources, and expert
-              guidance to help you grow as a developer.
-            </p>
-
-            {/* CTA Buttons */}
-            <div
-              data-aos="fade-up"
-              data-aos-duration="1800"
-              className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start"
-            >
-              <Link href="/topics">
-                <button className="px-8 py-4 bg-gradient-to-r from-sky-500 to-cyan-500 hover:from-sky-400 hover:to-cyan-400 text-white font-semibold rounded-xl transition-all duration-300 shadow-lg shadow-sky-500/25 hover:shadow-sky-500/40 hover:-translate-y-0.5">
-                  Explore Topics
-                </button>
-              </Link>
-              <Link href="/blogs">
-                <button className="px-8 py-4 bg-gray-800 hover:bg-gray-700 text-gray-300 hover:text-white font-semibold rounded-xl border border-gray-700 hover:border-gray-600 transition-all duration-300">
-                  Read Blogs
-                </button>
-              </Link>
-            </div>
-
-            {/* Stats */}
-            <div
-              data-aos="fade-up"
-              data-aos-duration="2000"
-              className="flex gap-8 justify-center lg:justify-start pt-4"
-            >
-              {[
-                { value: "10+", label: "Topics" },
-                { value: "Free", label: "Resources" },
-                { value: "MERN", label: "Stack" },
-              ].map((stat) => (
-                <div key={stat.label} className="text-center">
-                  <div className="text-2xl font-bold text-white">
-                    {stat.value}
-                  </div>
-                  <div className="text-gray-500 text-sm">{stat.label}</div>
-                </div>
-              ))}
-            </div>
+        <div className="relative mx-auto max-w-3xl text-center">
+          {/* Badge */}
+          <div
+            data-aos="fade-up"
+            className="mb-6 inline-flex items-center gap-2 rounded-full border border-border bg-secondary/60 px-4 py-1.5 text-sm font-medium text-muted-foreground backdrop-blur"
+          >
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-400 opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-emerald-400" />
+            </span>
+            100% Free Learning Path
           </div>
 
-          {/* Right Lottie */}
-          <div
-            data-aos="fade-left"
+          {/* Heading — StackLearner ধাঁচে: সাদা লাইন + gradient লাইন */}
+          <h1
+            data-aos="fade-up"
             data-aos-duration="1200"
-            className="flex-1 max-w-[520px] w-full"
+            className="text-4xl font-bold tracking-tight text-foreground sm:text-5xl md:text-6xl lg:text-7xl"
           >
-            <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-r from-sky-500/20 to-cyan-500/20 rounded-3xl blur-2xl" />
-              <DotLottieReact
-                autoplay="true"
-                loop="true"
-                src="/images.lottie"
-                background="transparent"
-                style={{ width: "100%", height: "100%" }}
-              />
-            </div>
+            Learn The Right Skills
+            <span className="mt-2 block bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 bg-clip-text text-transparent dark:from-blue-400 dark:via-indigo-400 dark:to-purple-400">
+              For A Global Career
+            </span>
+          </h1>
+
+          {/* Description */}
+          <p
+            data-aos="fade-up"
+            data-aos-duration="1500"
+            className="mx-auto mt-6 max-w-2xl text-base font-medium leading-relaxed text-muted-foreground opacity-90 sm:text-lg"
+          >
+            Structured roadmaps, curated resources, and expert guidance to help
+            you grow as a developer — completely free, from your first line of
+            code to a job-ready portfolio.
+          </p>
+
+          {/* CTA */}
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1800"
+            className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row"
+          >
+            <Link
+              href="/topics"
+              className="group inline-flex h-11 items-center justify-center gap-2 rounded-sm bg-blue-600 px-6 text-sm font-semibold text-white shadow-glow transition-all duration-300 hover:-translate-y-0.5 hover:bg-blue-700 dark:bg-blue-500 dark:hover:bg-blue-600"
+            >
+              Start Learning Free
+              <svg
+                className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                />
+              </svg>
+            </Link>
+
+            <Link
+              href="/blogs"
+              className="inline-flex h-11 items-center justify-center rounded-sm border border-border bg-transparent px-6 text-sm font-semibold text-foreground transition-all duration-300 hover:border-primary/40 hover:bg-accent"
+            >
+              Read Blogs
+            </Link>
+          </div>
+
+          {/* Stats */}
+          <div
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            className="mt-12 flex items-center justify-center gap-6 sm:gap-10"
+          >
+            {stats.map((stat, i) => (
+              <div
+                key={stat.label}
+                className="flex items-center gap-6 sm:gap-10"
+              >
+                {i > 0 && (
+                  <span className="h-8 w-px bg-gradient-to-b from-transparent via-border to-transparent" />
+                )}
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-foreground">
+                    {stat.value}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {stat.label}
+                  </div>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </Container>
-    </div>
+
+      {/* Bottom fade into next section */}
+      <div className="pointer-events-none absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-background to-transparent" />
+    </section>
   );
 }

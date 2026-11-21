@@ -1,13 +1,19 @@
 import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
+import { notFound } from "next/navigation";
 import { MDXRemote } from "next-mdx-remote/rsc";
 import Link from "next/link";
 import { components } from "../../../components/blogs/MDXComponents";
 
 export default async function BlogModal({ params }) {
-  const { slug } = params;
+  const { slug } = await params;
   const filePath = path.join(process.cwd(), "content/blogs", `${slug}.mdx`);
+
+  if (!fs.existsSync(filePath)) {
+    notFound();
+  }
+
   const fileContent = fs.readFileSync(filePath, "utf8");
   const { content, data } = matter(fileContent);
 
@@ -17,26 +23,27 @@ export default async function BlogModal({ params }) {
       <div className="fixed inset-0 bg-gradient-to-b from-black/60 via-black/80 to-black/95 backdrop-blur-xl z-[9999] animate-in fade-in-0 zoom-in-95 duration-500" />
 
       {/* Modal Container */}
-      <div className="fixed inset-0 flex items-center justify-center z-[10000] p-4 animate-in fade-in-0 zoom-in-95 duration-700">
-        <div className="w-full max-w-6xl max-h-[95vh] relative">
+      <div className="fixed inset-0 z-[10000] flex animate-in items-center justify-center p-4 fade-in-0 zoom-in-95 duration-700">
+        <div className="relative max-h-[95vh] w-full max-w-6xl">
           {/* Main Modal Card */}
-          <div className="bg-gradient-to-b from-slate-900/95 via-slate-800/90 to-slate-900/80 backdrop-blur-3xl border border-white/10 rounded-3xl shadow-2xl shadow-black/50 overflow-hidden hover:shadow-3xl hover:shadow-blue-500/20 transition-all duration-500 group">
+          <div className="group relative max-h-[95vh] overflow-hidden rounded-xl border bg-background shadow-2xl transition-all duration-300">
             {/* Header */}
-            <div className="p-8 pb-4 border-b border-white/10 sticky top-0 bg-gradient-to-r from-slate-900/95 to-transparent backdrop-blur-xl z-20">
-              <div className="flex items-center justify-between mb-2">
-                <div className="flex items-center gap-4">
-                  <div className="w-3 h-3 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-full animate-pulse" />
-                  <h1 className="text-4xl lg:text-5xl font-black bg-gradient-to-r from-white via-blue-50 to-purple-100 bg-clip-text text-transparent drop-shadow-2xl line-clamp-1">
+            <div className="sticky top-0 z-20 border-b border-border bg-background/90 p-6 backdrop-blur-lg sm:p-8">
+              <div className="mb-3 flex items-center justify-between gap-4">
+                <div className="flex min-w-0 items-center gap-3">
+                  <span className="h-2 w-2 shrink-0 rounded-full bg-primary" aria-hidden="true" />
+                  <h1 className="line-clamp-2 text-xl font-extrabold tracking-tight sm:text-2xl">
                     {data.title}
                   </h1>
                 </div>
 
                 <Link
                   href="/blogs"
-                  className="group relative p-3 rounded-2xl bg-white/5 hover:bg-white/10 backdrop-blur-xl border border-white/20 hover:border-white/40 shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 hover:rotate-3 flex items-center justify-center w-12 h-12"
+                  aria-label="Close and return to blogs"
+                  className="group grid h-10 w-10 shrink-0 place-items-center rounded-sm border border-border bg-secondary transition-colors duration-200 hover:border-primary/40 hover:bg-accent"
                 >
                   <svg
-                    className="w-6 h-6 text-gray-300 group-hover:text-white transition-colors duration-300"
+                    className="h-5 w-5 text-muted-foreground transition-colors duration-200 group-hover:text-foreground"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -53,9 +60,9 @@ export default async function BlogModal({ params }) {
               </div>
 
               {data.date && (
-                <div className="inline-flex items-center gap-2 text-sm font-semibold text-blue-300/90 backdrop-blur-sm bg-blue-500/10 px-4 py-2 rounded-2xl border border-blue-500/30 ml-10">
+                <div className="ml-5 inline-flex items-center gap-2 rounded-full border border-border bg-secondary px-4 py-1.5 text-xs font-semibold text-primary">
                   <svg
-                    className="w-4 h-4"
+                    className="h-4 w-4"
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -73,19 +80,14 @@ export default async function BlogModal({ params }) {
             </div>
 
             {/* Content Area */}
-            <div className="relative z-10 p-8 lg:p-12 max-h-[70vh] overflow-y-auto scrollbar-thin scrollbar-thumb-white/20 scrollbar-track-slate-900/50 pr-4">
-              <div className="prose prose-invert prose-headings:text-white prose-headings:font-black prose-headings:drop-shadow-lg prose-a:text-blue-400 prose-a:no-underline prose-a:hover:text-blue-300 prose-code:bg-slate-800/50 prose-code:backdrop-blur prose-code:rounded-xl prose-blockquote:border-l-blue-400 prose-blockquote:bg-blue-500/5 max-w-none">
+            <div className="relative z-10 max-h-[70vh] overflow-y-auto p-6 pr-4 sm:p-8 lg:p-12">
+              {/* prose-invert ইচ্ছাকৃতভাবে বাদ — রঙ এখানে token থেকে আসে,
+                  তাই light/dark দুই থিমেই সঠিক থাকবে */}
+              <div className="prose max-w-none prose-headings:font-bold prose-headings:tracking-tight prose-headings:text-foreground prose-a:text-primary prose-a:no-underline prose-a:hover:underline prose-code:rounded prose-code:bg-secondary prose-code:px-1.5 prose-code:py-0.5 prose-code:text-primary prose-pre:rounded-xl prose-pre:border prose-pre:border-border prose-pre:bg-card prose-blockquote:border-l-primary prose-blockquote:bg-primary/5 prose-blockquote:text-muted-foreground prose-strong:text-foreground">
                 {/* ✅ styled components passed here */}
                 <MDXRemote source={content} components={components} />
               </div>
             </div>
-
-            {/* Bottom Gradient Overlay */}
-            <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-slate-900/90 to-transparent pointer-events-none" />
-
-            {/* Floating Decorative Elements */}
-            <div className="absolute top-1/2 -right-12 w-24 h-24 bg-gradient-to-r from-blue-400/10 to-purple-400/10 rounded-4xl backdrop-blur-xl border border-blue-400/20 opacity-60 animate-pulse" />
-            <div className="absolute bottom-20 -left-8 w-20 h-20 bg-gradient-to-r from-emerald-400/10 to-teal-400/10 rounded-full backdrop-blur-xl border border-emerald-400/20 opacity-50 animate-pulse delay-1000" />
           </div>
         </div>
       </div>

@@ -19,86 +19,112 @@ import {
 import { FaGolang } from "react-icons/fa6";
 import { TbBrandVscode } from "react-icons/tb";
 
+/**
+ * topic-এর category — তিনটা sub-page (/topics/framework|languages|tooling)
+ * এর সাথে মেলে। ভবিষ্যতে নতুন topic যোগ করলে এখানে category দিতে হবে।
+ */
+export const topicCategories = {
+  framework: { label: "Framework", plural: "Frameworks" },
+  languages: { label: "Language", plural: "Languages" },
+  tooling: { label: "Tooling", plural: "Tooling" },
+};
+
 export const topics = [
   {
     icon: <FaReact />,
     topic: "React",
     link: "/react",
+    category: "framework",
   },
   {
     icon: <SiNextdotjs />,
-    topic: "next",
+    topic: "Next",
     link: "/next",
+    category: "framework",
   },
   {
     icon: <SiJavascript />,
     topic: "Javascript",
     link: "/javascript",
+    category: "languages",
   },
   {
     icon: <FaGitSquare />,
     topic: "Git",
     link: "/git",
+    category: "tooling",
   },
   {
     icon: <FaDocker />,
     topic: "Docker",
     link: "/docker",
+    category: "tooling",
   },
   {
     icon: <TbBrandVscode />,
     topic: "VS Code",
     link: "/vscode",
+    category: "tooling",
   },
   {
     icon: <SiMysql />,
     topic: "MySQL",
     link: "/mysql",
+    category: "tooling",
   },
   {
     icon: <SiTypescript />,
     topic: "TypeScript",
     link: "/typescript",
+    category: "languages",
   },
   {
     icon: <FaPhp />,
     topic: "PHP",
     link: "/php",
+    category: "languages",
   },
   {
     icon: <SiPython />,
     topic: "Python",
     link: "/python",
+    category: "languages",
   },
   {
     icon: <FaGolang />,
     topic: "Go",
     link: "/go",
+    category: "languages",
   },
   {
     icon: <SiVuedotjs />,
     topic: "Vue",
     link: "/vue",
+    category: "framework",
   },
   {
     icon: <FaAngular />,
     topic: "Angular",
     link: "/angular",
+    category: "framework",
   },
   {
     icon: <SiTailwindcss />,
     topic: "Tailwind CSS",
     link: "/tailwindcss",
+    category: "framework",
   },
   {
     icon: <SiNuxt />,
     topic: "Nuxt",
     link: "/nuxt",
+    category: "framework",
   },
   {
     icon: <FaLaravel />,
     topic: "Laravel",
     link: "/laravel",
+    category: "framework",
   },
 ];
 export const classes = {

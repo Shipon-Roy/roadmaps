@@ -2,32 +2,205 @@
 @tailwind components;
 @tailwind utilities;
 
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* =========================================================
+   DESIGN TOKENS
+   প্রতিটি রঙ, border, ring এখান থেকে আসে।
+   মানগুলো space-separated RGB channel (০-২৫৫) —
+   এতে Tailwind-এর `bg-background/80` opacity modifier কাজ করে।
+   ========================================================= */
+@layer base {
+  :root {
+    /* --- Light theme (ভবিষ্যতে toggle করলে এখান থেকেই বদলাবে) --- */
+    --background: 255 255 255;
+    --foreground: 9 9 11;
+
+    --card: 255 255 255;
+    --card-foreground: 9 9 11;
+    --popover: 255 255 255;
+    --popover-foreground: 9 9 11;
+
+    --primary: 14 165 233; /* sky-500 */
+    --primary-foreground: 255 255 255;
+
+    --secondary: 244 244 245; /* zinc-100 */
+    --secondary-foreground: 9 9 11;
+    --muted: 244 244 245;
+    --muted-foreground: 113 113 122; /* zinc-500 */
+    --accent: 244 244 245;
+    --accent-foreground: 9 9 11;
+
+    --destructive: 228 0 20;
+    --destructive-foreground: 228 0 20;
+
+    --border: 228 228 231;
+    --input: 228 228 231;
+    --ring: 14 165 233;
+
+    --radius: 0.625rem; /* ১০px — StackLearner-এর মতো */
+
+    /* Gradient headline-এর রঙ: সাদা পটভূমিতে পড়ার জন্য গাঢ় */
+    --gradient-text: #2563eb, #6d28d9, #9333ea;
+  }
+
+  .dark {
+    /* --- Dark theme (ডিফল্ট) --- */
+    --background: 9 9 11; /* #09090b — zinc-950 */
+    --foreground: 250 250 250; /* #fafafa */
+
+    --card: 24 24 27; /* #18181b — zinc-900 */
+    --card-foreground: 250 250 250;
+    --popover: 24 24 27;
+    --popover-foreground: 250 250 250;
+
+    --primary: 56 189 248; /* sky-400 — brand */
+    --primary-foreground: 9 9 11;
+
+    --secondary: 39 39 42; /* zinc-800 */
+    --secondary-foreground: 250 250 250;
+    --muted: 39 39 42;
+    --muted-foreground: 161 161 170; /* zinc-400 */
+    --accent: 39 39 42;
+    --accent-foreground: 250 250 250;
+
+    --destructive: 251 44 54;
+    --destructive-foreground: 251 44 54;
+
+    --border: 39 39 42;
+    --input: 39 39 42;
+    --ring: 56 189 248;
+
+    /* ডার্ক পটভূমিতে হালকা রঙ বেশি সুন্দর */
+    --gradient-text: #60a5fa, #818cf8, #c084fc;
+  }
+
+  *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-color: rgb(var(--border));
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    background-color: rgb(var(--background));
+    color: rgb(var(--foreground));
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  ::selection {
+    background: rgb(var(--primary) / 0.3);
+    color: rgb(var(--foreground));
+  }
+
+  :focus-visible {
+    outline: 2px solid rgb(var(--ring));
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    text-wrap: balance;
+  }
 }
 
-body {
-  background: #0f172a;
-  background-image:
-    radial-gradient(ellipse at 20% 50%, rgba(14, 165, 233, 0.04) 0%, transparent 60%),
-    radial-gradient(ellipse at 80% 20%, rgba(6, 182, 212, 0.04) 0%, transparent 60%);
+@layer components {
+  /* Frosted glass — sticky header ও overlay-এ ব্যবহৃত */
+  .glass {
+    background-color: rgb(var(--background) / 0.8);
+    -webkit-backdrop-filter: blur(16px) saturate(160%);
+    backdrop-filter: blur(16px) saturate(160%);
+  }
+}
+
+@layer utilities {
+  /* Gradient headline (brand blue → purple) */
+  .gradient-text {
+    background-image: linear-gradient(90deg, var(--gradient-text));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Subtle blueprint grid — hero-এর পেছনে */
+  .grid-bg {
+    background-image:
+      linear-gradient(rgb(var(--foreground) / 0.05) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(var(--foreground) / 0.05) 1px, transparent 1px);
+    background-size: 52px 52px;
+    -webkit-mask-image: radial-gradient(ellipse at 50% 40%, #000 20%, transparent 75%);
+    mask-image: radial-gradient(ellipse at 50% 40%, #000 20%, transparent 75%);
+  }
+
+  /* সেকশনের মাঝে পাতলা gradient divider */
+  .divider-glow {
+    background-image: linear-gradient(
+      90deg,
+      transparent,
+      rgb(var(--foreground) / 0.22),
+      transparent
+    );
+  }
+
+  /* Marquee — টেক ট্যাগ স্ক্রলিং স্ট্রিপ */
+  .animate-marquee {
+    animation: marquee 40s linear infinite;
+  }
+  .animate-marquee-slow {
+    animation: marquee 60s linear infinite;
+  }
+
+  @keyframes marquee {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
+  }
 }
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 9px;
+  height: 9px;
 }
 ::-webkit-scrollbar-track {
-  background: #0f172a;
+  background: rgb(var(--background));
 }
 ::-webkit-scrollbar-thumb {
-  background: #334155;
-  border-radius: 3px;
+  background: rgb(var(--secondary));
+  border-radius: 999px;
+  border: 2px solid rgb(var(--background));
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: #475569;
+  background: rgb(var(--muted-foreground) / 0.6);
+}
+
+* {
+  scrollbar-color: rgb(var(--secondary)) rgb(var(--background));
+  scrollbar-width: thin;
+}
+
+/* কম motion পছন্দ করেন এমন ইউজারদের জন্য */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
